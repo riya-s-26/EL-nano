@@ -1,0 +1,55 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        .card { width: 250px; border: 1px solid #ccc; padding: 16px; box-sizing: border-box; font-family: sans-serif; margin-bottom: 20px; }
+        .head-wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 6px 12px; flex-wrap: wrap; }
+        
+        /* Candidate A: flex: 1 1 auto & flex: 0 1 auto */
+        .title-a { font-size: 1.25rem; font-weight: bold; flex: 1 1 auto; min-width: 0; margin: 0; }
+        .price-a { font-size: 0.85rem; font-weight: bold; flex: 0 1 auto; max-width: 100%; text-align: right; }
+
+        /* Candidate B: title flex: 1 1 auto & price flex: 0 0 auto (shrink 0) */
+        .title-b { font-size: 1.25rem; font-weight: bold; flex: 1 1 auto; min-width: 0; margin: 0; }
+        .price-b { font-size: 0.85rem; font-weight: bold; flex: 0 0 auto; max-width: 100%; text-align: right; }
+
+        /* Candidate C: title flex: 1 1 50% min-width: 0 & price flex: 1 1 auto */
+        .title-c { font-size: 1.25rem; font-weight: bold; flex: 1 1 auto; min-width: 140px; margin: 0; }
+        .price-c { font-size: 0.85rem; font-weight: bold; flex: 0 0 auto; max-width: 100%; text-align: right; }
+      </style>
+    </head>
+    <body>
+      <div class="card" id="card-a1">
+        <div class="head-wrap">
+          <h4 class="title-a">Pulpo a la brasa con patatas</h4>
+          <span class="price-a">Consultar precio al mesero</span>
+        </div>
+      </div>
+      <div class="card" id="card-a2">
+        <div class="head-wrap">
+          <h4 class="title-a">Encebollado</h4>
+          <span class="price-a">House Specialty</span>
+        </div>
+      </div>
+      <div class="card" id="card-b1">
+        <div class="head-wrap">
+          <h4 class="title-b">Pulpo a la brasa con patatas</h4>
+          <span class="price-b">Consultar precio al mesero</span>
+        </div>
+      </div>
+      <div class="card" id="card-b2">
+        <div class="head-wrap">
+          <h4 class="title-b">Encebollado</h4>
+          <span class="price-b">House Specialty</span>
+        </div>
+      </div>
+      <div class="card" id="card-b3">
+        <div class="head-wrap">
+          <h4 class="title-b">Encebollado</h4>
+          <span class="price-b">Consultar precio al mesero</span>
+        </div>
+      </div>
+    </body>
+    </html>
+  

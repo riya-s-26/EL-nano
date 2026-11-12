@@ -1,0 +1,221 @@
+BEBIDAS\JPG\Guanábana.jpg
+BEBIDAS\JPG\Jarra Sangría - Cava - Copa.jpg
+BEBIDAS\JPG\Jarra sangría Cava.jpg
+BEBIDAS\JPG\Jarra sangría.jpg
+BEBIDAS\JPG\Jarra zumo.jpg
+BEBIDAS\JPG\Quaker.jpg
+BEBIDAS\JPG\Zumo Guanabana.jpg
+BEBIDAS\JPG\Zumo aguacate.jpg
+BEBIDAS\JPG\Zumo coco.jpg
+BEBIDAS\JPG\Zumo de Tamarindo.jpg
+BEBIDAS\JPG\Zumo fresa.jpg
+BEBIDAS\JPG\Zumo mango.jpg
+BEBIDAS\JPG\Zumo maracuyá.jpg
+BEBIDAS\JPG\Zumo mora.jpg
+BEBIDAS\JPG\Zumo piña.jpg
+BEBIDAS\JPG\Zumo plátano.jpg
+BEBIDAS\PNG\Guanábana.png
+BEBIDAS\PNG\Jarra sangría Cava.png
+BEBIDAS\PNG\Jarra sangría.png
+BEBIDAS\PNG\Jarra zumo.png
+BEBIDAS\PNG\Quaker.png
+BEBIDAS\PNG\Zumo Guanabana.png
+BEBIDAS\PNG\Zumo aguacate.png
+BEBIDAS\PNG\Zumo coco.png
+BEBIDAS\PNG\Zumo de Tamarindo.png
+BEBIDAS\PNG\Zumo fresa.png
+BEBIDAS\PNG\Zumo mango.png
+BEBIDAS\PNG\Zumo maracuyá.png
+BEBIDAS\PNG\Zumo mora.png
+BEBIDAS\PNG\Zumo piña.png
+BEBIDAS\PNG\Zumo plátano.png
+CESTAS DE PLÁTANO\JPG\Cesta carne.jpg
+CESTAS DE PLÁTANO\JPG\Cesta gratinados.jpg
+CESTAS DE PLÁTANO\JPG\Cesta marisco.jpg
+CESTAS DE PLÁTANO\PNG\Cesta carne.png
+CESTAS DE PLÁTANO\PNG\Cesta gratinados.png
+CESTAS DE PLÁTANO\PNG\Cesta marisco.png
+COCINA CRIOLLA TRADICIONAL\JPG\Bandera completa.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Bandera mixta.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Guatita.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Cazuelas\Cazuela plátano marinera.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Cazuelas\Cazuela plátano mixta.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Cazuelas\Cazuela plátano pescado.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Encebollados\Encebollado mixto.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Encebollados\Encebollado.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Encocados\Encocado gambas.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Encocados\Encocado mixto.jpg
+COCINA CRIOLLA TRADICIONAL\JPG\Encocados\Encocado pescado.jpg
+COCINA CRIOLLA TRADICIONAL\PNG\Bandera completa.png
+COCINA CRIOLLA TRADICIONAL\PNG\Bandera mixta.png
+COCINA CRIOLLA TRADICIONAL\PNG\Guatita.png
+COCINA CRIOLLA TRADICIONAL\PNG\Cazuelas\Cazuela plátano marinera.png
+COCINA CRIOLLA TRADICIONAL\PNG\Cazuelas\Cazuela plátano mixta.png
+COCINA CRIOLLA TRADICIONAL\PNG\Cazuelas\Cazuela plátano pescado.png
+COCINA CRIOLLA TRADICIONAL\PNG\Encebollados\Encebollado mixto.png
+COCINA CRIOLLA TRADICIONAL\PNG\Encebollados\Encebollado.png
+COCINA CRIOLLA TRADICIONAL\PNG\Encocados\Encocado gambas.png
+COCINA CRIOLLA TRADICIONAL\PNG\Encocados\Encocado mixto.png
+COCINA CRIOLLA TRADICIONAL\PNG\Encocados\Encocado pescado.png
+COMPLEMENTOS\JPG\Acompañamiento guatita.jpg
+COMPLEMENTOS\JPG\Arroz-menestra.jpg
+COMPLEMENTOS\JPG\Arroz-patacones-aguacate.jpg
+COMPLEMENTOS\JPG\Ensalada aguacate pequeña.jpg
+COMPLEMENTOS\PNG\Acompañamiento guatita.png
+COMPLEMENTOS\PNG\Arroz-menestra.png
+COMPLEMENTOS\PNG\Arroz-patacones-aguacate.png
+COMPLEMENTOS\PNG\Ensalada aguacate pequeña.png
+DELICIOSOS CEVICHES\JPG\Ceviche gambas.jpg
+DELICIOSOS CEVICHES\JPG\Ceviche jipijapa.jpg
+DELICIOSOS CEVICHES\JPG\Ceviche mixto (1).jpg
+DELICIOSOS CEVICHES\JPG\Ceviche pescado.jpg
+DELICIOSOS CEVICHES\JPG\Ceviche trifásico.jpg
+DELICIOSOS CEVICHES\PNG\Ceviche gambas.png
+DELICIOSOS CEVICHES\PNG\Ceviche jipijapa.png
+DELICIOSOS CEVICHES\PNG\Ceviche mixto.png
+DELICIOSOS CEVICHES\PNG\Ceviche pescado.png
+DELICIOSOS CEVICHES\PNG\Ceviche trifásico.png
+NUESTRA PARRILLADA\JPG\1Parrillada carne completa 2.jpg
+NUESTRA PARRILLADA\JPG\1Parrillada carne completa.jpg
+NUESTRA PARRILLADA\JPG\2Parrillada carne 2.jpg
+NUESTRA PARRILLADA\JPG\2Parrillada carne.jpg
+NUESTRA PARRILLADA\JPG\3Parrillada mini marisco 2.jpg
+NUESTRA PARRILLADA\JPG\3Parrillada mini marisco.jpg
+NUESTRA PARRILLADA\PNG\Parrillada carne completa.png
+NUESTRA PARRILLADA\PNG\Parrillada carne.png
+NUESTRA PARRILLADA\PNG\Parrillada mini marisco.png
+NUESTRAS BURGERS\JPG\Burger cabra.jpg
+NUESTRAS BURGERS\JPG\Burger pepa.jpg
+NUESTRAS BURGERS\PNG\Burger cabra.png
+NUESTRAS BURGERS\PNG\Burger pepa.png
+NUESTRAS ENSALADAS\JPG\Cocktail gambas.jpg
+NUESTRAS ENSALADAS\JPG\Ensalada aguacate.jpg
+NUESTRAS ENSALADAS\JPG\Ensalada salmón.jpg
+NUESTRAS ENSALADAS\PNG\Cocktail gambas.png
+NUESTRAS ENSALADAS\PNG\Ensalada aguacate.png
+NUESTRAS ENSALADAS\PNG\Ensalada salmón.png
+NUESTROS COMBOS\JPG\Combo Nanito.jpg
+NUESTROS COMBOS\JPG\Combo americanito.jpg
+NUESTROS COMBOS\JPG\Combo choclo.jpg
+NUESTROS COMBOS\JPG\Combo cholito.jpg
+NUESTROS COMBOS\JPG\Combo peladito.jpg
+NUESTROS COMBOS\JPG\Sanduche Chancho.jpg
+NUESTROS COMBOS\PNG\Combo Nanito.png
+NUESTROS COMBOS\PNG\Combo americanito.png
+NUESTROS COMBOS\PNG\Combo choclo.png
+NUESTROS COMBOS\PNG\Combo cholito.png
+NUESTROS COMBOS\PNG\Combo peladito.png
+NUESTROS COMBOS\PNG\Sanduche Chancho.png
+NUESTROS PLATOS COMBINADOS\JPG\Chuzos patacones.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Costilla Brasa BBQ.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Dorada asada.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Dorada frita.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Entrecot.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Merluza.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Parrillada mini.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Picaña.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Pollo asado.jpg
+NUESTROS PLATOS COMBINADOS\JPG\Ternera.jpg
+NUESTROS PLATOS COMBINADOS\PNG\Chuzos patacones.png
+NUESTROS PLATOS COMBINADOS\PNG\Costilla Brasa BBQ.png
+NUESTROS PLATOS COMBINADOS\PNG\Dorada asada.png
+NUESTROS PLATOS COMBINADOS\PNG\Dorada frita.png
+NUESTROS PLATOS COMBINADOS\PNG\Entrecot.png
+NUESTROS PLATOS COMBINADOS\PNG\Merluza.png
+NUESTROS PLATOS COMBINADOS\PNG\Parrillada mini.png
+NUESTROS PLATOS COMBINADOS\PNG\Picaña.png
+NUESTROS PLATOS COMBINADOS\PNG\Pollo asado.png
+NUESTROS PLATOS COMBINADOS\PNG\Ternera.png
+PARA PICAR\JPG\Calamares romana.jpg
+PARA PICAR\JPG\Ceviche mix.jpg
+PARA PICAR\JPG\Choclo asado.jpg
+PARA PICAR\JPG\Maduros queso.jpg
+PARA PICAR\JPG\Mix rebozados.jpg
+PARA PICAR\JPG\Patacones queso.jpg
+PARA PICAR\JPG\Plátanos mixtos.jpg
+PARA PICAR\JPG\Pulpo brasa.jpg
+PARA PICAR\JPG\Salchipapa.jpg
+PARA PICAR\JPG\Sanduche Chanco.jpg
+PARA PICAR\JPG\Tequeños.jpg
+PARA PICAR\JPG\Yuca frita.jpg
+PARA PICAR\PNG\Calamares romana.png
+PARA PICAR\PNG\Ceviche mix.png
+PARA PICAR\PNG\Choclo asado.png
+PARA PICAR\PNG\Maduros queso.png
+PARA PICAR\PNG\Mix rebozados.png
+PARA PICAR\PNG\Patacones queso.png
+PARA PICAR\PNG\Plátanos mixtos.png
+PARA PICAR\PNG\Pulpo brasa.png
+PARA PICAR\PNG\Salchipapa.png
+PARA PICAR\PNG\Sanduche Chanco.png
+PARA PICAR\PNG\Tequeños.png
+PARA PICAR\PNG\Yuca frita.png
+PLATOS PRINCIPALES\JPG\Camarones reventados.jpg
+PLATOS PRINCIPALES\JPG\Chicharrón pescado.jpg
+PLATOS PRINCIPALES\JPG\Churrasco ecuatoriano.jpg
+PLATOS PRINCIPALES\JPG\Fritada.jpg
+PLATOS PRINCIPALES\JPG\Hornado cerdo Bellaterra.jpg
+PLATOS PRINCIPALES\JPG\Hornado de cerdo.jpg
+PLATOS PRINCIPALES\JPG\Pollo apanado.jpg
+PLATOS PRINCIPALES\JPG\Yapingacho 1.jpg
+PLATOS PRINCIPALES\JPG\Yapingacho 2.jpg
+PLATOS PRINCIPALES\PNG\Camarones reventados.png
+PLATOS PRINCIPALES\PNG\Chicharrón pescado.png
+PLATOS PRINCIPALES\PNG\Churrasco ecuatoriano.png
+PLATOS PRINCIPALES\PNG\Fritada.png
+PLATOS PRINCIPALES\PNG\Hornado cerdo Bellaterra.png
+PLATOS PRINCIPALES\PNG\Hornado de cerdo.png
+PLATOS PRINCIPALES\PNG\Pollo apanado.png
+PLATOS PRINCIPALES\PNG\Yapingacho 1.png
+PLATOS PRINCIPALES\PNG\Yapingacho 2.png
+PROMO LUNES A VIERNES\JPG\Promo costilla.jpg
+PROMO LUNES A VIERNES\JPG\Promo pescado.jpg
+PROMO LUNES A VIERNES\JPG\Promo pollo.jpg
+PROMO LUNES A VIERNES\PNG\Promo costilla.png
+PROMO LUNES A VIERNES\PNG\Promo pescado.png
+PROMO LUNES A VIERNES\PNG\Promo pollo.png
+RACIONES\JPG\Aguacate.jpg
+RACIONES\JPG\Arroz.jpg
+RACIONES\JPG\Maduro.jpg
+RACIONES\JPG\Menestra.jpg
+RACIONES\JPG\Moros.jpg
+RACIONES\JPG\patacones.jpg
+RACIONES\PNG\Aguacate.png
+RACIONES\PNG\Arroz.png
+RACIONES\PNG\Maduro.png
+RACIONES\PNG\Menestra.png
+RACIONES\PNG\Moros.png
+RACIONES\PNG\patacones.png
+SABROSOS ARROCES\JPG\1Arroz camarones 2.jpg
+SABROSOS ARROCES\JPG\1Arroz camarones.jpg
+SABROSOS ARROCES\JPG\2Arroz marinero 2.jpg
+SABROSOS ARROCES\JPG\2Arroz marinero.jpg
+SABROSOS ARROCES\JPG\3Chaulafan 2.jpg
+SABROSOS ARROCES\JPG\3Chaulafan.jpg
+SABROSOS ARROCES\PNG\Arroz camarones.png
+SABROSOS ARROCES\PNG\Arroz marinero.png
+SABROSOS ARROCES\PNG\Chaulafan.png
+SALSAS\JPG\Guacamole.jpg
+SALSAS\JPG\Guayaba.jpg
+SALSAS\JPG\Miel y mostaza.jpg
+SALSAS\JPG\Tártara.jpg
+SALSAS\JPG\Verde.jpg
+SALSAS\PNG\Guacamole.png
+SALSAS\PNG\Guayaba.png
+SALSAS\PNG\Miel y mostaza.png
+SALSAS\PNG\Tártara.png
+SALSAS\PNG\Verde.png
+SUSHI\JPG\Dragon roll.jpg
+SUSHI\JPG\Love roll.jpg
+SUSHI\JPG\Tropical roll.jpg
+SUSHI\PNG\Dragon roll.png
+SUSHI\PNG\Love roll.png
+SUSHI\PNG\Tropical roll.png
+VEGANOS\JPG\VGA Arroz salteado verduras.jpg
+VEGANOS\JPG\VGA Ensalada arroz maduros.jpg
+VEGANOS\PNG\VGA Arroz salteado verduras.png
+VEGANOS\PNG\VGA Ensalada arroz maduros.png
+VEGETARIANOS\JPG\1VG - Arroz - tortilla - menestra.jpg
+VEGETARIANOS\JPG\2VG-patacones-queso- ensalada.jpg
+VEGETARIANOS\PNG\VG - Arroz - tortilla - menestra.png
+VEGETARIANOS\PNG\VG-patacones-queso- ensalada.png

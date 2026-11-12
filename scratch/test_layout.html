@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+:root {
+  --g: #003C28;
+  --cream-alt: #E8DCC4;
+  --font-display: 'Paytone One', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 20px;
+  background: #f5f0e6;
+}
+
+.menu-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* 4-column layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.menu-card {
+  min-width: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--cream-alt);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.menu-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.menu-card-title {
+  font-size: 1.25rem;
+  color: var(--g);
+  line-height: 1.25;
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.menu-card-price {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--g);
+  line-height: 1.3;
+  flex: 0 1 auto;
+  max-width: 100%;
+  white-space: normal;
+  text-align: right;
+  margin-left: auto;
+}
+
+.menu-card-price.cocktail-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.menu-card-desc {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: rgba(0, 60, 40, 0.82);
+  margin: 0 0 16px 0;
+  flex-grow: 1;
+  width: 100%;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.menu-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px dashed var(--cream-alt);
+  font-size: 0.85rem;
+}
+</style>
+</head>
+<body>
+<div class="menu-wrap">
+  <div class="menu-grid">
+    <!-- Test Card 1: Encebollado ES -->
+    <div class="menu-card">
+      <div class="menu-card-body">
+        <div class="menu-card-head">
+          <h4 class="menu-card-title">Encebollado</h4>
+          <span class="menu-card-price">Consultar precio al mesero</span>
+        </div>
+        <p class="menu-card-desc">De la cocina tradicional criolla, nuestro encebollado de pescado con cebolla curtida y nuestro sabroso consomé.</p>
+        <div class="menu-card-meta">
+          <span>Clásicos</span>
+          <a href="#">Ver en Menú Digital ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Test Card 2: Pulpo a la brasa con patatas ES -->
+    <div class="menu-card">
+      <div class="menu-card-body">
+        <div class="menu-card-head">
+          <h4 class="menu-card-title">Pulpo a la brasa con patatas</h4>
+          <span class="menu-card-price">Consultar precio al mesero</span>
+        </div>
+        <p class="menu-card-desc">Tierno pulpo a la brasa servido con patatas cocidas, pimentón y aceite de oliva.</p>
+        <div class="menu-card-meta">
+          <span>Para Empezar</span>
+          <a href="#">Ver en Menú Digital ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Test Card 3: Cazuela ES -->
+    <div class="menu-card">
+      <div class="menu-card-body">
+        <div class="menu-card-head">
+          <h4 class="menu-card-title">Cazuela</h4>
+          <span class="menu-card-price">Consultar precio al mesero</span>
+        </div>
+        <p class="menu-card-desc">De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y maní.</p>
+        <div class="menu-card-meta">
+          <span>Clásicos</span>
+          <a href="#">Ver en Menú Digital ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Test Card 4: Churrasco Ecuatoriano ES -->
+    <div class="menu-card">
+      <div class="menu-card-body">
+        <div class="menu-card-head">
+          <h4 class="menu-card-title">Churrasco Ecuatoriano</h4>
+          <span class="menu-card-price">Consultar precio al mesero</span>
+        </div>
+        <p class="menu-card-desc">Carne de vacuno a la plancha, servida con patatas fritas, arroz, huevo frito y ensalada criolla.</p>
+        <div class="menu-card-meta">
+          <span>Clásicos</span>
+          <a href="#">Ver en Menú Digital ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

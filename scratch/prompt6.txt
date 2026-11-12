@@ -1,0 +1,73 @@
+<USER_REQUEST>
+# Antigravity Task: Fix Spanish Menu Catalog Text Wrapping and Card Layout
+
+## Objective
+
+Fix the text-rendering and formatting issue in the Spanish version of the **“Authentic Coastal Flavors & Cocktails”** menu catalog on the El Ñaño Miami website.
+
+Reference website: https://pavan-bhosale.github.io/Restaurant-Website/
+
+Use the supplied screenshots as the primary visual reference for the bug.
+
+The Spanish menu currently displays dish names, prices, and descriptions with abnormal wrapping. Some titles break into multiple tiny lines even though there is sufficient space across the card, and price labels such as “Consultar precio al mesero” are split awkwardly.
+
+**Find and fix the underlying layout or CSS issue rather than applying individual fixes to every dish.**
+
+The English version is the visual reference for the intended card layout. Preserve the existing design, branding, menu data, and functionality.
+
+---
+
+## 1. Understand the Problem Before Editing
+
+Inspect the current implementation of the menu catalog in both English and Spanish.
+
+Investigate the following potential causes:
+
+- A language-specific CSS class applying an incorrect width or maximum width to Spanish cards.
+- Different grid or flexbox settings between English and Spanish mode.
+- Cards shrinking because their grid columns or flex children have incorrect sizing constraints.
+- Excessive `word-break`, `overflow-wrap`, or `white-space` rules.
+- Fixed widths or minimum widths applied to title, price, description, or metadata elements.
+- Long Spanish text causing flex children to shrink unexpectedly.
+- Price labels or category labels competing for horizontal space with dish titles.
+- Translation-specific markup that differs from the English card structure.
+- Global styles that affect Spanish text but should only apply to particular elements.
+
+Do not assume the issue is caused by Spanish text being longer. The screenshots show severe word-by-word and even syllable-by-syllable wrapping, which s
+<truncated 8423 bytes>
+- [ ] Root cause of the Spanish text-wrapping issue identified.
+- [ ] Underlying grid or card-width issue corrected.
+- [ ] Dish titles wrap naturally.
+- [ ] “Consultar precio al mesero” displays cleanly.
+- [ ] Spanish descriptions use the full available card width.
+- [ ] English layout remains unchanged.
+- [ ] English and Spanish cards use consistent styling.
+- [ ] Four-column desktop layout verified where space permits.
+- [ ] Browser zoom at 100%, 125%, and 150% tested.
+- [ ] Tablet and mobile layouts tested.
+- [ ] Language switching and menu filters tested.
+- [ ] No image, content, pricing, or link regressions introduced.
+
+In the final report, explain:
+
+1. The actual root cause discovered.
+2. The CSS or component changes made to resolve it.
+3. How the fix keeps English and Spanish layouts consistent.
+4. Which viewport sizes and zoom levels were tested.
+5. Any remaining issues that could not be verified.
+
+Do not claim that a test passed unless it was actually performed.
+
+**Expected result:** The Spanish menu catalog has the same clean, professional layout as the English catalog. Dish names, prices, and descriptions remain readable at normal desktop widths, browser zoom levels, tablet sizes, and mobile sizes, with no broken word wrapping or collapsed cards.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-28T00:04:54+05:30.
+
+The user's current state is as follows:
+Other open documents:
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\apply_image_fixes.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\check_encebollado_history.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\trace_encebollado.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\save_drive_pics.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\test_8_cards.py (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

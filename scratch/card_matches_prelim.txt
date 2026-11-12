@@ -1,0 +1,314 @@
+
+================================================================================
+CARD #1: Encebollado / Encebollado Ecuatoriano
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/Encebollado mixto.jpg
+  Current EN Desc: Albacore tuna and tender yuca broth infused with cilantro, cumin, pickled red onions, and toasted chifles.
+  Current ES Desc: El plato bandera del Ecuador: albacora fresca, yuca suave, cebolla colorada curtida, cilantro fresco y chifles.
+  MiCartaYa Candidates (2):
+    - [CLASICOS ] ID 183: Encebollado (ES name: Encebollado)
+      Official ES Desc: De la comida criolla, nuestro encebolla de pescado cebolla encurtida y nuestro consome
+      Official Image URL: https://media.micartaya.es/shared/media/8467ab967d5e6352ce60176ff77ca005.jpg
+    - [CLASICOS ] ID 184: Encebollado mixto (ES name: Encebollado mixto)
+      Official ES Desc: De la comida criolla nuestro encebollado de pescado y langostinos del pacífico cebolla encurtida y nuestro consome.
+      Official Image URL: https://media.micartaya.es/shared/media/ceede360456e57ec913a64b1e1872146.jpg
+
+================================================================================
+CARD #2: Guatita / Guatita Tradicional
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/VGA Arroz salteado verduras.png
+  Current EN Desc: Slow-simmered tender tripe in a rich peanut and achiote sauce with diced potatoes, white rice, and avocado.
+  Current ES Desc: Mondongo tierno guisado en una suave y aromática salsa de maní con papas, servido con arroz caliente y aguacate.
+  MiCartaYa Candidates (1):
+    - [CLASICOS ] ID 188: Guatita (ES name: Guatita)
+      Official ES Desc: Callos guisados con patata y maní.
+      Official Image URL: https://media.micartaya.es/shared/media/81458e4c45c2e129fe1d14235a1f2c72.jpg
+
+================================================================================
+CARD #3: Seco de Pollo / Seco de Pollo Casero
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/Seco de Pollo.jpeg
+  Current EN Desc: Tender chicken braised in a savory reduction of herbs, mild spices, and fruit notes with fragrant yellow rice and maduros.
+  Current ES Desc: Presas de pollo braseadas a fuego lento con naranjilla, cerveza, pimientos y cilantro, servido con arroz amarillo.
+  MiCartaYa Candidates (4):
+    - [SALADS] ID 164: Ensalada Cesar con Pollo (ES name: Ensalada Cesar con Pollo)
+      Official ES Desc: None
+      Official Image URL: None
+    - [CLASICOS ] ID 193: Seco de pollo (ES name: Seco de pollo)
+      Official ES Desc: None
+      Official Image URL: https://media.micartaya.es/shared/media/41c7c35a6a6500863309ab1f074b0e26.webp
+    - [JOSPED FIRED] ID 205: Pollo asado  (ES name: Pollo asado o apanado)
+      Official ES Desc: Servido con patacones, arroz blanco y ensalada de aguacate.
+      Official Image URL: https://media.micartaya.es/shared/media/8a8b990aac625d0f031d4dbea482e830.jpg
+    - [SPECIALS] ID 214: Pollo asado con arroz y menestra (ES name: Pollo asado con arroz y menestra)
+      Official ES Desc: Pollo a la brasa servido con arroz y menestra.
+      Official Image URL: https://media.micartaya.es/shared/media/b02f35af1e8cd4d1ef76a0547cf02694.jpg
+
+================================================================================
+CARD #4: Fritada / Fritada Ecuatoriana
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/Fritada.png
+  Current EN Desc: Succulent seasoned pork braised in spiced citrus broth and crisped in its own juices, served with sweet maduro and choclo.
+  Current ES Desc: Cerdo sazonado y dorado en paila de bronce, acompañado de mote tierno, llapingacho, maduro frito y ensalada criolla.
+  MiCartaYa Candidates (1):
+    - [CLASICOS ] ID 194: Fritada (ES name: Fritada)
+      Official ES Desc: Costillas de cerdo adobadas fritas, servidas con patacón y ensalada criolla.
+      Official Image URL: https://media.micartaya.es/shared/media/e208e6af93b2b2e790956fd3cba0792c.jpg
+
+================================================================================
+CARD #5: Churrasco Ecuatoriano / Churrasco Ecuatoriano
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/Parrillada carne completa.png
+  Current EN Desc: Grilled seasoned steak topped with fried eggs, accompanied by white rice, french fries, sweet plantains, and fresh avocado salad.
+  Current ES Desc: Carne tierna a la plancha servida con huevos fritos, arroz blanco, papas fritas, ensalada criolla y aguacate.
+  MiCartaYa Candidates (2):
+    - [CLASICOS ] ID 189: Churrasco ecuatoriano (ES name: Churrasco ecuatoriano)
+      Official ES Desc: Sudado de ternera en salsa servido con arroz, patatas fritas, huevo y ensalada.
+      Official Image URL: https://media.micartaya.es/shared/media/ef04295a493518410d8fccca175c98fe.jpg
+    - [JOSPED FIRED] ID 201: Tira de churrasco a la brasa 120Z (ES name: Tira de churrasco a la brasa 120Z)
+      Official ES Desc: None
+      Official Image URL: None
+
+================================================================================
+CARD #6: Yapingacho / Llapingachos con Cecina
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/Yapingacho 1.png
+  Current EN Desc: Golden pan-fried potato cakes filled with melted cheese, served with creamy peanut sauce, chorizo, fried egg, and salad.
+  Current ES Desc: Tortillas doradas de papa rellenas de queso, servidas con cecina asada, chorizo, huevo frito y salsa de maní.
+  MiCartaYa Candidates (1):
+    - [CLASICOS ] ID 2991: Yapingacho (ES name: Yapingacho)
+      Official ES Desc: Cerdo asado, acompañado de tortilla de yapingacho con salsa de mani, chorizo, huevos fritos y ensalada de aguacate.
+      Official Image URL: https://media.micartaya.es/shared/media/bbb907594ff7f9c5a7effd194b2bca0c.webp
+
+================================================================================
+CARD #7: Cazuela / Cazuela de Mariscos
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/Cesta marisco.png
+  Current EN Desc: Baked green plantain and ground peanut casserole simmered with fresh fish or shrimp, herbs, and garlic, served bubbly hot.
+  Current ES Desc: Masa de plátano verde rallado cocinada con pasta de maní y mariscos frescos, horneada en cazuela de barro.
+  MiCartaYa Candidates (2):
+    - [CLASICOS ] ID 185: Cazuela plátano-pescado (ES name: Cazuela plátano-pescado)
+      Official ES Desc: De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y maní.
+      Official Image URL: https://media.micartaya.es/shared/media/10414276845ab7dfcbed6e044b2f1543.jpg
+    - [CLASICOS ] ID 187: Cazuela plátano-mixta (ES name: Cazuela plátano-mixta)
+      Official ES Desc: De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y cacahuete.
+      Official Image URL: https://media.micartaya.es/shared/media/e2c3030ea731bc7d43345298ef57a927.jpg
+
+================================================================================
+CARD #8: Encocado / Encocado de Camarón
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/Mix rebozados.png
+  Current EN Desc: Fresh seafood simmered in a luscious spiced coconut milk sauce with bell peppers, garlic, and cilantro, served with rice and patacones.
+  Current ES Desc: Camarones del Pacífico cocidos en leche de coco fresca con pimientos, cebolla y chillangua al estilo esmeraldeño.
+  MiCartaYa Candidates (2):
+    - [CLASICOS ] ID 191: Encocado de pescado (ES name: Encocado de pescado)
+      Official ES Desc: Desde la provincia verde de Ecuador y toda la costa pacífica, nuestros mariscos en salsa de coco.
+      Official Image URL: https://media.micartaya.es/shared/media/34b5aebacfe3b5f8ce865b383d12ba0f.jpg
+    - [CLASICOS ] ID 192: Encocado mixto (ES name: Encocado mixto)
+      Official ES Desc: Desde la provincia verde de Ecuador y toda la costa pacífica, nuestros mariscos en salsa de coco.
+      Official Image URL: https://media.micartaya.es/shared/media/fce5193cc2f7d1ed3af88fb5f3849c6e.jpg
+
+================================================================================
+CARD #9: Cazuela / Cazuela
+  Current Category: clasicos
+  Current Image: assets/img/pics from clients/VG-patacones-queso- ensalada.png
+  Current EN Desc: Comforting coastal sweet corn stew prepared with freshly grated choclo, achiote aromatics, and tender coastal shrimp.
+  Current ES Desc: Guiso espeso de maíz choclo tierno aromatizado con achiote y mariscos, servido con arroz blanco y patacones.
+  MiCartaYa Candidates (2):
+    - [CLASICOS ] ID 185: Cazuela plátano-pescado (ES name: Cazuela plátano-pescado)
+      Official ES Desc: De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y maní.
+      Official Image URL: https://media.micartaya.es/shared/media/10414276845ab7dfcbed6e044b2f1543.jpg
+    - [CLASICOS ] ID 187: Cazuela plátano-mixta (ES name: Cazuela plátano-mixta)
+      Official ES Desc: De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y cacahuete.
+      Official Image URL: https://media.micartaya.es/shared/media/e2c3030ea731bc7d43345298ef57a927.jpg
+
+================================================================================
+CARD #10: Bolón de Plátano / Bolón de Plátano con Queso
+  Current Category: empezar
+  Current Image: assets/img/pics from clients/Verde.png
+  Current EN Desc: Giant mashed green plantain dumpling stuffed with coastal white cheese, crispy pork chicharrón, or mixto, fried golden.
+  Current ES Desc: Bola tradicional de plátano verde frito y majado a mano con abundante queso fresco costeño o chicharrón.
+  MiCartaYa Candidates (3):
+    - [STARTERS] ID 173: Plátanos mixtos con queso (ES name: Plátanos mixtos con queso)
+      Official ES Desc: None
+      Official Image URL: https://media.micartaya.es/shared/media/d46ae9fc41c715cd11d05f3c884e2d3b.jpg
+    - [CLASICOS ] ID 185: Cazuela plátano-pescado (ES name: Cazuela plátano-pescado)
+      Official ES Desc: De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y maní.
+      Official Image URL: https://media.micartaya.es/shared/media/10414276845ab7dfcbed6e044b2f1543.jpg
+    - [CLASICOS ] ID 187: Cazuela plátano-mixta (ES name: Cazuela plátano-mixta)
+      Official ES Desc: De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y cacahuete.
+      Official Image URL: https://media.micartaya.es/shared/media/e2c3030ea731bc7d43345298ef57a927.jpg
+
+================================================================================
+CARD #11: Patacones con Queso / Patacones con Queso
+  Current Category: empezar
+  Current Image: assets/img/pics from clients/patacones.png
+  Current EN Desc: Twice-fried crispy green plantain rounds served alongside thick slices of fresh Ecuadorian coastal white cheese.
+  Current ES Desc: Rodajas dobles de plátano verde frito y aplastado, doradas al punto crocante con queso fresco costeño.
+  MiCartaYa Candidates (4):
+    - [STARTERS] ID 171: Patacones con queso (ES name: Patacones con queso)
+      Official ES Desc: Plátanos verdes fritos servidos con queso y salsa tártara.
+      Official Image URL: https://media.micartaya.es/shared/media/66cfe55086dbe48f1c5034425414147e.jpg
+    - [STARTERS] ID 172: Maduros con queso (ES name: Maduros con queso)
+      Official ES Desc: Plátano maduro frito, servido con queso fresco y salsa de guayaba
+      Official Image URL: https://media.micartaya.es/shared/media/ebd863c83ddb5ac79c32e34a3fae62af.jpg
+    - [STARTERS] ID 173: Plátanos mixtos con queso (ES name: Plátanos mixtos con queso)
+      Official ES Desc: None
+      Official Image URL: https://media.micartaya.es/shared/media/d46ae9fc41c715cd11d05f3c884e2d3b.jpg
+    - [STARTERS] ID 2985: Bolon De Platano con Queso (ES name: Bolon De Platano con Queso)
+      Official ES Desc: None
+      Official Image URL: None
+
+================================================================================
+CARD #12: Maduros con Queso / Maduros Fritos con Queso
+  Current Category: empezar
+  Current Image: assets/img/pics from clients/Maduro.png
+  Current EN Desc: Tender caramelized ripe sweet plantains baked to perfection and served with fresh coastal white cheese.
+  Current ES Desc: Plátano maduro frito caramelizado en sus azúcares naturales con abundante queso fresco rallado.
+  MiCartaYa Candidates (4):
+    - [STARTERS] ID 171: Patacones con queso (ES name: Patacones con queso)
+      Official ES Desc: Plátanos verdes fritos servidos con queso y salsa tártara.
+      Official Image URL: https://media.micartaya.es/shared/media/66cfe55086dbe48f1c5034425414147e.jpg
+    - [STARTERS] ID 172: Maduros con queso (ES name: Maduros con queso)
+      Official ES Desc: Plátano maduro frito, servido con queso fresco y salsa de guayaba
+      Official Image URL: https://media.micartaya.es/shared/media/ebd863c83ddb5ac79c32e34a3fae62af.jpg
+    - [STARTERS] ID 173: Plátanos mixtos con queso (ES name: Plátanos mixtos con queso)
+      Official ES Desc: None
+      Official Image URL: https://media.micartaya.es/shared/media/d46ae9fc41c715cd11d05f3c884e2d3b.jpg
+    - [STARTERS] ID 2985: Bolon De Platano con Queso (ES name: Bolon De Platano con Queso)
+      Official ES Desc: None
+      Official Image URL: None
+
+================================================================================
+CARD #13: Pan de Yuca / Pan de Yuca Recién Horneado
+  Current Category: empezar
+  Current Image: assets/img/pics from clients/Guacamole.png
+  Current EN Desc: Warm, cheesy baked Ecuadorian cassava rolls with crisp golden crust and light, airy chewy interior.
+  Current ES Desc: Panecillos suaves y esponjosos preparados con almidón de yuca y queso artesanal, servidos calientes.
+  MiCartaYa Candidates (1):
+    - [STARTERS] ID 169: Pan de yuca con parmesano (ES name: Pan de yuca con parmesano)
+      Official ES Desc: None
+      Official Image URL: None
+
+================================================================================
+CARD #14: Choclo Asado / Choclo Asado con Queso
+  Current Category: empezar
+  Current Image: assets/img/pics from clients/patacones.png
+  Current EN Desc: Charred giant-kernel Andean sweet corn on the cob served with thick cuts of fresh Ecuadorian white cheese.
+  Current ES Desc: Mazorca tierna de choclo andino asada a fuego directo, bañada con mantequilla y queso blanco costeño.
+  MiCartaYa Candidates (5):
+    - [STARTERS] ID 170: Choclo asado (ES name: Choclo asado)
+      Official ES Desc: Choclo asado servido con queso rallado y salsa verde
+      Official Image URL: https://media.micartaya.es/shared/media/4ce88f6452a07c602d1883b55797e689.jpg
+    - [CLASICOS ] ID 2993: Sango de Choclo de Pescado y Camarones (ES name: Sango de Choclo de Pescado y Camarones)
+      Official ES Desc: None
+      Official Image URL: None
+    - [CLASICOS ] ID 2992: Sango de Choclo de Pescado (ES name: Sango de Choclo de Pescado)
+      Official ES Desc: None
+      Official Image URL: None
+    - [JOSPED FIRED] ID 205: Pollo asado  (ES name: Pollo asado o apanado)
+      Official ES Desc: Servido con patacones, arroz blanco y ensalada de aguacate.
+      Official Image URL: https://media.micartaya.es/shared/media/8a8b990aac625d0f031d4dbea482e830.jpg
+    - [SPECIALS] ID 214: Pollo asado con arroz y menestra (ES name: Pollo asado con arroz y menestra)
+      Official ES Desc: Pollo a la brasa servido con arroz y menestra.
+      Official Image URL: https://media.micartaya.es/shared/media/b02f35af1e8cd4d1ef76a0547cf02694.jpg
+
+================================================================================
+CARD #15: Chaulafán / Chaulafán Tradicional
+  Current Category: arroces
+  Current Image: assets/img/pics from clients/Chaulafan.png
+  Current EN Desc: Ecuadorian wok-tossed seasoned rice packed with tender pork, chicken, shrimp, vegetables, and scrambled egg.
+  Current ES Desc: Arroz salteado al wok al estilo chifa ecuatoriano con pollo, camarones, carne de cerdo, huevo y cebollín verde.
+  MiCartaYa Candidates (1):
+    - [WOK RICE DISHES] ID 197: Chaulafán (ES name: Chaulafán)
+      Official ES Desc: None
+      Official Image URL: https://media.micartaya.es/shared/media/ea2766cce6dda3e3f8441ca748863ec0.jpg
+
+================================================================================
+CARD #16: Arroz Marinero / Arroz Marinero Ecuatoriano
+  Current Category: arroces
+  Current Image: assets/img/pics from clients/Arroz marinero.png
+  Current EN Desc: Sautéed yellow spiced rice with whole jumbo prawns, mussels, calamari rings, crab claws, and fresh citrus herbs.
+  Current ES Desc: Arroz condimentado cocinado con mariscos surtidos (camarones, calamares, mejillones y almejas) al cilantro.
+  MiCartaYa Candidates (5):
+    - [WOK RICE DISHES] ID 198: Arroz con camarones (ES name: Arroz con camarones)
+      Official ES Desc: (WOK) Desde las costas del Ecuador, con langostinos ecuatorianos hechos al wok salteado de verduras.
+      Official Image URL: https://media.micartaya.es/shared/media/d4191c64e37b59d40bd9c07d651d2570.jpg
+    - [WOK RICE DISHES] ID 199: Arroz marinero (ES name: Arroz marinero)
+      Official ES Desc: (PARA COMPARTIR) Con los mariscos frescos del pacífico salteamos con mucho sabor nuestro arroz marinero.
+      Official Image URL: https://media.micartaya.es/shared/media/7ef610edc1e0747b0d9f9a15b30001b0.webp
+    - [SPECIALS] ID 213: Pescado frito con arroz y menestra (ES name: Pescado frito con arroz y menestra)
+      Official ES Desc: Pescado rebozado servido con arroz y menestra
+      Official Image URL: https://media.micartaya.es/shared/media/24e5c3cf0c4c1a5e84cad135783fc744.jpg
+    - [SPECIALS] ID 214: Pollo asado con arroz y menestra (ES name: Pollo asado con arroz y menestra)
+      Official ES Desc: Pollo a la brasa servido con arroz y menestra.
+      Official Image URL: https://media.micartaya.es/shared/media/b02f35af1e8cd4d1ef76a0547cf02694.jpg
+    - [SPECIALS] ID 215: Chuleta de cerdo con arroz y menestra (ES name: Chuleta de cerdo con arroz y menestra)
+      Official ES Desc: None
+      Official Image URL: https://media.micartaya.es/shared/media/94da2f1ef64db1ffa700f588bee9a955.jpg
+
+================================================================================
+CARD #17: Bandera Mixta / Bandera Mixta
+  Current Category: banderas
+  Current Image: assets/img/pics from clients/VGA Ensalada arroz maduros.png
+  Current EN Desc: The quintessential combination plate featuring generous portions of Encebollado, Guatita, and Seco de Pollo over yellow rice.
+  Current ES Desc: Plato combinado de Guatita criolla, Seco de Pollo y Ceviche de Camarón, servido con arroz amarillo.
+  MiCartaYa Candidates (3):
+    - [CLASICOS ] ID 187: Cazuela plátano-mixta (ES name: Cazuela plátano-mixta)
+      Official ES Desc: De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y cacahuete.
+      Official Image URL: https://media.micartaya.es/shared/media/e2c3030ea731bc7d43345298ef57a927.jpg
+    - [CLASICOS ] ID 195: Bandera mixta (ES name: Bandera mixta)
+      Official ES Desc: Arroz, guatita, cazuela
+      Official Image URL: https://media.micartaya.es/shared/media/463762636a4b7327e649ac256d58c64c.jpg
+    - [CLASICOS ] ID 196: Bandera completa (ES name: Bandera completa)
+      Official ES Desc: Guatita, cazuela, encebollado, ceviche de gambas
+      Official Image URL: https://media.micartaya.es/shared/media/615b53278e290ae9903a9dc228b16958.jpg
+
+================================================================================
+CARD #18: Bandera Completa / Bandera Completa
+  Current Category: banderas
+  Current Image: assets/img/pics from clients/Parrillada mini marisco.png
+  Current EN Desc: Grand coastal platter uniting Encebollado, Guatita, Ceviche de Camarón, and Seco de Pollo with sweet plantains and avocado.
+  Current ES Desc: La experiencia total de guisos: Guatita, Seco de Pollo, Cazuela de mariscos y Ceviche en un solo plato abundante.
+  MiCartaYa Candidates (2):
+    - [CLASICOS ] ID 195: Bandera mixta (ES name: Bandera mixta)
+      Official ES Desc: Arroz, guatita, cazuela
+      Official Image URL: https://media.micartaya.es/shared/media/463762636a4b7327e649ac256d58c64c.jpg
+    - [CLASICOS ] ID 196: Bandera completa (ES name: Bandera completa)
+      Official ES Desc: Guatita, cazuela, encebollado, ceviche de gambas
+      Official Image URL: https://media.micartaya.es/shared/media/615b53278e290ae9903a9dc228b16958.jpg
+
+================================================================================
+CARD #19: Patacones, Maduros & Moros / Acompañantes Típicos
+  Current Category: acompanantes
+  Current Image: assets/img/pics from clients/Moros.png
+  Current EN Desc: Crispy patacones, sweet caramelized maduros, seasoned lentil moro rice, and slow-simmered savory menestra.
+  Current ES Desc: Mote cocido, chifles finos crocantes, maíz tostado chulpi, aguacate fresco y porciones de arroz blanco o amarillo.
+  MiCartaYa Candidates (1):
+    - [STARTERS] ID 172: Maduros con queso (ES name: Maduros con queso)
+      Official ES Desc: Plátano maduro frito, servido con queso fresco y salsa de guayaba
+      Official Image URL: https://media.micartaya.es/shared/media/ebd863c83ddb5ac79c32e34a3fae62af.jpg
+
+================================================================================
+CARD #20: La Ñaña / La Ñaña (Signature)
+  Current Category: drinks
+  Current Image: assets/img/experiences/exp-cocktails.webp
+  Current EN Desc: Our namesake cocktail crafted with fresh maracuyá (passion fruit), premium aged rum, citrus cordial, and mint.
+  Current ES Desc: Aguardiente artesanal ecuatoriano, pulpa de maracuyá fresca, jarabe de hierba luisa y un toque cítrico balanceado.
+  MiCartaYa Candidates (0):
+
+================================================================================
+CARD #21: Canelazo Miamero / Canelazo Miamero
+  Current Category: drinks
+  Current Image: assets/img/experiences/exp-cocktails.webp
+  Current EN Desc: Spiced naranjilla and cinnamon infusion balanced with cane spirits, panela reduction, and citrus zest. Served chilled.
+  Current ES Desc: Nuestra versión fresca del clásico andino: aguardiente, infusión de canela, jugo de naranjilla natural y hielo picado.
+  MiCartaYa Candidates (0):
+
+================================================================================
+CARD #22: Ecuadorian Sour / Ecuadorian Sour
+  Current Category: drinks
+  Current Image: assets/img/experiences/exp-cocktails.webp
+  Current EN Desc: Artisanal spirits shaken with Andean fruit reduction, fresh lime juice, egg white froth, and aromatic bitters.
+  Current ES Desc: Pisco y aguardiente macerados con fruta de la pasión, clara de huevo emulsionada, limón sutil y gotas de amargo.
+  MiCartaYa Candidates (0):

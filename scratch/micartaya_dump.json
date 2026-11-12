@@ -1,0 +1,3044 @@
+{
+  "restaurant": {
+    "id": 4,
+    "name": "El Ñaño Miami",
+    "slogan": "",
+    "slug": "el-nano-miami",
+    "address": "339 Miracle Mile, Coral Gables, FL 33134, Estados Unidos",
+    "phone": "+1 786-558-5466",
+    "primary_language": "en",
+    "timezone": "Europe/Madrid",
+    "logo_url": "https://media.micartaya.es/restaurants/4/logo/logo.png",
+    "logo_size": 100,
+    "wifi_name": "",
+    "wifi_password": "",
+    "accepts_orders": false,
+    "enable_mi_selection": false,
+    "orders_paused": false,
+    "payment_enabled": false,
+    "payment_provider": "dojo",
+    "payment_mode": "disabled",
+    "ask_diners": false,
+    "service_mode": "with_tables",
+    "website_url": "https://elnanorestaurant.com/",
+    "instagram_url": null,
+    "facebook_url": null,
+    "google_review_url": "",
+    "show_name_in_menu": false,
+    "show_phone_in_menu": true,
+    "show_address_in_menu": true,
+    "plan_status": "CARTA",
+    "currency": "USD",
+    "show_secondary_currency": false,
+    "secondary_currency": "USD",
+    "exchange_rate": 1.0,
+    "brand_color": "#223E39",
+    "accent_color": "#ecc42e",
+    "meta_title": "",
+    "meta_description": "",
+    "theme": "custom",
+    "tips_enabled": false,
+    "tips_percentages": [
+      5,
+      10,
+      15
+    ],
+    "hide_out_of_stock": false,
+    "show_prices_during_selection": true,
+    "ab_testing_enabled": false,
+    "smartwaiter_enabled": false
+  },
+  "languages": [
+    {
+      "code": "en",
+      "flag": "🇺🇸",
+      "is_default": true
+    },
+    {
+      "code": "es",
+      "flag": "🇪🇸",
+      "is_default": false
+    }
+  ],
+  "allergens": [
+    {
+      "id": 67,
+      "name": "Altramuces",
+      "icon": "🌼",
+      "translations": {
+        "es": {
+          "name": "Altramuces"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "name": "Apio",
+      "icon": "🥬",
+      "translations": {
+        "es": {
+          "name": "Apio"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "name": "Cacahuetes",
+      "icon": "🥜",
+      "translations": {
+        "es": {
+          "name": "Cacahuetes"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "name": "Crustáceos",
+      "icon": "🦀",
+      "translations": {
+        "es": {
+          "name": "Crustceos"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "name": "Frutos de Cáscara",
+      "icon": "🌰",
+      "translations": {
+        "es": {
+          "name": "Frutos de Cscara"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "name": "Gluten",
+      "icon": "🌾",
+      "translations": {
+        "es": {
+          "name": "Gluten"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "name": "Huevos",
+      "icon": "🥚",
+      "translations": {
+        "es": {
+          "name": "Huevos"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "name": "Lácteos",
+      "icon": "🥛",
+      "translations": {
+        "es": {
+          "name": "Lcteos"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "name": "Moluscos",
+      "icon": "🦪",
+      "translations": {
+        "es": {
+          "name": "Moluscos"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "name": "Mostaza",
+      "icon": "🌭",
+      "translations": {
+        "es": {
+          "name": "Mostaza"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "name": "Pescado",
+      "icon": "🐟",
+      "translations": {
+        "es": {
+          "name": "Pescado"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "name": "Sésamo",
+      "icon": "🥯",
+      "translations": {
+        "es": {
+          "name": "Ssamo"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "name": "Soja",
+      "icon": "🫘",
+      "translations": {
+        "es": {
+          "name": "Soja"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "name": "Sulfitos",
+      "icon": "🍷",
+      "translations": {
+        "es": {
+          "name": "Sulfitos"
+        }
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": 38,
+      "name": "STARTERS",
+      "description": "",
+      "order": 10,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "ENTRANTES"
+        }
+      },
+      "products": [
+        {
+          "id": 169,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Pan de yuca con parmesano",
+          "short_description": "Pan de queso elaborado con almidón de Yuca. ",
+          "long_description": "",
+          "order": -11,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Pan de yuca con parmesano"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 172,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 14.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            57,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 170,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Choclo asado",
+          "short_description": "Choclo asado servido con queso rallado y salsa verde",
+          "long_description": "",
+          "order": -10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/4ce88f6452a07c602d1883b55797e689.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Choclo asado",
+              "short_description": "Choclo asado servido con queso rallado y salsa verde"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 173,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 15.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            57,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 171,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Patacones con queso",
+          "short_description": "Plátanos verdes fritos servidos con queso y salsa tártara.",
+          "long_description": "",
+          "order": 0,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/66cfe55086dbe48f1c5034425414147e.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Patacones con queso",
+              "short_description": "Plátanos verdes fritos servidos con queso y salsa tártara."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 174,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 16.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            57,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 172,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Maduros con queso",
+          "short_description": "Plátano maduro frito, servido con queso fresco y salsa de guayaba",
+          "long_description": "",
+          "order": 0,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/ebd863c83ddb5ac79c32e34a3fae62af.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Maduros con queso",
+              "short_description": "Plátano maduro frito, servido con queso fresco y salsa de guayaba"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 175,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 16.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 173,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Plátanos mixtos con queso",
+          "short_description": "Platanos maduros y patacones con queso ",
+          "long_description": "",
+          "order": 0,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/d46ae9fc41c715cd11d05f3c884e2d3b.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Plátanos mixtos con queso"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 176,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 19.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            57,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2985,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Bolon De Platano con Queso",
+          "short_description": "Bolon de platano verde con Queso",
+          "long_description": "",
+          "order": 0,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {},
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3485,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 15.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2987,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Bolon de Platano Con Chicharron",
+          "short_description": "Bolon de platano verde con Chicharron ",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {},
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3487,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 16.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2988,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Bolon de Platano Mixto",
+          "short_description": "Bolon de platano con Queso y Chicharron",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {},
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3488,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 18.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 175,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Calamares a la andaluza",
+          "short_description": "Calamares fritos, terminados con sal marina",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Calamares a la andaluza"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 178,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 22.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55,
+            57,
+            68
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2989,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Gambas al Ajillo",
+          "short_description": "Camarones salteados con salsa de ajo, acompañados de patacones",
+          "long_description": "",
+          "order": 40,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "short_description": "Camarones salteados con salsa de ajo, acompañados de patacones"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3489,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 20.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2990,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Jipijapa Tiradito",
+          "short_description": "Finas laminas de pescado blanco, bañadas en leche de tigre estilo Jipijapa. ",
+          "long_description": "",
+          "order": 70,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "short_description": "Finas laminas de pescado blanco, bañadas en leche de tigre estilo Jipijapa."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3490,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 20.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            58,
+            59
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 176,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Patacón con picaña",
+          "short_description": "Platano verde (Patacones) con queso, guacamole y picanha. ",
+          "long_description": "",
+          "order": 80,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/b6fcbcef4dd7d304dacb5b22bae68c7a.webp",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Patacón con picaña"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 179,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 28.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 174,
+          "family_id": 38,
+          "subfamily_id": null,
+          "name": "Pulpo a la brasa con patatas",
+          "short_description": "Pulpo a la brasa con tortilla de patata tradicional de la sierra Ecuatoriana, terminada con chorizo molido",
+          "long_description": "",
+          "order": 90,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/02d2ad0e739c703d78dc7caa2fd1383f.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Pulpo a la brasa con patatas"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 177,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 36.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            59,
+            61,
+            66,
+            68
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "ECUATORIAN CEVICHES",
+      "description": "",
+      "order": 30,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "ECUATORIAN CEVICHES"
+        }
+      },
+      "products": [
+        {
+          "id": 179,
+          "family_id": 39,
+          "subfamily_id": null,
+          "name": "Ceviche de pescado",
+          "short_description": "Pescado blanco encurtido con limón, sal, cebolla y tomate.",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/9c30f7f150701db6d173a08b4a436df5.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Ceviche de pescado",
+              "short_description": "Pescado blanco encurtido con limón, sal, cebolla y tomate."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 182,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 26.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            58,
+            63
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 180,
+          "family_id": 39,
+          "subfamily_id": null,
+          "name": "Ceviche mixto",
+          "short_description": "Langostino fresco y pescado blanco encurtido con limón, sal, cebolla y tomate.",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/697d359f644fc405338d3d842683cd6b.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Ceviche mixto",
+              "short_description": "Langostino fresco y pescado blanco encurtido con limón, sal, cebolla y tomate."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 183,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 27.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58,
+            63
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 178,
+          "family_id": 39,
+          "subfamily_id": null,
+          "name": "Ceviche de gambas",
+          "short_description": "Langostino fresco del pacífico ecuatoriano encurtido con limón, sal, cebolla y tomate.",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/2f6386c5d42eb4b4067e18dcefdabf77.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Ceviche de gambas",
+              "short_description": "Langostino fresco del pacífico ecuatoriano encurtido con limón, sal, cebolla y tomate."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 181,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 28.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            63
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 181,
+          "family_id": 39,
+          "subfamily_id": null,
+          "name": "Ceviche jipijapa",
+          "short_description": "Camarones y pescado marinados en cítricos y salsa de mani de Jipijapa",
+          "long_description": "",
+          "order": 50,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/5ab953f086ad4ffdd02fe7efd398c6b4.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Ceviche jipijapa"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 184,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 29.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58,
+            59,
+            63
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 182,
+          "family_id": 39,
+          "subfamily_id": null,
+          "name": "Ceviche mixto con pulpo jipijapa",
+          "short_description": "Camarones, pulpo y pescado marinados en cítricos y salsa de mani de Jipijapa",
+          "long_description": "",
+          "order": 60,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Ceviche mixto con pulpo jipijapa"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 185,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 36.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58,
+            59,
+            63
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 168,
+          "family_id": 39,
+          "subfamily_id": null,
+          "name": "Trio de ceviches",
+          "short_description": "",
+          "long_description": "",
+          "order": 61,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/e3eae96c925250b65c26cbdac5607277.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Trio de ceviches"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 171,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 40.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58,
+            59,
+            63
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "SALADS",
+      "description": "",
+      "order": 40,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "ENSALADAS"
+        }
+      },
+      "products": [
+        {
+          "id": 164,
+          "family_id": 37,
+          "subfamily_id": null,
+          "name": "Ensalada Cesar con Pollo",
+          "short_description": "",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Ensalada Cesar con Pollo"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 167,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 19.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55,
+            57,
+            60,
+            61,
+            65
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 223,
+          "family_id": 37,
+          "subfamily_id": null,
+          "name": "Ensalada de mango, parmesano y Tajin",
+          "short_description": "",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Ensalada de mango y parmesano"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 226,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 20.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            61,
+            63
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "CLASICOS ",
+      "description": "",
+      "order": 50,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "ECUATORIAN TRADICIONAL DISHES"
+        }
+      },
+      "products": [
+        {
+          "id": 183,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Encebollado",
+          "short_description": "De la comida criolla, nuestro encebolla de pescado cebolla encurtida y nuestro consome",
+          "long_description": "",
+          "order": -1,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/8467ab967d5e6352ce60176ff77ca005.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Encebollado",
+              "short_description": "De la comida criolla, nuestro encebolla de pescado cebolla encurtida y nuestro consome"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 186,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 24.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            58
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 184,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Encebollado mixto",
+          "short_description": "De la comida criolla nuestro encebollado de pescado y langostinos del pacífico cebolla encurtida y nuestro consome.",
+          "long_description": "",
+          "order": 0,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/ceede360456e57ec913a64b1e1872146.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Encebollado mixto",
+              "short_description": "De la comida criolla nuestro encebollado de pescado y langostinos del pacífico cebolla encurtida y nuestro consome."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 187,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 28.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 185,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Cazuela plátano-pescado",
+          "short_description": "De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y maní.",
+          "long_description": "",
+          "order": 0,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/10414276845ab7dfcbed6e044b2f1543.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Cazuela plátano-pescado",
+              "short_description": "De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y maní."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 188,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 24.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            58,
+            59,
+            62
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 187,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Cazuela plátano-mixta",
+          "short_description": "De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y cacahuete.",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/e2c3030ea731bc7d43345298ef57a927.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Cazuela plátano-mixta",
+              "short_description": "De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y cacahuete."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 190,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 29.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58,
+            59,
+            62
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 191,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Encocado de pescado",
+          "short_description": "Desde la provincia verde de Ecuador y toda la costa pacífica, nuestros mariscos en salsa de coco.",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/34b5aebacfe3b5f8ce865b383d12ba0f.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Encocado de pescado",
+              "short_description": "Desde la provincia verde de Ecuador y toda la costa pacífica, nuestros mariscos en salsa de coco."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 194,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 24.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            58,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 192,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Encocado mixto",
+          "short_description": "Desde la provincia verde de Ecuador y toda la costa pacífica, nuestros mariscos en salsa de coco.",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/fce5193cc2f7d1ed3af88fb5f3849c6e.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Encocado mixto",
+              "short_description": "Desde la provincia verde de Ecuador y toda la costa pacífica, nuestros mariscos en salsa de coco."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 195,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 28.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2993,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Sango de Choclo de Pescado y Camarones",
+          "short_description": "Guiso cremoso de maíz fresco molido con mariscos.",
+          "long_description": "",
+          "order": 50,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {},
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3493,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 28.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58,
+            59,
+            62
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2992,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Sango de Choclo de Pescado",
+          "short_description": "Guiso cremoso de maíz fresco molido con mariscos. ",
+          "long_description": "",
+          "order": 60,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {},
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3492,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 24.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            58,
+            59,
+            62
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 188,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Guatita",
+          "short_description": "Callos guisados con patata y maní.",
+          "long_description": "",
+          "order": 80,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/81458e4c45c2e129fe1d14235a1f2c72.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Guatita",
+              "short_description": "Callos guisados con patata y maní."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 191,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 24.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            59
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 193,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Seco de pollo",
+          "short_description": "Guiso de Pollo, acompañado de arroz y platano maduro",
+          "long_description": "",
+          "order": 90,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/41c7c35a6a6500863309ab1f074b0e26.webp",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Seco de pollo"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 196,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 25.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55,
+            66
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 189,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Churrasco ecuatoriano",
+          "short_description": "Sudado de ternera en salsa servido con arroz, patatas fritas, huevo y ensalada.",
+          "long_description": "",
+          "order": 100,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/ef04295a493518410d8fccca175c98fe.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Churrasco ecuatoriano",
+              "short_description": "Sudado de ternera en salsa servido con arroz, patatas fritas, huevo y ensalada."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 192,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 30.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            57
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 194,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Fritada",
+          "short_description": "Costillas de cerdo adobadas fritas, servidas con patacón y ensalada criolla.",
+          "long_description": "",
+          "order": 110,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/e208e6af93b2b2e790956fd3cba0792c.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Fritada",
+              "short_description": "Costillas de cerdo adobadas fritas, servidas con patacón y ensalada criolla."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 197,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 30.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            57
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2991,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Yapingacho",
+          "short_description": "Cerdo asado, acompañado de tortilla de yapingacho con salsa de mani, chorizo, huevos fritos y ensalada de aguacate. ",
+          "long_description": "",
+          "order": 120,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/bbb907594ff7f9c5a7effd194b2bca0c.webp",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "short_description": "Cerdo asado, acompañado de tortilla de yapingacho con salsa de mani, chorizo, huevos fritos y ensalada de aguacate."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3491,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 29.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            57,
+            59
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 195,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Bandera mixta",
+          "short_description": "Arroz, guatita, cazuela",
+          "long_description": "",
+          "order": 130,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/463762636a4b7327e649ac256d58c64c.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Bandera mixta",
+              "short_description": "Arroz, guatita, cazuela"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 198,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 35.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55,
+            58,
+            59,
+            62
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 196,
+          "family_id": 40,
+          "subfamily_id": null,
+          "name": "Bandera completa",
+          "short_description": "Guatita, cazuela, encebollado, ceviche de gambas",
+          "long_description": "",
+          "order": 140,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/615b53278e290ae9903a9dc228b16958.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Bandera completa",
+              "short_description": "Guatita, cazuela, encebollado, ceviche de gambas"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 199,
+              "size_name": "Platos",
+              "dst_piece_number": null,
+              "price": 58.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55,
+            56,
+            58,
+            59,
+            62
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "JOSPED FIRED",
+      "description": "",
+      "order": 60,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "PLATOS COMBINADOS"
+        }
+      },
+      "products": [
+        {
+          "id": 204,
+          "family_id": 42,
+          "subfamily_id": null,
+          "name": "Carne asada o apanada",
+          "short_description": "",
+          "long_description": "",
+          "order": 0,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/9b3cc2d6a5f9ca7e255a2e4ac82894e6.webp",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Carne asada o apanada"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 207,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 28.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 205,
+          "family_id": 42,
+          "subfamily_id": null,
+          "name": "Pollo asado ",
+          "short_description": "Servido con patacones, arroz blanco y ensalada de aguacate.",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/8a8b990aac625d0f031d4dbea482e830.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Pollo asado o apanado",
+              "short_description": "Servido con patacones, arroz blanco y ensalada de aguacate."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 208,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 30.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55,
+            57
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 207,
+          "family_id": 42,
+          "subfamily_id": null,
+          "name": "Filete de Corvina",
+          "short_description": "",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Filete de pescado frito"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 210,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 25.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            58
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 2994,
+          "family_id": 42,
+          "subfamily_id": null,
+          "name": "Pesca del Dia",
+          "short_description": "Pescado frito a la parrilla",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {},
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 3494,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 39.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            58
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 201,
+          "family_id": 42,
+          "subfamily_id": null,
+          "name": "Tira de churrasco a la brasa 120Z",
+          "short_description": "",
+          "long_description": "",
+          "order": 40,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Tira de churrasco a la brasa 120Z"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 204,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 44.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 202,
+          "family_id": 42,
+          "subfamily_id": null,
+          "name": "Picaña a la brasa 120Z",
+          "short_description": "Picaña de 400 Gr a la parrilla",
+          "long_description": "",
+          "order": 80,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/37c8f803e1e11cb5c24b846591c471c7.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Picaña a la brasa 120Z",
+              "short_description": "Picaña de 400 Gr a la parrilla"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 205,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 42.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 211,
+          "family_id": 42,
+          "subfamily_id": null,
+          "name": "Parrillada de mariscos",
+          "short_description": "Mariscos a la parrilla con guarnición a elegir: Patacones o ensalada de aguacate.",
+          "long_description": "",
+          "order": 90,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/144ca4738ad59ea66b244ab22a75bd5c.webp",
+          "video_url": null,
+          "video_thumbnail_url": "https://media.micartaya.es/shared/media/144ca4738ad59ea66b244ab22a75bd5c.webp",
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Parrillada de mariscos",
+              "short_description": "Mariscos a la parrilla con guarnición a elegir: Patacones o ensalada de aguacate."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 214,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 48.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            58
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 210,
+          "family_id": 42,
+          "subfamily_id": null,
+          "name": "Parrillada de carnes para compartir",
+          "short_description": "Ternera, churrasco, chorizo criollo, chuzo, entraña, morcilla. Guarnición: Arroz, menestra y ensalada de aguacate.",
+          "long_description": "",
+          "order": 100,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/a9a32b7eed1c9975ed4eb55d770d1cde.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Parrillada de carnes para compartir",
+              "short_description": "Ternera, churrasco, chorizo criollo, chuzo, entraña, morcilla. Guarnición: Arroz, menestra y ensalada de aguacate."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 213,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 76.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "WOK RICE DISHES",
+      "description": "",
+      "order": 80,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "ARROZ AL WOK"
+        }
+      },
+      "products": [
+        {
+          "id": 198,
+          "family_id": 41,
+          "subfamily_id": null,
+          "name": "Arroz con camarones",
+          "short_description": "(WOK) Desde las costas del Ecuador, con langostinos ecuatorianos hechos al wok salteado de verduras.",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/d4191c64e37b59d40bd9c07d651d2570.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Arroz con camarones",
+              "short_description": "(WOK) Desde las costas del Ecuador, con langostinos ecuatorianos hechos al wok salteado de verduras."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 201,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 21.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            57,
+            60,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 197,
+          "family_id": 41,
+          "subfamily_id": null,
+          "name": "Chaulafán",
+          "short_description": "Arroz frito al wok con camarones, pollo, cerdo y verduras ",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/ea2766cce6dda3e3f8441ca748863ec0.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Chaulafán"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 200,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 22.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            57,
+            60,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 199,
+          "family_id": 41,
+          "subfamily_id": null,
+          "name": "Arroz marinero",
+          "short_description": "Con los mariscos frescos del pacífico salteamos con mucho sabor nuestro arroz marinero.",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/7ef610edc1e0747b0d9f9a15b30001b0.webp",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Arroz marinero",
+              "short_description": "(PARA COMPARTIR) Con los mariscos frescos del pacífico salteamos con mucho sabor nuestro arroz marinero."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 202,
+              "size_name": "Tapa",
+              "dst_piece_number": null,
+              "price": 36.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            56,
+            60,
+            61,
+            64,
+            68
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "SPECIALS",
+      "description": "",
+      "order": 90,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "OFERTAS"
+        }
+      },
+      "products": [
+        {
+          "id": 213,
+          "family_id": 43,
+          "subfamily_id": null,
+          "name": "Pescado frito con arroz y menestra",
+          "short_description": "Pescado rebozado servido con arroz y menestra",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/24e5c3cf0c4c1a5e84cad135783fc744.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Pescado frito con arroz y menestra",
+              "short_description": "Pescado rebozado servido con arroz y menestra"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 216,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 18.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55,
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 214,
+          "family_id": 43,
+          "subfamily_id": null,
+          "name": "Pollo asado con arroz y menestra",
+          "short_description": "Pollo a la brasa servido con arroz y menestra.",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/b02f35af1e8cd4d1ef76a0547cf02694.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Pollo asado con arroz y menestra",
+              "short_description": "Pollo a la brasa servido con arroz y menestra."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 217,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 18.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 215,
+          "family_id": 43,
+          "subfamily_id": null,
+          "name": "Chuleta de cerdo con arroz y menestra",
+          "short_description": "",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/94da2f1ef64db1ffa700f588bee9a955.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Chuleta de cerdo con arroz y menestra"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 218,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 18.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            61
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "FOR KIDS",
+      "description": "",
+      "order": 120,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "PARA NIÑOS"
+        }
+      },
+      "products": [
+        {
+          "id": 228,
+          "family_id": 46,
+          "subfamily_id": null,
+          "name": "Combo peladito",
+          "short_description": "Nuggets de pollo + patatas + bebida",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/9270bda0a15d0d8057c2ac83234ec656.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Combo peladito",
+              "short_description": "Nuggets de pollo + patatas + bebida"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 231,
+              "size_name": "Plato",
+              "dst_piece_number": null,
+              "price": 20.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [
+            55,
+            57
+          ],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "JUGOS NATURALES",
+      "description": "",
+      "order": 130,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "JUGOS NATURALES"
+        }
+      },
+      "products": [
+        {
+          "id": 230,
+          "family_id": 47,
+          "subfamily_id": null,
+          "name": "Jarra de jugo",
+          "short_description": "Maracuyá, limonada, lulo (naranjilla), tamarindo, mora, tomate de arbol.",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/a3fef74437a9ab703d161f6d5dcfc486.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Jarra de jugo",
+              "short_description": "Maracuyá, limonada, lulo (naranjilla), tamarindo, mora, tomate de arbol."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 233,
+              "size_name": "Jarra",
+              "dst_piece_number": null,
+              "price": 18.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 231,
+          "family_id": 47,
+          "subfamily_id": null,
+          "name": "Vaso de jugo",
+          "short_description": "Maracuyá, limonada, lulo (naranjilla), tamarindo, mora, tomate de arbol.",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/732dcc94e4cd594d3a11af7d3448ab56.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Vaso de jugo",
+              "short_description": "Maracuyá, limonada, lulo (naranjilla), tamarindo, mora, tomate de arbol."
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 234,
+              "size_name": "Vaso",
+              "dst_piece_number": null,
+              "price": 9.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "AGUAS",
+      "description": "",
+      "order": 140,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "AGUAS"
+        }
+      },
+      "products": [
+        {
+          "id": 232,
+          "family_id": 48,
+          "subfamily_id": null,
+          "name": "Agua con gas 16.9Z",
+          "short_description": "",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Agua con gas 16.9Z"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 235,
+              "size_name": "Botella",
+              "dst_piece_number": null,
+              "price": 5.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 233,
+          "family_id": 48,
+          "subfamily_id": null,
+          "name": "Agua regular 25.30Z",
+          "short_description": "",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Agua regular 25.30Z"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 236,
+              "size_name": "Botella",
+              "dst_piece_number": null,
+              "price": 25.3,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "SANGRIAS ",
+      "description": "",
+      "order": 150,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "SANGRÍA"
+        }
+      },
+      "products": [
+        {
+          "id": 234,
+          "family_id": 49,
+          "subfamily_id": null,
+          "name": "Jarra de sangría de vino",
+          "short_description": "",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/ed5e65c8eb4c9f6de8ec5881186ac447.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Jarra de sangría de vino"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 237,
+              "size_name": "Jarra",
+              "dst_piece_number": null,
+              "price": 25.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 235,
+          "family_id": 49,
+          "subfamily_id": null,
+          "name": "Jarra de sangría de champagne",
+          "short_description": "",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/a8db98def13eb402f24b2e5f4351490e.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Jarra de sangría de champagne"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 238,
+              "size_name": "Jarra",
+              "dst_piece_number": null,
+              "price": 29.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 236,
+          "family_id": 49,
+          "subfamily_id": null,
+          "name": "Copa de sangría de champagne",
+          "short_description": "",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": "https://media.micartaya.es/shared/media/28c6de7952b60af6f96399a2d66aa748.jpg",
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Copa de sangría de champagne"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 239,
+              "size_name": "Copa",
+              "dst_piece_number": null,
+              "price": 15.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "CERVEZAS",
+      "description": "",
+      "order": 160,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "CERVEZAS"
+        }
+      },
+      "products": [
+        {
+          "id": 237,
+          "family_id": 50,
+          "subfamily_id": null,
+          "name": "Cerveza club verde",
+          "short_description": "",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Cerveza club verde"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 240,
+              "size_name": "Botella",
+              "dst_piece_number": null,
+              "price": 8.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 238,
+          "family_id": 50,
+          "subfamily_id": null,
+          "name": "Jarra 1/2L Mahou",
+          "short_description": "",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Jarra 1/2L Mahou"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 241,
+              "size_name": "Jarra",
+              "dst_piece_number": null,
+              "price": 9.8,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 239,
+          "family_id": 50,
+          "subfamily_id": null,
+          "name": "Cerveza de barril mahou 120Z",
+          "short_description": "",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Cerveza de barril mahou 120Z"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 242,
+              "size_name": "Barril",
+              "dst_piece_number": null,
+              "price": 6.5,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 240,
+          "family_id": 50,
+          "subfamily_id": null,
+          "name": "Cerveza de botella mahou",
+          "short_description": "",
+          "long_description": "",
+          "order": 40,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Cerveza de botella mahou"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 243,
+              "size_name": "Botella",
+              "dst_piece_number": null,
+              "price": 6.5,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "REFRESCOS",
+      "description": "",
+      "order": 170,
+      "has_schedule": false,
+      "schedule_start_time": "",
+      "schedule_end_time": "",
+      "schedule_days": [],
+      "translations": {
+        "es": {
+          "name": "REFRESCOS"
+        }
+      },
+      "products": [
+        {
+          "id": 241,
+          "family_id": 51,
+          "subfamily_id": null,
+          "name": "Tropical",
+          "short_description": "",
+          "long_description": "",
+          "order": 10,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Tropical"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 244,
+              "size_name": "Vaso",
+              "dst_piece_number": null,
+              "price": 5.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 242,
+          "family_id": 51,
+          "subfamily_id": null,
+          "name": "Manzana",
+          "short_description": "",
+          "long_description": "",
+          "order": 20,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Manzana"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 245,
+              "size_name": "Vaso",
+              "dst_piece_number": null,
+              "price": 5.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 243,
+          "family_id": 51,
+          "subfamily_id": null,
+          "name": "Coca cola",
+          "short_description": "",
+          "long_description": "",
+          "order": 30,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Coca cola"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 246,
+              "size_name": "Lata",
+              "dst_piece_number": null,
+              "price": 5.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        },
+        {
+          "id": 244,
+          "family_id": 51,
+          "subfamily_id": null,
+          "name": "Coca cola light",
+          "short_description": "",
+          "long_description": "",
+          "order": 40,
+          "is_featured": false,
+          "featured_type": null,
+          "featured_order": 0,
+          "commercial_badge": null,
+          "image_url": null,
+          "video_url": null,
+          "video_thumbnail_url": null,
+          "is_out_of_stock": false,
+          "nutrition_info": null,
+          "translations": {
+            "es": {
+              "name": "Coca cola light"
+            }
+          },
+          "subfamily_name": null,
+          "subfamily_translations": {},
+          "prices": [
+            {
+              "id": 247,
+              "size_name": "Lata",
+              "dst_piece_number": null,
+              "price": 5.0,
+              "order": 0
+            }
+          ],
+          "allergen_ids": [],
+          "dietary_tags": [],
+          "option_groups": []
+        }
+      ]
+    }
+  ],
+  "featured": [],
+  "ab_test": {
+    "enabled": false,
+    "experiment_key": null,
+    "variant": "A",
+    "section_order": "categories_first",
+    "featured_style": "carousel",
+    "hero_copy": null,
+    "cta_label": null
+  }
+}

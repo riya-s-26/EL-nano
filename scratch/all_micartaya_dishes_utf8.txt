@@ -1,0 +1,181 @@
+Restaurant: El Ñaño Miami
+Languages: [{'code': 'en', 'flag': '🇺🇸', 'is_default': True}, {'code': 'es', 'flag': '🇪🇸', 'is_default': False}]
+Total families (categories): 13
+
+=======================================================
+CATEGORY: STARTERS (ID: 38) | Products count: 13
+=======================================================
+ID: 169 | Name: Pan de yuca con parmesano | Price: None | Img: None
+  Translations: {"es": {"name": "Pan de yuca con parmesano"}}
+ID: 170 | Name: Choclo asado | Price: None | Img: https://media.micartaya.es/shared/media/4ce88f6452a07c602d1883b55797e689.jpg
+  Translations: {"es": {"name": "Choclo asado", "short_description": "Choclo asado servido con queso rallado y salsa verde"}}
+ID: 171 | Name: Patacones con queso | Price: None | Img: https://media.micartaya.es/shared/media/66cfe55086dbe48f1c5034425414147e.jpg
+  Translations: {"es": {"name": "Patacones con queso", "short_description": "Plátanos verdes fritos servidos con queso y salsa tártara."}}
+ID: 172 | Name: Maduros con queso | Price: None | Img: https://media.micartaya.es/shared/media/ebd863c83ddb5ac79c32e34a3fae62af.jpg
+  Translations: {"es": {"name": "Maduros con queso", "short_description": "Plátano maduro frito, servido con queso fresco y salsa de guayaba"}}
+ID: 173 | Name: Plátanos mixtos con queso | Price: None | Img: https://media.micartaya.es/shared/media/d46ae9fc41c715cd11d05f3c884e2d3b.jpg
+  Translations: {"es": {"name": "Plátanos mixtos con queso"}}
+ID: 2985 | Name: Bolon De Platano con Queso | Price: None | Img: None
+ID: 2987 | Name: Bolon de Platano Con Chicharron | Price: None | Img: None
+ID: 2988 | Name: Bolon de Platano Mixto | Price: None | Img: None
+ID: 175 | Name: Calamares a la andaluza | Price: None | Img: None
+  Translations: {"es": {"name": "Calamares a la andaluza"}}
+ID: 2989 | Name: Gambas al Ajillo | Price: None | Img: None
+  Translations: {"es": {"short_description": "Camarones salteados con salsa de ajo, acompañados de patacones"}}
+ID: 2990 | Name: Jipijapa Tiradito | Price: None | Img: None
+  Translations: {"es": {"short_description": "Finas laminas de pescado blanco, bañadas en leche de tigre estilo Jipijapa."}}
+ID: 176 | Name: Patacón con picaña | Price: None | Img: https://media.micartaya.es/shared/media/b6fcbcef4dd7d304dacb5b22bae68c7a.webp
+  Translations: {"es": {"name": "Patacón con picaña"}}
+ID: 174 | Name: Pulpo a la brasa con patatas | Price: None | Img: https://media.micartaya.es/shared/media/02d2ad0e739c703d78dc7caa2fd1383f.jpg
+  Translations: {"es": {"name": "Pulpo a la brasa con patatas"}}
+
+=======================================================
+CATEGORY: ECUATORIAN CEVICHES (ID: 39) | Products count: 6
+=======================================================
+ID: 179 | Name: Ceviche de pescado | Price: None | Img: https://media.micartaya.es/shared/media/9c30f7f150701db6d173a08b4a436df5.jpg
+  Translations: {"es": {"name": "Ceviche de pescado", "short_description": "Pescado blanco encurtido con limón, sal, cebolla y tomate."}}
+ID: 180 | Name: Ceviche mixto | Price: None | Img: https://media.micartaya.es/shared/media/697d359f644fc405338d3d842683cd6b.jpg
+  Translations: {"es": {"name": "Ceviche mixto", "short_description": "Langostino fresco y pescado blanco encurtido con limón, sal, cebolla y tomate."}}
+ID: 178 | Name: Ceviche de gambas | Price: None | Img: https://media.micartaya.es/shared/media/2f6386c5d42eb4b4067e18dcefdabf77.jpg
+  Translations: {"es": {"name": "Ceviche de gambas", "short_description": "Langostino fresco del pacífico ecuatoriano encurtido con limón, sal, cebolla y tomate."}}
+ID: 181 | Name: Ceviche jipijapa | Price: None | Img: https://media.micartaya.es/shared/media/5ab953f086ad4ffdd02fe7efd398c6b4.jpg
+  Translations: {"es": {"name": "Ceviche jipijapa"}}
+ID: 182 | Name: Ceviche mixto con pulpo jipijapa | Price: None | Img: None
+  Translations: {"es": {"name": "Ceviche mixto con pulpo jipijapa"}}
+ID: 168 | Name: Trio de ceviches | Price: None | Img: https://media.micartaya.es/shared/media/e3eae96c925250b65c26cbdac5607277.jpg
+  Translations: {"es": {"name": "Trio de ceviches"}}
+
+=======================================================
+CATEGORY: SALADS (ID: 37) | Products count: 2
+=======================================================
+ID: 164 | Name: Ensalada Cesar con Pollo | Price: None | Img: None
+  Translations: {"es": {"name": "Ensalada Cesar con Pollo"}}
+ID: 223 | Name: Ensalada de mango, parmesano y Tajin | Price: None | Img: None
+  Translations: {"es": {"name": "Ensalada de mango y parmesano"}}
+
+=======================================================
+CATEGORY: CLASICOS  (ID: 40) | Products count: 15
+=======================================================
+ID: 183 | Name: Encebollado | Price: None | Img: https://media.micartaya.es/shared/media/8467ab967d5e6352ce60176ff77ca005.jpg
+  Translations: {"es": {"name": "Encebollado", "short_description": "De la comida criolla, nuestro encebolla de pescado cebolla encurtida y nuestro consome"}}
+ID: 184 | Name: Encebollado mixto | Price: None | Img: https://media.micartaya.es/shared/media/ceede360456e57ec913a64b1e1872146.jpg
+  Translations: {"es": {"name": "Encebollado mixto", "short_description": "De la comida criolla nuestro encebollado de pescado y langostinos del pacífico cebolla encurtida y nuestro consome."}}
+ID: 185 | Name: Cazuela plátano-pescado | Price: None | Img: https://media.micartaya.es/shared/media/10414276845ab7dfcbed6e044b2f1543.jpg
+  Translations: {"es": {"name": "Cazuela plátano-pescado", "short_description": "De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y maní."}}
+ID: 187 | Name: Cazuela plátano-mixta | Price: None | Img: https://media.micartaya.es/shared/media/e2c3030ea731bc7d43345298ef57a927.jpg
+  Translations: {"es": {"name": "Cazuela plátano-mixta", "short_description": "De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y cacahuete."}}
+ID: 191 | Name: Encocado de pescado | Price: None | Img: https://media.micartaya.es/shared/media/34b5aebacfe3b5f8ce865b383d12ba0f.jpg
+  Translations: {"es": {"name": "Encocado de pescado", "short_description": "Desde la provincia verde de Ecuador y toda la costa pacífica, nuestros mariscos en salsa de coco."}}
+ID: 192 | Name: Encocado mixto | Price: None | Img: https://media.micartaya.es/shared/media/fce5193cc2f7d1ed3af88fb5f3849c6e.jpg
+  Translations: {"es": {"name": "Encocado mixto", "short_description": "Desde la provincia verde de Ecuador y toda la costa pacífica, nuestros mariscos en salsa de coco."}}
+ID: 2993 | Name: Sango de Choclo de Pescado y Camarones | Price: None | Img: None
+ID: 2992 | Name: Sango de Choclo de Pescado | Price: None | Img: None
+ID: 188 | Name: Guatita | Price: None | Img: https://media.micartaya.es/shared/media/81458e4c45c2e129fe1d14235a1f2c72.jpg
+  Translations: {"es": {"name": "Guatita", "short_description": "Callos guisados con patata y maní."}}
+ID: 193 | Name: Seco de pollo | Price: None | Img: https://media.micartaya.es/shared/media/41c7c35a6a6500863309ab1f074b0e26.webp
+  Translations: {"es": {"name": "Seco de pollo"}}
+ID: 189 | Name: Churrasco ecuatoriano | Price: None | Img: https://media.micartaya.es/shared/media/ef04295a493518410d8fccca175c98fe.jpg
+  Translations: {"es": {"name": "Churrasco ecuatoriano", "short_description": "Sudado de ternera en salsa servido con arroz, patatas fritas, huevo y ensalada."}}
+ID: 194 | Name: Fritada | Price: None | Img: https://media.micartaya.es/shared/media/e208e6af93b2b2e790956fd3cba0792c.jpg
+  Translations: {"es": {"name": "Fritada", "short_description": "Costillas de cerdo adobadas fritas, servidas con patacón y ensalada criolla."}}
+ID: 2991 | Name: Yapingacho | Price: None | Img: https://media.micartaya.es/shared/media/bbb907594ff7f9c5a7effd194b2bca0c.webp
+  Translations: {"es": {"short_description": "Cerdo asado, acompañado de tortilla de yapingacho con salsa de mani, chorizo, huevos fritos y ensalada de aguacate."}}
+ID: 195 | Name: Bandera mixta | Price: None | Img: https://media.micartaya.es/shared/media/463762636a4b7327e649ac256d58c64c.jpg
+  Translations: {"es": {"name": "Bandera mixta", "short_description": "Arroz, guatita, cazuela"}}
+ID: 196 | Name: Bandera completa | Price: None | Img: https://media.micartaya.es/shared/media/615b53278e290ae9903a9dc228b16958.jpg
+  Translations: {"es": {"name": "Bandera completa", "short_description": "Guatita, cazuela, encebollado, ceviche de gambas"}}
+
+=======================================================
+CATEGORY: JOSPED FIRED (ID: 42) | Products count: 8
+=======================================================
+ID: 204 | Name: Carne asada o apanada | Price: None | Img: https://media.micartaya.es/shared/media/9b3cc2d6a5f9ca7e255a2e4ac82894e6.webp
+  Translations: {"es": {"name": "Carne asada o apanada"}}
+ID: 205 | Name: Pollo asado  | Price: None | Img: https://media.micartaya.es/shared/media/8a8b990aac625d0f031d4dbea482e830.jpg
+  Translations: {"es": {"name": "Pollo asado o apanado", "short_description": "Servido con patacones, arroz blanco y ensalada de aguacate."}}
+ID: 207 | Name: Filete de Corvina | Price: None | Img: None
+  Translations: {"es": {"name": "Filete de pescado frito"}}
+ID: 2994 | Name: Pesca del Dia | Price: None | Img: None
+ID: 201 | Name: Tira de churrasco a la brasa 120Z | Price: None | Img: None
+  Translations: {"es": {"name": "Tira de churrasco a la brasa 120Z"}}
+ID: 202 | Name: Picaña a la brasa 120Z | Price: None | Img: https://media.micartaya.es/shared/media/37c8f803e1e11cb5c24b846591c471c7.jpg
+  Translations: {"es": {"name": "Picaña a la brasa 120Z", "short_description": "Picaña de 400 Gr a la parrilla"}}
+ID: 211 | Name: Parrillada de mariscos | Price: None | Img: https://media.micartaya.es/shared/media/144ca4738ad59ea66b244ab22a75bd5c.webp
+  Translations: {"es": {"name": "Parrillada de mariscos", "short_description": "Mariscos a la parrilla con guarnición a elegir: Patacones o ensalada de aguacate."}}
+ID: 210 | Name: Parrillada de carnes para compartir | Price: None | Img: https://media.micartaya.es/shared/media/a9a32b7eed1c9975ed4eb55d770d1cde.jpg
+  Translations: {"es": {"name": "Parrillada de carnes para compartir", "short_description": "Ternera, churrasco, chorizo criollo, chuzo, entraña, morcilla. Guarnición: Arroz, menestra y ensalada de aguacate."}}
+
+=======================================================
+CATEGORY: WOK RICE DISHES (ID: 41) | Products count: 3
+=======================================================
+ID: 198 | Name: Arroz con camarones | Price: None | Img: https://media.micartaya.es/shared/media/d4191c64e37b59d40bd9c07d651d2570.jpg
+  Translations: {"es": {"name": "Arroz con camarones", "short_description": "(WOK) Desde las costas del Ecuador, con langostinos ecuatorianos hechos al wok salteado de verduras."}}
+ID: 197 | Name: Chaulafán | Price: None | Img: https://media.micartaya.es/shared/media/ea2766cce6dda3e3f8441ca748863ec0.jpg
+  Translations: {"es": {"name": "Chaulafán"}}
+ID: 199 | Name: Arroz marinero | Price: None | Img: https://media.micartaya.es/shared/media/7ef610edc1e0747b0d9f9a15b30001b0.webp
+  Translations: {"es": {"name": "Arroz marinero", "short_description": "(PARA COMPARTIR) Con los mariscos frescos del pacífico salteamos con mucho sabor nuestro arroz marinero."}}
+
+=======================================================
+CATEGORY: SPECIALS (ID: 43) | Products count: 3
+=======================================================
+ID: 213 | Name: Pescado frito con arroz y menestra | Price: None | Img: https://media.micartaya.es/shared/media/24e5c3cf0c4c1a5e84cad135783fc744.jpg
+  Translations: {"es": {"name": "Pescado frito con arroz y menestra", "short_description": "Pescado rebozado servido con arroz y menestra"}}
+ID: 214 | Name: Pollo asado con arroz y menestra | Price: None | Img: https://media.micartaya.es/shared/media/b02f35af1e8cd4d1ef76a0547cf02694.jpg
+  Translations: {"es": {"name": "Pollo asado con arroz y menestra", "short_description": "Pollo a la brasa servido con arroz y menestra."}}
+ID: 215 | Name: Chuleta de cerdo con arroz y menestra | Price: None | Img: https://media.micartaya.es/shared/media/94da2f1ef64db1ffa700f588bee9a955.jpg
+  Translations: {"es": {"name": "Chuleta de cerdo con arroz y menestra"}}
+
+=======================================================
+CATEGORY: FOR KIDS (ID: 46) | Products count: 1
+=======================================================
+ID: 228 | Name: Combo peladito | Price: None | Img: https://media.micartaya.es/shared/media/9270bda0a15d0d8057c2ac83234ec656.jpg
+  Translations: {"es": {"name": "Combo peladito", "short_description": "Nuggets de pollo + patatas + bebida"}}
+
+=======================================================
+CATEGORY: JUGOS NATURALES (ID: 47) | Products count: 2
+=======================================================
+ID: 230 | Name: Jarra de jugo | Price: None | Img: https://media.micartaya.es/shared/media/a3fef74437a9ab703d161f6d5dcfc486.jpg
+  Translations: {"es": {"name": "Jarra de jugo", "short_description": "Maracuyá, limonada, lulo (naranjilla), tamarindo, mora, tomate de arbol."}}
+ID: 231 | Name: Vaso de jugo | Price: None | Img: https://media.micartaya.es/shared/media/732dcc94e4cd594d3a11af7d3448ab56.jpg
+  Translations: {"es": {"name": "Vaso de jugo", "short_description": "Maracuyá, limonada, lulo (naranjilla), tamarindo, mora, tomate de arbol."}}
+
+=======================================================
+CATEGORY: AGUAS (ID: 48) | Products count: 2
+=======================================================
+ID: 232 | Name: Agua con gas 16.9Z | Price: None | Img: None
+  Translations: {"es": {"name": "Agua con gas 16.9Z"}}
+ID: 233 | Name: Agua regular 25.30Z | Price: None | Img: None
+  Translations: {"es": {"name": "Agua regular 25.30Z"}}
+
+=======================================================
+CATEGORY: SANGRIAS  (ID: 49) | Products count: 3
+=======================================================
+ID: 234 | Name: Jarra de sangría de vino | Price: None | Img: https://media.micartaya.es/shared/media/ed5e65c8eb4c9f6de8ec5881186ac447.jpg
+  Translations: {"es": {"name": "Jarra de sangría de vino"}}
+ID: 235 | Name: Jarra de sangría de champagne | Price: None | Img: https://media.micartaya.es/shared/media/a8db98def13eb402f24b2e5f4351490e.jpg
+  Translations: {"es": {"name": "Jarra de sangría de champagne"}}
+ID: 236 | Name: Copa de sangría de champagne | Price: None | Img: https://media.micartaya.es/shared/media/28c6de7952b60af6f96399a2d66aa748.jpg
+  Translations: {"es": {"name": "Copa de sangría de champagne"}}
+
+=======================================================
+CATEGORY: CERVEZAS (ID: 50) | Products count: 4
+=======================================================
+ID: 237 | Name: Cerveza club verde | Price: None | Img: None
+  Translations: {"es": {"name": "Cerveza club verde"}}
+ID: 238 | Name: Jarra 1/2L Mahou | Price: None | Img: None
+  Translations: {"es": {"name": "Jarra 1/2L Mahou"}}
+ID: 239 | Name: Cerveza de barril mahou 120Z | Price: None | Img: None
+  Translations: {"es": {"name": "Cerveza de barril mahou 120Z"}}
+ID: 240 | Name: Cerveza de botella mahou | Price: None | Img: None
+  Translations: {"es": {"name": "Cerveza de botella mahou"}}
+
+=======================================================
+CATEGORY: REFRESCOS (ID: 51) | Products count: 4
+=======================================================
+ID: 241 | Name: Tropical | Price: None | Img: None
+  Translations: {"es": {"name": "Tropical"}}
+ID: 242 | Name: Manzana | Price: None | Img: None
+  Translations: {"es": {"name": "Manzana"}}
+ID: 243 | Name: Coca cola | Price: None | Img: None
+  Translations: {"es": {"name": "Coca cola"}}
+ID: 244 | Name: Coca cola light | Price: None | Img: None
+  Translations: {"es": {"name": "Coca cola light"}}

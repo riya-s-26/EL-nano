@@ -1,0 +1,269 @@
+<USER_REQUEST>
+# Antigravity Task: Fix Spanish Menu Catalog Text Wrapping and Card Layout
+
+## Objective
+
+Fix the text-rendering and formatting issue in the Spanish version of the **“Authentic Coastal Flavors & Cocktails”** menu catalog on the El Ñaño Miami website.
+
+Reference website: https://pavan-bhosale.github.io/Restaurant-Website/
+
+Use the supplied screenshots as the primary visual reference for the bug.
+
+The Spanish menu currently displays dish names, prices, and descriptions with abnormal wrapping. Some titles break into multiple tiny lines even though there is sufficient space across the card, and price labels such as “Consultar precio al mesero” are split awkwardly.
+
+**Find and fix the underlying layout or CSS issue rather than applying individual fixes to every dish.**
+
+The English version is the visual reference for the intended card layout. Preserve the existing design, branding, menu data, and functionality.
+
+---
+
+## 1. Understand the Problem Before Editing
+
+Inspect the current implementation of the menu catalog in both English and Spanish.
+
+Investigate the following potential causes:
+
+- A language-specific CSS class applying an incorrect width or maximum width to Spanish cards.
+- Different grid or flexbox settings between English and Spanish mode.
+- Cards shrinking because their grid columns or flex children have incorrect sizing constraints.
+- Excessive `word-break`, `overflow-wrap`, or `white-space` rules.
+- Fixed widths or minimum widths applied to title, price, description, or metadata elements.
+- Long Spanish text causing flex children to shrink unexpectedly.
+- Price labels or category labels competing for horizontal space with dish titles.
+- Translation-specific markup that differs from the English card structure.
+- Global styles that affect Spanish text but should only apply to particular elements.
+
+Do not assume the issue is caused by Spanish text being longer. The screenshots show severe word-by-word and even syllable-by-syllable wrapping, which strongly suggests incorrect width constraints or text-wrapping behavior.
+
+Inspect the actual computed layout rules and identify the cause before choosing a fix.
+
+## 2. Fix the Catalog Grid and Card Widths
+
+The Spanish catalog must use the same fundamental layout as the English catalog.
+
+### Required behavior
+
+- Keep the existing four-column desktop layout when sufficient screen width is available.
+- Ensure all cards have a consistent and usable width.
+- Prevent cards from collapsing into narrow columns.
+- Allow the grid to adapt to smaller screens using the existing responsive design.
+- Use consistent grid sizing rules for both language versions.
+- Ensure the card width is determined by the available viewport space and the grid configuration, not by the length of an individual translated string.
+- Prevent grid or flex children from shrinking below a usable width.
+
+Where appropriate, review the existing grid implementation and consider patterns such as:
+
+```css
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: /* preserve the existing design spacing */;
+}
+
+.menu-card {
+  min-width: 0;
+  width: 100%;
+}
+```
+
+These are illustrative patterns, not instructions to replace the existing CSS blindly. Adapt the fix to the project's actual class names, breakpoints, and component structure.
+
+Do not force four columns on narrow mobile screens. Retain or implement sensible responsive breakpoints.
+
+## 3. Fix Dish Title Wrapping
+
+Dish titles must remain readable and should wrap naturally at word boundaries.
+
+Examples visible in the supplied screenshots include:
+
+- Encebollado
+- Seco de Pollo
+- Churrasco Ecuatoriano
+- Yapingacho
+- Pulpo a la brasa con patatas
+- Patacón con picaña
+- Patacones con Queso
+- Maduros con Queso
+- Arroz Marinero
+
+### Requirements
+
+- Keep each title in its normal heading container.
+- Remove unintended narrow widths or conflicting CSS rules.
+- Prevent individual letters or syllables from being forced onto separate lines.
+- Allow longer titles to occupy multiple lines naturally when necessary.
+- Use the same title font family, weight, and styling as the existing design.
+- Maintain readable font sizes and line heights.
+- Ensure titles do not overlap price labels or other card content.
+
+Do not reduce the font size of every Spanish title just to make the current broken layout appear acceptable.
+
+Do not add special-case widths for individual dishes unless a genuinely exceptional case requires it.
+
+## 4. Fix Price Label Layout
+
+In the screenshots, labels such as **“Consultar precio al mesero”** are breaking into several short lines beneath the dish names.
+
+Correct this formatting while preserving the existing Spanish wording.
+
+### Requirements
+
+- Keep the price label in a dedicated, consistently styled element.
+- Allow the label to wrap naturally only when necessary.
+- Avoid forcing the entire price label into an excessively narrow column.
+- Ensure price information remains readable and visually separated from the title and description.
+- Preserve the current pricing behavior and data. Do not invent numeric prices or change the menu's pricing rules.
+
+If the English version uses a title-and-price row, preserve the same layout structure in Spanish. Where Spanish text is longer, allow the price element to wrap gracefully without collapsing the title or card.
+
+If needed, use a responsive flex or grid arrangement with an appropriate gap and `min-width` constraints.
+
+## 5. Fix Description Text Rendering
+
+Descriptions should occupy the full available content width within each card.
+
+For example, the screenshot shows the following description for Cazuela:
+
+“De nuestra cultura criolla manabita un guiso de pescado con base de plátano macho y maní.”
+
+This should read as a normal paragraph spanning the card's content area, not a narrow stack of words.
+
+### Requirements
+
+- Remove unintended width restrictions from description containers.
+- Preserve natural Spanish word wrapping.
+- Use consistent line height, padding, and typography across the two languages.
+- Allow descriptions of different lengths to occupy multiple lines without distorting the card.
+- Keep the category label and digital-menu link within the card's normal content area.
+- Prevent horizontal overflow, clipped words, and overlapping text.
+
+**Do not rewrite or shorten descriptions as a workaround for the rendering bug.** This task is about presentation, not content editing.
+
+## 6. Maintain Visual Consistency Between English and Spanish
+
+Use the English catalog as the structural reference.
+
+Both language versions should share the same:
+
+- Grid configuration and responsive breakpoints.
+- Card widths and image dimensions.
+- Image aspect ratios and cropping behavior.
+- Content padding and spacing.
+- Title and description typography.
+- Price-label placement and styling.
+- Category and digital-menu link alignment.
+- Card border radius, shadows, colors, and visual hierarchy.
+
+Language-specific text may naturally occupy different numbers of lines. That is acceptable.
+
+However, **the layout must not break or become narrower simply because Spanish is selected**.
+
+Do not force every card to have identical text heights if doing so causes awkward empty spaces. Preserve the existing card design and ensure rows remain visually organized.
+
+## 7. Preserve Images and Existing Menu Data
+
+This is a formatting fix only.
+
+Do not change:
+
+- Dish names or descriptions.
+- Dish photographs or image paths.
+- Menu categories or category assignments.
+- Menu prices.
+- English or Spanish translations.
+- Digital-menu links.
+- Happy Hour information.
+- Menu filter behavior.
+- Signature Dish carousel content or navigation.
+- The navigation bar, hero section, or unrelated website sections.
+
+Do not replace the catalog with a new component or duplicate the menu data just to fix the layout.
+
+Prefer correcting the shared CSS or component structure so the fix applies consistently to every relevant card.
+
+## 8. Responsive and Zoom Testing
+
+Test the actual rendered catalog after implementing the fix.
+
+### Desktop
+- Verify the four-column layout at the same desktop viewport used in the supplied screenshots.
+- Confirm that titles and price labels no longer break into narrow vertical stacks.
+- Compare English and Spanish mode at the same viewport width.
+
+### Browser zoom
+Test at:
+
+- 100% zoom
+- 125% zoom
+- 150% zoom
+
+Browser zoom reduces the effective CSS viewport width. The catalog should respond through its breakpoints instead of squeezing text into unusable columns.
+
+When the viewport becomes too narrow for four readable cards, the grid should transition to fewer columns. Do not preserve four columns at the expense of legibility.
+
+### Tablet and mobile
+- Confirm cards use the available width correctly.
+- Ensure dish names and descriptions remain readable.
+- Check that prices, categories, and links do not overlap.
+- Verify there is no horizontal page overflow.
+- Ensure the card images remain correctly scaled.
+
+### Language switching
+- Switch repeatedly between EN and ES.
+- Confirm the grid does not collapse when Spanish is selected.
+- Confirm switching languages does not leave stale CSS classes, incorrect widths, or broken card layouts.
+- Confirm menu filters still work in both languages.
+
+## 9. Technical Implementation Requirements
+
+1. Identify the exact component and CSS rules responsible for the issue.
+2. Apply the smallest reliable fix to the shared layout or styling.
+3. Avoid unnecessary global typography changes.
+4. Avoid adding arbitrary widths or dish-specific CSS overrides.
+5. Avoid using `white-space: nowrap` on long titles or descriptions if it creates overflow.
+6. Avoid using `word-break: break-all` or similar rules that split normal words.
+7. Check whether any language-specific styles unintentionally override the shared catalog styles.
+8. Inspect the final code diff to ensure unrelated features and content remain unchanged.
+
+If the English and Spanish catalogs currently use separate markup, align their structural layout where practical without breaking translations or existing functionality.
+
+## 10. Required Final Checklist and Report
+
+After completing the work, provide a checklist that includes:
+
+- [ ] Root cause of the Spanish text-wrapping issue identified.
+- [ ] Underlying grid or card-width issue corrected.
+- [ ] Dish titles wrap naturally.
+- [ ] “Consultar precio al mesero” displays cleanly.
+- [ ] Spanish descriptions use the full available card width.
+- [ ] English layout remains unchanged.
+- [ ] English and Spanish cards use consistent styling.
+- [ ] Four-column desktop layout verified where space permits.
+- [ ] Browser zoom at 100%, 125%, and 150% tested.
+- [ ] Tablet and mobile layouts tested.
+- [ ] Language switching and menu filters tested.
+- [ ] No image, content, pricing, or link regressions introduced.
+
+In the final report, explain:
+
+1. The actual root cause discovered.
+2. The CSS or component changes made to resolve it.
+3. How the fix keeps English and Spanish layouts consistent.
+4. Which viewport sizes and zoom levels were tested.
+5. Any remaining issues that could not be verified.
+
+Do not claim that a test passed unless it was actually performed.
+
+**Expected result:** The Spanish menu catalog has the same clean, professional layout as the English catalog. Dish names, prices, and descriptions remain readable at normal desktop widths, browser zoom levels, tablet sizes, and mobile sizes, with no broken word wrapping or collapsed cards.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-28T00:04:54+05:30.
+
+The user's current state is as follows:
+Other open documents:
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\apply_image_fixes.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\check_encebollado_history.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\trace_encebollado.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\save_drive_pics.py (LANGUAGE_UNSPECIFIED)
+- c:\Users\Admin\Desktop\MAIN PROJECTS\El-nano-Mockup-5-main\scratch\test_8_cards.py (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>
