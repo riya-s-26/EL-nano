@@ -3781,11 +3781,11 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
 }
 
 .contact-quicklinks-panel {
-  background-color: #FFFDF8;
+  background-color: #FFFFFF;
   border: 1.5px solid rgba(0, 60, 40, 0.12);
   border-radius: 24px;
   padding: clamp(24px, 3.2vw, 38px) clamp(20px, 3.8vw, 48px);
-  box-shadow: 0 8px 28px rgba(0, 39, 26, 0.07);
+  box-shadow: 0 8px 28px rgba(0, 39, 26, 0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3799,7 +3799,7 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
 .quicklinks-panel-title {
   font-family: var(--font-display);
   font-size: clamp(1.3rem, 2vw, 1.85rem);
-  color: var(--g);
+  color: #003C28;
   line-height: 1.15;
   margin: 0;
   letter-spacing: -0.01em;
@@ -3831,15 +3831,14 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
 .quicklink-item-icon {
   width: 32px;
   height: 32px;
-  color: #F9EE24 !important;
+  color: #F4B723 !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s var(--ease), color 0.2s var(--ease);
+  transition: transform 0.2s var(--ease);
 }
 
 .quicklink-item:hover .quicklink-item-icon {
-  color: var(--g);
   transform: scale(1.1);
 }
 
@@ -3853,13 +3852,13 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   font-family: var(--font-body);
   font-size: 0.86rem;
   font-weight: 700;
-  color: var(--g);
+  color: #003C28;
   line-height: 1.25;
   transition: color 0.2s var(--ease);
 }
 
 .quicklink-item:hover .quicklink-item-label {
-  color: #f6a214;
+  color: #00271A;
 }
 
 /* ── Closing Welcome Note & Corner Foliage ── */
