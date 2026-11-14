@@ -1,0 +1,712 @@
+/* ==========================================================================
+   El Ñaño Miami — Menu Catalog Stylesheet
+   Premium, responsive restaurant menu catalog styling
+   Palette: Deep Green (#003C28), Warm Cream (#FAF3E6), Yellow (#F9EE24)
+   ========================================================================== */
+
+/* ── Hero Section ── */
+.menu-hero-section {
+  position: relative;
+  background-color: var(--g);
+  color: var(--cream);
+  padding: clamp(48px, 6vw, 84px) clamp(16px, 4vw, 48px);
+  overflow: hidden;
+}
+
+.menu-hero-bg-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(249, 238, 36, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(173, 204, 112, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.menu-hero-container {
+  position: relative;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+}
+
+.menu-hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-hero-badge-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.menu-hero-dash {
+  width: 24px;
+  height: 2.5px;
+  background-color: var(--y);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.menu-hero-kicker {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--y);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.menu-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.4vw, 3.8rem);
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin: 0 0 18px;
+  letter-spacing: -0.01em;
+}
+
+.menu-hero-lead {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  color: rgba(250, 243, 230, 0.88);
+  line-height: 1.65;
+  margin: 0 0 28px;
+  max-width: 640px;
+}
+
+.menu-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.btn-hero-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--y);
+  color: var(--g);
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 0.96rem;
+  padding: 13px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.2s var(--ease), background-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.btn-hero-explore:hover {
+  background-color: #FFFFFF;
+  color: var(--g);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn-hero-pdf-view,
+.btn-hero-pdf-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.86rem;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 1.5px solid rgba(250, 243, 230, 0.35);
+  transition: all 0.2s var(--ease);
+  letter-spacing: 0.04em;
+}
+
+.btn-hero-pdf-view:hover,
+.btn-hero-pdf-download:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--y);
+  color: var(--y);
+  transform: translateY(-2px);
+}
+
+.menu-hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(250, 243, 230, 0.15);
+}
+
+.hero-feature-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(250, 243, 230, 0.78);
+}
+
+.hero-feat-icon {
+  color: var(--y);
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.menu-hero-visual {
+  position: relative;
+}
+
+.menu-hero-image-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4/3;
+  border: 1px solid rgba(250, 243, 230, 0.2);
+}
+
+.menu-hero-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-image-badge {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background-color: rgba(0, 39, 26, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--cream);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(249, 238, 36, 0.3);
+  letter-spacing: 0.04em;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--y);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ── Sticky Category Navigation Bar ── */
+.menu-catalog-subnav {
+  position: sticky;
+  top: var(--hh);
+  z-index: 90;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--cream-alt);
+  box-shadow: 0 4px 18px rgba(0, 39, 26, 0.06);
+}
+
+.subnav-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 clamp(12px, 3vw, 24px);
+}
+
+.subnav-scroller {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+.subnav-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background-color: var(--cream-soft);
+  color: var(--g);
+  border: 1px solid rgba(0, 60, 40, 0.08);
+  border-radius: 24px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s var(--ease);
+  flex-shrink: 0;
+}
+
+.cat-pill:hover {
+  background-color: #FAF3E6;
+  border-color: rgba(0, 60, 40, 0.2);
+  transform: translateY(-1px);
+}
+
+.cat-pill.active {
+  background-color: var(--g);
+  color: var(--y);
+  border-color: var(--g);
+  box-shadow: 0 4px 12px rgba(0, 60, 40, 0.18);
+}
+
+.pill-num {
+  font-size: 0.72rem;
+  opacity: 0.65;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.cat-pill.active .pill-num {
+  opacity: 0.85;
+  color: var(--y);
+}
+
+.pill-badge {
+  font-size: 0.72rem;
+  background-color: rgba(0, 60, 40, 0.08);
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.cat-pill.active .pill-badge {
+  background-color: rgba(249, 238, 36, 0.25);
+  color: var(--y);
+}
+
+/* ── Menu Content Sections Container ── */
+.menu-catalog-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: clamp(32px, 5vw, 64px) clamp(16px, 4vw, 48px);
+}
+
+.menu-catalog-section {
+  padding-top: 36px;
+  margin-bottom: clamp(48px, 6vw, 80px);
+  scroll-margin-top: calc(var(--hh) + 64px);
+}
+
+/* ── Category Header ── */
+.cat-section-header {
+  margin-bottom: 28px;
+  border-bottom: 1.5px solid var(--cream-alt);
+  padding-bottom: 18px;
+}
+
+.cat-header-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.cat-eyebrow-line {
+  width: 18px;
+  height: 2px;
+  background-color: var(--teal);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.cat-eyebrow-badge {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--teal);
+  text-transform: uppercase;
+}
+
+.cat-header-main {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.cat-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  color: var(--g);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cat-count-indicator {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(0, 60, 40, 0.6);
+  background-color: var(--cream-soft);
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--cream-alt);
+}
+
+.cat-description {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  color: rgba(0, 60, 40, 0.78);
+  line-height: 1.55;
+  margin: 0;
+  max-width: 800px;
+}
+
+/* ── Menu Cards Grid ── */
+.menu-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.2vw, 26px);
+}
+
+/* ── Menu Card ── */
+.menu-catalog-card {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 60, 40, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 39, 26, 0.04);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease), border-color 0.22s var(--ease);
+}
+
+.menu-catalog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 39, 26, 0.1);
+  border-color: rgba(0, 60, 40, 0.18);
+}
+
+.menu-catalog-card.no-img {
+  border-left: 4px solid var(--g);
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--cream-soft) 100%);
+}
+
+/* Card Media */
+.card-media-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background-color: var(--cream-soft);
+}
+
+.card-media-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s var(--ease);
+}
+
+.menu-catalog-card:hover .card-media-wrap img {
+  transform: scale(1.05);
+}
+
+.card-format-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 60, 40, 0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid rgba(249, 238, 36, 0.3);
+}
+
+/* Card Content Wrap */
+.card-content-wrap {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.card-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.card-dish-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--g);
+  line-height: 1.3;
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+.card-dish-price {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--g);
+  background-color: #FAF3E6;
+  padding: 4px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: -0.01em;
+  border: 1px solid rgba(0, 60, 40, 0.08);
+}
+
+.card-dish-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: rgba(0, 60, 40, 0.75);
+  line-height: 1.5;
+  margin: 0 0 14px;
+  flex: 1 1 auto;
+}
+
+.card-bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(0, 60, 40, 0.1);
+  margin-top: auto;
+}
+
+.card-format-inline {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(0, 60, 40, 0.55);
+  letter-spacing: 0.06em;
+}
+
+.card-allergens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.allergen-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(0, 60, 40, 0.8);
+  background-color: var(--cream-soft);
+  border: 1px solid var(--cream-alt);
+  padding: 2px 7px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* ── PDF Access Bottom Banner ── */
+.menu-pdf-banner {
+  background-color: #FAF3E6;
+  border-top: 1px solid var(--cream-alt);
+  padding: clamp(48px, 6vw, 72px) clamp(16px, 4vw, 48px);
+}
+
+.pdf-banner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pdf-banner-card {
+  background-color: var(--g);
+  color: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: clamp(32px, 4.5vw, 48px);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: clamp(20px, 3.5vw, 36px);
+  align-items: center;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.pdf-banner-card::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(249, 238, 36, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.pdf-icon-ring {
+  width: 68px;
+  height: 68px;
+  background-color: rgba(249, 238, 36, 0.15);
+  border: 1.5px solid var(--y);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--y);
+}
+
+.pdf-banner-kicker {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--y);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.pdf-banner-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  color: #FFFFFF;
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.pdf-banner-desc {
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  color: rgba(250, 243, 230, 0.85);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 580px;
+}
+
+.pdf-banner-btn-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 220px;
+}
+
+.btn-pdf-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+  font-weight: 800;
+  padding: 12px 20px;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: all 0.2s var(--ease);
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.btn-pdf-action.view {
+  background-color: var(--y);
+  color: var(--g);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-pdf-action.view:hover {
+  background-color: #FFFFFF;
+  color: var(--g);
+  transform: translateY(-2px);
+}
+
+.btn-pdf-action.download {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1.5px solid rgba(250, 243, 230, 0.4);
+}
+
+.btn-pdf-action.download:hover {
+  border-color: var(--y);
+  color: var(--y);
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ── Responsive Adaptations ── */
+@media (max-width: 1140px) {
+  .menu-catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pdf-banner-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .pdf-banner-btn-col {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .pdf-banner-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-hero-image-frame {
+    aspect-ratio: 16/10;
+  }
+}
+
+@media (max-width: 680px) {
+  .menu-catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-hero-explore,
+  .btn-hero-pdf-view,
+  .btn-hero-pdf-download {
+    justify-content: center;
+  }
+
+  .pdf-banner-btn-col {
+    flex-direction: column;
+  }
+
+  .btn-pdf-action {
+    width: 100%;
+  }
+}
