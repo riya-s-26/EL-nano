@@ -1,8 +1,9 @@
 /**
  * El Ñaño Miami — Menu Catalog Interactive Script
  * - Category filter pills with active centering
- * - Default 'All' view showcases top 6 featured dishes (matching approved client mockup)
- * - 'Explore Full Menu' reveals complete catalog of all items
+ * - 'All' tab displays every single menu item in the entire menu catalog
+ * - Category tabs filter cards to the selected category
+ * - Restores complete catalog whenever 'All' is re-selected
  * - Smooth scroll handlers for Hero & CTA buttons
  * - Signature circular dish quick-links
  */
@@ -17,8 +18,6 @@
   var exploreFullBtn = document.getElementById('mc-filter-all-btn');
   var sigDiscoverBtn = document.getElementById('mc-sig-discover-btn');
   var filterDrinksBtn = document.getElementById('mc-filter-drinks-btn');
-
-  var isFullExpanded = false;
 
   // Calculate sticky offset for smooth scroll
   function getStickyOffset() {
@@ -52,7 +51,7 @@
   }
 
   // Filter cards by category
-  function filterCategory(catSlug, triggerScroll, forceExpandAll) {
+  function filterCategory(catSlug, triggerScroll) {
     // Update active pill
     pills.forEach(function (p) {
       var isMatch = p.getAttribute('data-cat') === catSlug;
@@ -60,46 +59,15 @@
       if (isMatch) centerPill(p);
     });
 
-    if (forceExpandAll) {
-      isFullExpanded = true;
-    }
-
-    // Show/hide cards
+    // Show/hide cards: when 'all', show every card without exception
     cards.forEach(function (card) {
       var cardCat = card.getAttribute('data-cat');
-      var isFeatured = card.getAttribute('data-featured') === 'true';
-
-      if (catSlug === 'all') {
-        if (isFullExpanded) {
-          card.classList.remove('is-hidden');
-        } else {
-          // Default curated overview matching approved client mockup
-          if (isFeatured) {
-            card.classList.remove('is-hidden');
-          } else {
-            card.classList.add('is-hidden');
-          }
-        }
+      if (catSlug === 'all' || cardCat === catSlug) {
+        card.classList.remove('is-hidden');
       } else {
-        if (cardCat === catSlug) {
-          card.classList.remove('is-hidden');
-        } else {
-          card.classList.add('is-hidden');
-        }
+        card.classList.add('is-hidden');
       }
     });
-
-    // Update button text if toggling
-    if (exploreFullBtn) {
-      var btnSpan = exploreFullBtn.querySelector('span');
-      if (btnSpan) {
-        if (catSlug === 'all' && isFullExpanded) {
-          btnSpan.textContent = (window.currentLang === 'es') ? 'Ver Destacados' : 'Show Featured';
-        } else {
-          btnSpan.textContent = (window.currentLang === 'es') ? 'Ver Todo el Menú' : 'Explore Full Menu';
-        }
-      }
-    }
 
     if (triggerScroll && mainSection) {
       scrollToElement(mainSection);
@@ -111,10 +79,7 @@
     pill.addEventListener('click', function (e) {
       e.preventDefault();
       var cat = pill.getAttribute('data-cat') || 'all';
-      if (cat !== 'all') {
-        isFullExpanded = false;
-      }
-      filterCategory(cat, false, false);
+      filterCategory(cat, false);
     });
   });
 
@@ -122,12 +87,7 @@
   if (exploreFullBtn) {
     exploreFullBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      if (isFullExpanded) {
-        isFullExpanded = false;
-        filterCategory('all', true, false);
-      } else {
-        filterCategory('all', true, true);
-      }
+      filterCategory('all', true);
     });
   }
 
@@ -135,7 +95,7 @@
   if (sigDiscoverBtn) {
     sigDiscoverBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      filterCategory('clasicos', true, false);
+      filterCategory('clasicos', true);
     });
   }
 
@@ -143,7 +103,7 @@
   if (filterDrinksBtn) {
     filterDrinksBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      filterCategory('sangrias', true, false);
+      filterCategory('sangrias', true);
     });
   }
 
@@ -151,7 +111,7 @@
   var circleItems = [].slice.call(document.querySelectorAll('.mc-circle-item'));
   circleItems.forEach(function (item) {
     item.addEventListener('click', function () {
-      filterCategory('clasicos', true, false);
+      filterCategory('clasicos', true);
     });
   });
 
@@ -168,6 +128,6 @@
     });
   }
 
-  // Initialize with curated mockup overview
-  filterCategory('all', false, false);
+  // Initialize: Display all items in the catalog with ALL tab active
+  filterCategory('all', false);
 })();
