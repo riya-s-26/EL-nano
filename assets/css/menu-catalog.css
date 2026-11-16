@@ -187,6 +187,7 @@
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 0.92rem;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.22s var(--ease);
   outline: none;
