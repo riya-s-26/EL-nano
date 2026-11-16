@@ -8,13 +8,14 @@
 /* ── 1. Hero Section (Full-Width Photographic Backdrop with Text Overlay) ── */
 .mc-hero {
   position: relative;
-  min-height: clamp(380px, 46vh, 520px);
+  min-height: clamp(660px, 52vw, 920px);
   display: flex;
   align-items: center;
   color: var(--cream);
   overflow: hidden;
   background-color: var(--g-deep);
-  padding: clamp(52px, 6.5vw, 84px) var(--pad-narrow);
+  padding: var(--hh) var(--pad-narrow) 0;
+  box-sizing: border-box;
 }
 
 .mc-hero-backdrop {
@@ -291,18 +292,6 @@
   transform: translateY(-1px);
 }
 
-.mc-botanical-art {
-  margin-top: 40px;
-  opacity: 0.4;
-  max-width: 190px;
-  pointer-events: none;
-}
-
-.mc-botanical-art img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 /* Right Food Cards Grid */
 .mc-grid-col {
@@ -785,8 +774,8 @@
 
 @media (max-width: 880px) {
   .mc-hero {
-    min-height: 380px;
-    padding: 44px var(--pad-narrow);
+    min-height: clamp(480px, 58vh, 560px);
+    padding: var(--hh) var(--pad-narrow) 0;
   }
 
   .mc-hero-backdrop img {
@@ -851,8 +840,8 @@
   }
 
   .mc-hero {
-    min-height: 350px;
-    padding: 40px 18px;
+    min-height: clamp(420px, 52vh, 480px);
+    padding: var(--hh) var(--pad-narrow) 0;
   }
 
   .mc-hero-backdrop img {
@@ -872,5 +861,92 @@
   .mc-btn-reserve {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* ── Footer Matching About Us Exactly ── */
+.foot-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.9fr) minmax(0, 1.6fr);
+  gap: clamp(32px, 4vw, 56px);
+  align-items: start;
+}
+
+.foot-brand p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(250, 243, 230, 0.85);
+  max-width: 32ch;
+  margin: 0;
+}
+
+.foot-col-discover h3,
+.foot-subcol h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--y);
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.foot-col-discover ul,
+.foot-subcol ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foot-col-discover a,
+.foot-subcol a {
+  font-size: 0.92rem;
+  color: rgba(250, 243, 230, 0.85);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.foot-col-discover a:hover,
+.foot-subcol a:hover {
+  color: var(--y);
+}
+
+.foot-col-combined {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 36px);
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .foot-top {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+    gap: 36px;
+  }
+  .foot-brand {
+    grid-column: 1 / -1;
+  }
+  .foot-brand p {
+    max-width: 50ch;
+  }
+  .foot-col-combined {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .foot-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .foot-col-combined {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .foot-bottom {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
