@@ -5,42 +5,74 @@
    Typography: Headings "Paytone One", Body & UI "Lexend", Accents "Holiday Free"
    ========================================================================== */
 
-/* ── 1. Hero Section ── */
+/* ── 1. Hero Section (Full-Width Photographic Backdrop with Text Overlay) ── */
 .mc-hero {
   position: relative;
-  background-color: var(--g);
+  min-height: clamp(380px, 46vh, 520px);
+  display: flex;
+  align-items: center;
   color: var(--cream);
-  padding: clamp(48px, 6vw, 84px) var(--pad-narrow);
   overflow: hidden;
+  background-color: var(--g-deep);
+  padding: clamp(52px, 6.5vw, 84px) var(--pad-narrow);
+}
+
+.mc-hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.mc-hero-backdrop picture,
+.mc-hero-backdrop img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
 }
 
 .mc-hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 85% 20%, rgba(249, 238, 36, 0.08) 0%, transparent 55%),
-              radial-gradient(circle at 10% 85%, rgba(173, 204, 112, 0.06) 0%, transparent 45%);
+  z-index: 1;
   pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 39, 26, 0.95) 0%,
+    rgba(0, 39, 26, 0.88) 36%,
+    rgba(0, 39, 26, 0.58) 64%,
+    rgba(0, 39, 26, 0.2) 84%,
+    rgba(0, 39, 26, 0.3) 100%
+  ),
+  linear-gradient(
+    0deg,
+    rgba(0, 39, 26, 0.65) 0%,
+    transparent 50%,
+    rgba(0, 39, 26, 0.45) 100%
+  );
 }
 
 .mc-hero-container {
   position: relative;
+  z-index: 2;
   max-width: 1360px;
+  width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: clamp(32px, 5vw, 64px);
-  align-items: center;
 }
 
 .mc-hero-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
+  max-width: 620px;
 }
 
 .mc-hero-kicker {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 800;
   color: var(--y);
   letter-spacing: 0.16em;
@@ -51,21 +83,23 @@
 
 .mc-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-size: clamp(2.8rem, 5.5vw, 4.6rem);
   color: #FFFFFF;
-  line-height: 1.1;
+  line-height: 1.08;
   margin: 0 0 16px;
   letter-spacing: -0.01em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
 }
 
 .mc-hero-tagline {
   font-family: var(--font-body);
-  font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
   color: rgba(250, 243, 230, 0.92);
-  line-height: 1.55;
+  line-height: 1.5;
   margin: 0 0 28px;
   max-width: 520px;
   font-weight: 400;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 .mc-hero-actions {
@@ -79,81 +113,35 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background-color: var(--y);
-  color: var(--g);
-  padding: 14px 28px;
+  background-color: rgba(0, 39, 26, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--cream);
+  border: 1.5px solid rgba(250, 243, 230, 0.75);
+  padding: 13px 28px;
   border-radius: 999px;
   font-family: var(--font-body);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 0.98rem;
   text-decoration: none;
-  transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease), background-color 0.2s ease;
-  box-shadow: 0 6px 20px rgba(249, 238, 36, 0.25);
+  transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease), background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 .mc-btn-hero:hover {
-  background-color: var(--y-hover);
+  background-color: var(--y);
+  color: var(--g);
+  border-color: var(--y);
   transform: translateY(-2px);
   box-shadow: 0 10px 26px rgba(249, 238, 36, 0.35);
 }
 
-.mc-hero-visual {
-  position: relative;
-  display: flex;
-  justify-content: center;
+.mc-btn-hero svg {
+  transition: transform 0.2s ease;
 }
 
-.mc-hero-plate-wrap {
-  position: relative;
-  width: 100%;
-  max-width: 580px;
-  border-radius: clamp(22px, 3.5vw, 38px);
-  overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
-  border: 4px solid rgba(249, 238, 36, 0.18);
-  background: var(--g-deep);
-}
-
-.mc-hero-plate-wrap img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/10;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s var(--ease);
-}
-
-.mc-hero-plate-wrap:hover img {
-  transform: scale(1.03);
-}
-
-.mc-hero-badge {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  background: rgba(0, 39, 26, 0.88);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: var(--cream);
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(249, 238, 36, 0.3);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.mc-hero-badge .badge-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--y);
-  display: inline-block;
-  box-shadow: 0 0 6px var(--y);
+.mc-btn-hero:hover svg {
+  transform: translateX(3px);
 }
 
 /* ── 2. Horizontal Category Navigation Bar ── */
@@ -796,14 +784,33 @@
 }
 
 @media (max-width: 880px) {
-  .mc-hero-container {
-    grid-template-columns: 1fr;
-    gap: 36px;
-    text-align: center;
+  .mc-hero {
+    min-height: 380px;
+    padding: 44px var(--pad-narrow);
+  }
+
+  .mc-hero-backdrop img {
+    object-position: 65% center;
+  }
+
+  .mc-hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 39, 26, 0.95) 0%,
+      rgba(0, 39, 26, 0.9) 55%,
+      rgba(0, 39, 26, 0.65) 85%,
+      rgba(0, 39, 26, 0.45) 100%
+    );
   }
 
   .mc-hero-content {
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .mc-hero-tagline {
+    max-width: 100%;
   }
 
   .mc-cards-grid,
@@ -843,15 +850,22 @@
     height: 160px;
   }
 
-  .mc-hero-plate-wrap {
-    max-width: 100%;
+  .mc-hero {
+    min-height: 350px;
+    padding: 40px 18px;
   }
 
-  .mc-hero-badge {
-    bottom: 10px;
-    left: 10px;
-    font-size: 0.74rem;
-    padding: 6px 12px;
+  .mc-hero-backdrop img {
+    object-position: 70% center;
+  }
+
+  .mc-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 39, 26, 0.92) 0%,
+      rgba(0, 39, 26, 0.84) 60%,
+      rgba(0, 39, 26, 0.88) 100%
+    );
   }
 
   .mc-btn-hero,
