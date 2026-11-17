@@ -1705,7 +1705,7 @@ html[lang="es"] .offer-price-item span,
 }
 
 .atmo-card:nth-child(3) img {
-  object-position: center 60%;
+  object-position: center center;
 }
 
 .atmo-card:nth-child(4) {
