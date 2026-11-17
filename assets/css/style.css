@@ -1836,10 +1836,47 @@ html[lang="es"] .offer-price-item span,
 /* ──────────────────────────────────────────────────────────────────────────
    SECTION 7 — VISIT, HOURS & CONTACT
    ────────────────────────────────────────────────────────────────────────── */
+/* Plan Your Visit Floral Branding Background & Divider */
 .visit {
   background-color: var(--cream);
-  padding: clamp(72px, 9vw, 140px) var(--pad);
   position: relative;
+  overflow: hidden;
+  padding: clamp(72px, 9vw, 140px) var(--pad);
+}
+
+.visit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/Floral-Pattern.jpeg");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: 1024px auto;
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.visit-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.visit-address-divider {
+  width: 56px;
+  height: 2px;
+  background: var(--teal, #f6a214);
+  margin: 16px 0 16px;
+  border-radius: 2px;
+}
+
+.visit-lead {
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  line-height: 1.5;
+  color: var(--g);
+  font-weight: 500;
+  margin-bottom: 20px;
+  max-width: 540px;
 }
 
 .visit-grid {

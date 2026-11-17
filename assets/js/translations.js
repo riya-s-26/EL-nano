@@ -42,7 +42,7 @@ window.I18N_DATA = {
     "drink_card3_title": "Cervezas & Refrescos",
     "drink_card3_desc": "Ecuadorian Club Verde beer, Tropical sodas, and authentic refreshments.",
     "visit_kicker": "Plan Your Visit",
-    "visit_lead": "Warm hospitality, outdoor terrace dining, and coastal flavors in Coral Gables.",
+    "visit_lead": "A table with room for everyone, right in the heart of Coral Gables.",
     "skip_nav": "Skip to main content",
     "nav_menu": "The Menu",
     "nav_lunch": "Lunch Specials",
@@ -135,7 +135,7 @@ window.I18N_DATA = {
     "hh_pill_bites": "Savory Bites",
     "price_inquire": "Side Dishes",
     "cat_clasicos_label": "Classics",
-    "card_view_digital": "View on Digital Menu ↗",
+    "card_view_digital": "View on Menu ↗",
     "tag_traditional": "Traditional",
     "dish_guatita_title": "Guatita",
     "dish_guatita_desc": "Stewed tripe with potato and peanut.",
@@ -189,7 +189,7 @@ window.I18N_DATA = {
     "tag_craft_cocktail": "Signature Cocktail",
     "banner_micartaya_title": "Want to explore our complete catalog?",
     "banner_micartaya_desc": "Browse our full digital menu on MiCartaYa for the entire range of ceviches, specialty cocktails, and seasonal dishes.",
-    "banner_micartaya_btn": "Open Full Digital Menu ↗",
+    "banner_micartaya_btn": "Explore Full Menu Catalog →",
     "story_kicker": "Where it started",
     "story_title": "Since 2001, the taste of Ecuador, wherever we go.",
     "story_lead": "Our encebollado has been celebrated as the best in Europe. Now, we bring that authentic passion to 339 Miracle Mile in Coral Gables.",
@@ -251,7 +251,7 @@ window.I18N_DATA = {
     "foot_sig_dishes": "Signature Dishes",
     "foot_col_menus": "Menus & Orders",
     "foot_link_onsite_menu": "On-Site Food & Cocktails",
-    "foot_link_full_menu": "Full Digital Menu (MiCartaYa)",
+    "foot_link_full_menu": "Full Menu Catalog",
     "foot_link_lunch": "Executive Lunch Specials",
     "foot_link_ubereats": "Uber Eats Delivery",
     "foot_link_reservations": "Online Reservations",
@@ -424,7 +424,9 @@ window.I18N_DATA = {
     "mc_desc_tropical": "Traditional Ecuadorian Tropical sparkling strawberry soda.",
     "mc_desc_manzana": "Classic Ecuadorian apple-flavored sparkling soda.",
     "mc_desc_coca_cola": "Classic original Coca-Cola can served chilled.",
-    "mc_desc_coca_cola_light": "Diet / Zero sugar Coca-Cola can served chilled."
+    "mc_desc_coca_cola_light": "Diet / Zero sugar Coca-Cola can served chilled.",
+    "menu_btn_open_digital": "Explore Full Menu →",
+    "drawer_digital_menu": "Explore Menu Catalog ↗"
 },
   es: {
     "menu_catalog_kicker": "EL ÑAÑO MIAMI",
@@ -464,7 +466,7 @@ window.I18N_DATA = {
     "drink_card3_title": "Cervezas y Refrescos",
     "drink_card3_desc": "Cerveza ecuatoriana Club Verde, refrescos Tropical y bebidas tradicionales.",
     "visit_kicker": "Encuéntranos",
-    "visit_lead": "Cálida hospitalidad, terraza al aire libre y auténticos sabores costeños en Coral Gables.",
+    "visit_lead": "Una mesa con lugar para todos, en pleno Coral Gables.",
     "skip_nav": "Saltar al contenido principal",
     "nav_menu": "Menú",
     "nav_lunch": "Almuerzos",
@@ -679,8 +681,8 @@ window.I18N_DATA = {
     "foot_col_menus": "Menús",
     "foot_link_onsite_menu": "Menú en el Sitio",
     "foot_link_lunch": "Almuerzos",
-    "card_view_digital": "Ver en Menú Digital ↗",
-    "foot_link_full_menu": "Menú Completo Digital (MiCartaYa)",
+    "card_view_digital": "Ver en el Menú ↗",
+    "foot_link_full_menu": "Catálogo de Menú Completo",
     "foot_col_discover": "Conoce Más",
     "foot_sig_dishes": "Especialidades",
     "foot_col_visit": "Visítanos &amp; Reservas",
@@ -859,6 +861,8 @@ window.I18N_DATA = {
     "mc_desc_tropical": "Tradicional gaseosa ecuatoriana Tropical con sabor a frutilla/fresa.",
     "mc_desc_manzana": "Clásica gaseosa ecuatoriana sabor a manzana.",
     "mc_desc_coca_cola": "Lata de Coca-Cola original bien fría.",
-    "mc_desc_coca_cola_light": "Lata de Coca-Cola Light / Zero sin azúcar."
+    "mc_desc_coca_cola_light": "Lata de Coca-Cola Light / Zero sin azúcar.",
+    "menu_btn_open_digital": "Explorar Menú Completo →",
+    "drawer_digital_menu": "Explorar Catálogo de Menú ↗"
 }
 };

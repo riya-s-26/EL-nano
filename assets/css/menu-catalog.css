@@ -951,3 +951,16 @@
     align-items: flex-start;
   }
 }
+
+
+/* Cerveza Club Verde Specific Contain & Padding Fix */
+.mc-card-media img[src*="cerveza-club-verde"],
+.mc-dish-card[data-cat="cervezas"] img[src*="cerveza-club-verde"],
+.mc-dish-card:has(img[src*="cerveza-club-verde"]) .mc-card-media img {
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 12px 8px !important;
+  box-sizing: border-box !important;
+  background-color: #FAF4E8 !important;
+  transform: none !important;
+}
