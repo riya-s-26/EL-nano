@@ -464,9 +464,15 @@
 .mc-sig-bg-pattern {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 15% 50%, rgba(249, 238, 36, 0.05) 0%, transparent 50%),
-              radial-gradient(circle at 85% 50%, rgba(173, 204, 112, 0.05) 0%, transparent 50%);
+  background-color: var(--g);
+  background-image:
+    linear-gradient(rgba(0, 48, 32, 0.82), rgba(0, 48, 32, 0.88)),
+    url("../img/signature-dishes-floral.jpg");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: 540px auto;
   pointer-events: none;
+  z-index: 0;
 }
 
 .mc-sig-container {
@@ -953,14 +959,21 @@
 }
 
 
-/* Cerveza Club Verde Specific Contain & Padding Fix */
+/* Cerveza Club Verde Specific Contain & Spacing Fix */
+.mc-dish-card:has(img[src*="cerveza-club-verde"]) .mc-card-media {
+  aspect-ratio: 3 / 4 !important;
+  background: transparent !important;
+}
 .mc-card-media img[src*="cerveza-club-verde"],
 .mc-dish-card[data-cat="cervezas"] img[src*="cerveza-club-verde"],
 .mc-dish-card:has(img[src*="cerveza-club-verde"]) .mc-card-media img {
+  width: 100% !important;
+  height: 100% !important;
   object-fit: contain !important;
   object-position: center center !important;
-  padding: 12px 8px !important;
+  padding: 0 !important;
+  margin: 0 !important;
   box-sizing: border-box !important;
-  background-color: #FAF4E8 !important;
+  background: transparent !important;
   transform: none !important;
 }
