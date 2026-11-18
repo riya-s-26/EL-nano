@@ -543,6 +543,32 @@
   font-size: 0.95rem;
 }
 
+/* ── Brunch View Menu Cards (Design System Green) ── */
+#lb-view-brunch .lb-card {
+  background-color: var(--g, #003C28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 39, 26, 0.16);
+}
+
+#lb-view-brunch .lb-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 20, 10, 0.28);
+  border-color: rgba(249, 238, 36, 0.3);
+}
+
+#lb-view-brunch .lb-card-media {
+  background-color: var(--g-deep, #00271A);
+}
+
+#lb-view-brunch .lb-card-title {
+  color: #FFFFFF;
+}
+
+#lb-view-brunch .lb-card-desc {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+
 /* ── 7. Drinks Highlight Strip ── */
 .lb-drinks-strip {
   background-color: #FDF3D8;
