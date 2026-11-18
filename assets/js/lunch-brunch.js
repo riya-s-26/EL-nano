@@ -16,6 +16,7 @@
   const heroDayWrap = document.getElementById('lb-hero-day-wrap');
   const heroTbdBadge = document.getElementById('lb-hero-tbd-badge');
 
+  const priceBadge = document.getElementById('lb-price-badge');
   const priceAmount = document.getElementById('lb-price-amount');
   const priceSub = document.getElementById('lb-price-sub');
 
@@ -48,6 +49,10 @@
       if (heroDayWrap) heroDayWrap.style.display = 'inline-flex';
       if (heroTbdBadge) heroTbdBadge.style.display = 'none';
 
+      if (priceBadge) {
+        priceBadge.classList.remove('is-text');
+        priceBadge.removeAttribute('data-text');
+      }
       priceAmount.textContent = '$26';
       priceSub.textContent = isEs ? '3 TIEMPOS' : '3 COURSES';
 
@@ -92,6 +97,10 @@
       if (heroDayWrap) heroDayWrap.style.display = 'none';
       if (heroTbdBadge) heroTbdBadge.style.display = 'inline-flex';
 
+      if (priceBadge) {
+        priceBadge.classList.add('is-text');
+        priceBadge.setAttribute('data-text', 'true');
+      }
       priceAmount.textContent = isEs ? 'PRECIO' : 'PRICE';
       priceSub.textContent = 'TBD';
 
@@ -139,6 +148,18 @@
   }
 
   // Listen for language changes if language switcher is triggered
+  
+    // Safeguard check for text length overflow
+    if (priceBadge && priceAmount) {
+      if (priceAmount.textContent.trim().length > 3) {
+        priceBadge.classList.add('is-text');
+        priceBadge.setAttribute('data-text', 'true');
+      } else {
+        priceBadge.classList.remove('is-text');
+        priceBadge.removeAttribute('data-text');
+      }
+    }
+
   document.addEventListener('languageChanged', updateView);
   window.addEventListener('load', updateView);
 
