@@ -16,7 +16,7 @@
 
   <link rel="icon" href="assets/logo/el-nano-miami-green.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css?v=13.0">
-  <link rel="stylesheet" href="assets/css/lunch-brunch.css?v=1.0">
+  <link rel="stylesheet" href="assets/css/lunch-brunch.css?v=2.0">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 
@@ -95,18 +95,21 @@
           </div>
 
           <!-- Days TBD Badge for Brunch (hidden by default) -->
-          <span class="lb-tbd-pill" id="lb-hero-tbd-badge" style="display: none;" data-i18n="lb_days_tbd">DAYS TBD</span>
+          <div class="lb-tbd-group" id="lb-hero-tbd-badge" style="display: none;">
+            <span class="lb-tbd-pill" data-i18n="lb_days_tbd">DAYS TBD</span>
+            <span class="lb-tbd-empty" aria-hidden="true"></span>
+          </div>
         </div>
 
         <div class="lb-hero-right">
-          <!-- Lunch / Brunch Interactive Tabs -->
-          <div class="lb-tab-group" role="tablist" aria-label="Menu Type">
-            <button type="button" class="lb-tab-btn active" id="lb-tab-lunch" role="tab" aria-selected="true" data-i18n="lb_tab_lunch">LUNCH</button>
-            <button type="button" class="lb-tab-btn" id="lb-tab-brunch" role="tab" aria-selected="false" data-i18n="lb_tab_brunch">BRUNCH</button>
+          <!-- Lunch / Brunch Interactive Tab Switcher -->
+          <div class="lb-tab-group" role="tablist" aria-label="Menu selection">
+            <button type="button" role="tab" class="lb-tab-btn active" id="lb-tab-lunch" aria-selected="true" data-i18n="lb_tab_lunch">LUNCH</button>
+            <button type="button" role="tab" class="lb-tab-btn" id="lb-tab-brunch" aria-selected="false" data-i18n="lb_tab_brunch">BRUNCH</button>
           </div>
 
           <!-- Circular Price Badge -->
-          <div class="lb-price-badge" id="lb-price-badge" aria-label="Menu Price Badge">
+          <div class="lb-price-badge" id="lb-price-badge" aria-label="Menu Price">
             <span class="lb-price-amount" id="lb-price-amount">$26</span>
             <span class="lb-price-sub" id="lb-price-sub" data-i18n="lb_price_sub">3 COURSES</span>
           </div>
@@ -118,10 +121,10 @@
     <!-- CONTENT WRAPPER -->
     <div class="lb-content-container">
 
-      <!-- ========================================== -->
-      <!-- VIEW 1: LUNCH VIEW                         -->
-      <!-- ========================================== -->
-      <div id="lb-view-lunch">
+      <!-- ===================================================================
+           VIEW 1: LUNCH MENU (Weekday 3-Course Special)
+           =================================================================== -->
+      <div id="lb-view-lunch" class="lb-menu-view">
 
         <!-- Friday Special Announcement -->
         <div class="lb-friday-banner" id="lb-friday-banner">
@@ -156,7 +159,6 @@
             <!-- Card 2: Chicken Caesar Salad -->
             <article class="lb-card">
               <div class="lb-card-media">
-                
                 <span class="lb-card-media-label">PHOTO</span>
               </div>
               <div class="lb-card-body">
@@ -168,7 +170,6 @@
             <!-- Card 3: Locro de Papa Soup -->
             <article class="lb-card">
               <div class="lb-card-media">
-                
                 <span class="lb-card-media-label">PHOTO</span>
               </div>
               <div class="lb-card-body">
@@ -180,7 +181,6 @@
             <!-- Card 4: Chupe Fish & Shrimp Soup -->
             <article class="lb-card">
               <div class="lb-card-media">
-                
                 <span class="lb-card-media-label">PHOTO</span>
               </div>
               <div class="lb-card-body">
@@ -190,15 +190,15 @@
             </article>
 
             <!-- Card 5: Caldo de Bola (Fridays Only) -->
-            <article class="lb-card lb-card-friday-special" id="lb-card-caldo">
-              <span class="lb-badge-fridays-only" data-i18n="lb_badge_fridays_only">FRIDAYS ONLY</span>
+            <article class="lb-card lb-card-friday" id="lb-card-caldo">
               <div class="lb-card-media">
+                <span class="lb-card-badge-friday" data-i18n="lb_badge_fridays_only">FRIDAYS ONLY</span>
                 <img src="assets/img/pics from clients/Caldo de Bola.png" alt="Caldo de Bola" width="400" height="250" loading="lazy" decoding="async">
                 <span class="lb-card-media-label">PHOTO</span>
               </div>
               <div class="lb-card-body">
                 <h3 class="lb-card-title" data-i18n="lb_title_caldo_bola">Caldo de Bola</h3>
-                <p class="lb-card-desc" data-i18n="lb_desc_caldo_bola">Savory beef broth with a golden plantain dumpling filled with seasoned beef, egg, and fresh herbs.</p>
+                <p class="lb-card-desc" data-i18n="lb_desc_caldo_bola">Description from the digital menu</p>
               </div>
             </article>
 
@@ -266,14 +266,19 @@
             </div>
           </div>
 
-          <!-- Full-width Text-only Dessert Card (per prompt specification) -->
-          <article class="lb-dessert-card">
-            <h3 class="lb-card-title" data-i18n="lb_dessert_title">House Specialty</h3>
-            <p class="lb-card-desc" data-i18n="lb_dessert_desc">Our dessert of the day. Ask your server.</p>
+          <!-- Full-width Dessert Card matching reference screenshot -->
+          <article class="lb-card lb-card-full">
+            <div class="lb-card-media lb-card-media-banner">
+              <span class="lb-card-media-label">PHOTO</span>
+            </div>
+            <div class="lb-card-body">
+              <h3 class="lb-card-title" data-i18n="lb_dessert_title">House Specialty</h3>
+              <p class="lb-card-desc" data-i18n="lb_dessert_desc">Our dessert of the day. Ask your server.</p>
+            </div>
           </article>
         </section>
 
-        <!-- Lunch Drinks Special Horizontal Strip -->
+        <!-- Lunch Drinks Special Highlight Strip -->
         <div class="lb-drinks-strip">
           <span class="lb-drinks-kicker" data-i18n="lb_drinks_kicker">With your lunch</span>
           <span class="lb-drinks-offer" data-i18n="lb_drinks_offer">House wine $9 <span class="lb-drinks-dot">·</span> Beer $5</span>
@@ -282,10 +287,10 @@
 
       </div>
 
-      <!-- ========================================== -->
-      <!-- VIEW 2: BRUNCH VIEW (Hidden by default)    -->
-      <!-- ========================================== -->
-      <div id="lb-view-brunch" style="display: none;">
+      <!-- ===================================================================
+           VIEW 2: BRUNCH MENU (Weekend & Special Hours View)
+           =================================================================== -->
+      <div id="lb-view-brunch" class="lb-menu-view" style="display: none;">
 
         <!-- Section 1 -->
         <section class="lb-course-sec">
@@ -393,8 +398,8 @@
             </div>
           </div>
 
-          <article class="lb-card" style="width: 100%;">
-            <div class="lb-card-media" style="aspect-ratio: 21 / 9; max-height: 220px;">
+          <article class="lb-card lb-card-full">
+            <div class="lb-card-media lb-card-media-banner">
               <span class="lb-card-media-label">PHOTO</span>
             </div>
             <div class="lb-card-body">
@@ -439,7 +444,7 @@
             <li><a href="index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
             <li><a href="menu.html" data-i18n="nav_menu_catalog">Menu Catalog</a></li>
-            <li><a href="lunch-specials.html" data-i18n="nav_lunch">Lunch Specials</a></li>
+            <li><a href="lunch-specials.html" class="active" data-i18n="nav_lunch">Lunch Specials</a></li>
             <li><a href="blogs.html" data-i18n="nav_blogs">Blogs</a></li>
             <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
           </ul>
@@ -476,6 +481,6 @@
 
   <script src="assets/js/translations.js?v=13.0" defer></script>
   <script src="assets/js/main.js?v=2.7" defer></script>
-  <script src="assets/js/lunch-brunch.js?v=1.0" defer></script>
+  <script src="assets/js/lunch-brunch.js?v=2.0" defer></script>
 </body>
 </html>
