@@ -1,21 +1,128 @@
 /* ==========================================================================
-   El Ñaño Miami — Lunch & Brunch Page Stylesheet
-   Brand Palette: Deep Green (#003C28), Warm Cream (#FAF3E6), Yellow (#F9EE24),
-   Sage Green (#6E8679), Ochre Accent (#C89228)
+   El Ñaño Miami — Lunch & Brunch Page Stylesheet (Production Polished)
+   Palette:
+     Deep Green: #003C28 / #00271A
+     Yellow: #F9EE24
+     Warm Cream: #FAF3E6
+     Card Cream: #FFFBF2
+     Sage Green: #5D796A
+     Ochre Accent: #C89228
    ========================================================================== */
 
+/* ── 1. Header & Desktop / Mobile Navigation ── */
+.site-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: var(--hh, 76px) !important;
+  background-color: #00271A !important;
+  box-shadow: 0 4px 20px rgba(0, 20, 10, 0.4) !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.site-header .bar {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--pad, 24px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.site-header .brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.site-header .brand img {
+  width: clamp(120px, 11vw, 145px);
+  height: auto;
+  display: block;
+}
+
+.site-header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 1.8vw, 28px);
+  flex: 1;
+}
+
+.site-header .nav a {
+  font-family: var(--font-body, "Plus Jakarta Sans", sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--cream, #FAF3E6);
+  text-decoration: none;
+  padding: 8px 2px;
+  position: relative;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.site-header .nav a:hover,
+.site-header .nav a.active {
+  color: var(--y, #F9EE24);
+}
+
+.site-header .nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--y, #F9EE24);
+  border-radius: 2px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 1.5vw, 18px);
+  flex-shrink: 0;
+}
+
+.header-actions .reserve-btn {
+  background-color: var(--y, #F9EE24);
+  color: var(--g-deep, #00271A);
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.header-actions .reserve-btn:hover {
+  background-color: #ffe600;
+  transform: translateY(-1px);
+}
+
+/* ── 2. Page Wrapper & Padding Offset ── */
 .lb-page-wrap {
   background-color: var(--cream, #FAF3E6);
   color: var(--g, #003C28);
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding-top: var(--hh, 76px); /* offsets fixed header */
+  padding-bottom: 0;
 }
 
-/* ── Hero Section with Floral Accent ── */
+/* ── 3. Hero Section ── */
 .lb-hero {
   position: relative;
   background-color: var(--cream, #FAF3E6);
-  padding: 40px 24px 30px;
+  padding: 44px 24px 34px;
   overflow: hidden;
   border-bottom: 1px solid rgba(0, 60, 40, 0.08);
 }
@@ -29,7 +136,7 @@
   background-image: url('../img/signature-dishes-floral.jpg');
   background-size: cover;
   background-position: center top;
-  opacity: 0.25;
+  opacity: 0.22;
   pointer-events: none;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
@@ -41,222 +148,209 @@
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .lb-hero-left {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .lb-hero-eyebrow {
-  font-family: var(--font-body, "Lexend", sans-serif);
+  font-family: var(--font-body, "Plus Jakarta Sans", sans-serif);
   font-size: 0.88rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #C89228;
-  margin-bottom: 6px;
-  display: block;
+  color: var(--ochre, #C89228);
 }
 
 .lb-hero-title {
   font-family: var(--font-display, "Paytone One", sans-serif);
-  font-size: clamp(2.8rem, 5.5vw, 4.4rem);
-  font-weight: 400;
+  font-size: clamp(3rem, 6vw, 4.25rem);
+  line-height: 1.02;
   color: var(--g, #003C28);
-  line-height: 1.05;
-  margin: 0 0 18px;
+  margin: 0;
+  letter-spacing: -0.01em;
 }
 
-/* Day selector pill (Lunch) / Days TBD badge (Brunch) */
+/* Day Selector: MON - THU vs FRIDAY */
 .lb-day-selector {
   display: inline-flex;
-  background: #FFFFFF;
-  border-radius: 999px;
+  align-items: center;
+  background-color: rgba(0, 60, 40, 0.06);
   padding: 4px;
-  border: 1px solid rgba(0, 60, 40, 0.15);
-  box-shadow: 0 2px 8px rgba(0, 60, 40, 0.05);
-  gap: 4px;
+  border-radius: 999px;
+  margin-top: 10px;
+  width: fit-content;
+  border: 1px solid rgba(0, 60, 40, 0.08);
 }
 
 .lb-day-btn {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.85rem;
-  font-weight: 800;
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
   padding: 7px 18px;
   border-radius: 999px;
   border: none;
   background: transparent;
   color: var(--g, #003C28);
   cursor: pointer;
-  transition: all 0.25s ease;
-  letter-spacing: 0.04em;
+  transition: all 0.2s ease;
 }
 
 .lb-day-btn.active {
   background-color: var(--y, #F9EE24);
-  color: #00271A;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: var(--g-deep, #00271A);
+  box-shadow: 0 2px 8px rgba(0, 60, 40, 0.12);
 }
 
+/* Brunch Days TBD Badge */
 .lb-tbd-group {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  margin-top: 10px;
 }
 
 .lb-tbd-pill {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.85rem;
-  font-weight: 800;
-  padding: 7px 20px;
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  padding: 7px 18px;
   border-radius: 999px;
   background-color: var(--y, #F9EE24);
-  color: #00271A;
-  display: inline-block;
-  letter-spacing: 0.04em;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  color: var(--g-deep, #00271A);
 }
 
 .lb-tbd-empty {
   display: inline-block;
-  width: 38px;
-  height: 34px;
+  width: 32px;
+  height: 24px;
   border-radius: 999px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 60, 40, 0.15);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 60, 40, 0.08);
 }
 
-/* Hero Right Actions */
 .lb-hero-right {
   display: flex;
   align-items: center;
-  gap: 28px;
-  padding-top: 10px;
+  gap: 24px;
 }
 
-/* Tab Switcher: LUNCH / BRUNCH */
+/* Lunch / Brunch Tab Pill */
 .lb-tab-group {
   display: inline-flex;
-  background: #FFFFFF;
-  border-radius: 999px;
+  background-color: #FFFFFF;
   padding: 4px;
-  border: 1px solid rgba(0, 60, 40, 0.15);
-  box-shadow: 0 2px 8px rgba(0, 60, 40, 0.05);
-  gap: 4px;
+  border-radius: 999px;
+  border: 1.5px solid var(--g, #003C28);
+  box-shadow: 0 4px 14px rgba(0, 60, 40, 0.08);
 }
 
 .lb-tab-btn {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.88rem;
-  font-weight: 800;
-  padding: 8px 24px;
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  padding: 8px 22px;
   border-radius: 999px;
   border: none;
   background: transparent;
   color: var(--g, #003C28);
   cursor: pointer;
   transition: all 0.25s ease;
-  letter-spacing: 0.04em;
 }
 
 .lb-tab-btn.active {
   background-color: var(--y, #F9EE24);
-  color: #00271A;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: var(--g-deep, #00271A);
+  box-shadow: 0 2px 6px rgba(0, 60, 40, 0.1);
 }
 
 /* Circular Price Badge */
 .lb-price-badge {
-  width: 96px;
-  height: 96px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 2px solid var(--g, #003C28);
+  box-shadow: 0 6px 18px rgba(0, 60, 40, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(0, 60, 40, 0.1);
   flex-shrink: 0;
 }
 
 .lb-price-amount {
   font-family: var(--font-display, "Paytone One", sans-serif);
-  font-size: 1.85rem;
+  font-size: 2.15rem;
+  line-height: 1;
   color: var(--g, #003C28);
-  line-height: 1.05;
+  font-weight: 800;
 }
 
 .lb-price-sub {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.65rem;
+  font-family: var(--font-body, "Plus Jakarta Sans", sans-serif);
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--g, #003C28);
+  text-transform: uppercase;
   margin-top: 2px;
 }
 
-/* ── Content Container ── */
+/* ── 4. Content Container & Friday Banner ── */
 .lb-content-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 24px;
+  padding: 28px 24px 60px;
 }
 
-/* ── Announcement Banner (Every Friday) ── */
 .lb-friday-banner {
   background-color: var(--g, #003C28);
-  color: #FAF3E6;
-  border-radius: 999px;
-  padding: 10px 24px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px 18px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   margin-bottom: 34px;
-  box-shadow: 0 4px 14px rgba(0, 60, 40, 0.12);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.lb-friday-banner.hidden {
-  display: none !important;
+  box-shadow: 0 3px 12px rgba(0, 60, 40, 0.12);
+  transition: all 0.3s ease;
 }
 
 .lb-friday-badge {
+  font-family: var(--font-display, "Paytone One", sans-serif);
   background-color: var(--y, #F9EE24);
-  color: #00271A;
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.74rem;
-  font-weight: 800;
+  color: var(--g-deep, #00271A);
+  font-size: 0.72rem;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 4px 12px;
+  padding: 4px 10px;
   border-radius: 999px;
+  font-weight: 700;
   white-space: nowrap;
 }
 
 .lb-friday-text {
-  font-family: var(--font-body, "Lexend", sans-serif);
   font-size: 0.95rem;
-  font-weight: 500;
-  color: #FAF3E6;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 
-/* ── Section Blocks ── */
+/* ── 5. Course Sections & Hierarchy ── */
 .lb-course-sec {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .lb-sec-header {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .lb-sec-badge {
@@ -264,9 +358,10 @@
   height: 32px;
   border-radius: 50%;
   background-color: var(--g, #003C28);
-  color: #FAF3E6;
+  color: var(--y, #F9EE24);
   font-family: var(--font-display, "Paytone One", sans-serif);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,28 +375,26 @@
 
 .lb-sec-title {
   font-family: var(--font-display, "Paytone One", sans-serif);
-  font-size: 1.45rem;
-  font-weight: 400;
+  font-size: 1.4rem;
   color: var(--g, #003C28);
   margin: 0;
   line-height: 1.15;
 }
 
 .lb-sec-subtitle {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.72rem;
+  font-family: var(--font-body, "Plus Jakarta Sans", sans-serif);
+  font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #C89228;
-  margin-top: 3px;
+  color: var(--ochre, #C89228);
+  margin-top: 2px;
 }
 
-/* ── Card Grids ── */
+/* ── 6. Food Menu Cards Grid ── */
 .lb-cards-grid {
   display: grid;
-  gap: 16px;
-  width: 100%;
+  gap: 18px;
 }
 
 .lb-grid-5 {
@@ -316,210 +409,202 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* ── Individual Menu Cards ── */
 .lb-card {
-  background: #FFFFFF;
+  background-color: #FFFBF2;
+  border: 1px solid rgba(0, 60, 40, 0.08);
   border-radius: 12px;
-  border: 1px solid rgba(0, 60, 40, 0.1);
   overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 60, 40, 0.05);
   display: flex;
   flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 2px 10px rgba(0, 60, 40, 0.04);
 }
 
 .lb-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 60, 40, 0.08);
+  box-shadow: 0 8px 22px rgba(0, 60, 40, 0.1);
 }
 
-/* Full-width card (Course 3 Dessert & Brunch Section 3) */
-.lb-card-full {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Caldo de Bola special Friday card */
-.lb-card-friday,
-.lb-card-friday-special {
-  border: 2.5px solid var(--y, #F9EE24) !important;
-  box-shadow: 0 4px 16px rgba(249, 238, 36, 0.2) !important;
-}
-
-.lb-card-badge-friday,
-.lb-badge-fridays-only {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background-color: var(--y, #F9EE24);
-  color: #00271A;
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 6px;
-  z-index: 3;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-}
-
-/* Card Media (Sage Green Photo Area) */
 .lb-card-media {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10;
-  background-color: #6E8679;
+  background-color: #5D796A;
   overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
 }
 
 .lb-card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center;
   display: block;
+  transition: transform 0.4s ease;
 }
 
-.lb-card-media-banner {
-  aspect-ratio: 21 / 6;
-  max-height: 180px;
-  width: 100%;
+.lb-card:hover .lb-card-media img {
+  transform: scale(1.04);
 }
 
-.lb-card-media-label {
-  position: absolute;
-  bottom: 8px;
-  left: 10px;
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.85);
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Card Body */
 .lb-card-body {
-  padding: 14px 16px 18px;
-  background: #FFFFFF;
-  flex: 1;
+  padding: 16px 16px 18px;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .lb-card-title {
-  font-family: var(--font-body, "Lexend", sans-serif);
+  font-family: var(--font-display, "Paytone One", sans-serif);
   font-size: 1.02rem;
-  font-weight: 700;
   color: var(--g, #003C28);
   margin: 0 0 6px;
   line-height: 1.25;
 }
 
 .lb-card-desc {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.82rem;
-  font-weight: 400;
-  color: #55685D;
-  line-height: 1.4;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: rgba(0, 39, 26, 0.78);
   margin: 0;
 }
 
-/* ── Lunch Drinks Special Strip ── */
+/* Friday-Only Card Special Badge */
+.lb-card-friday {
+  border: 2px solid var(--y, #F9EE24);
+  position: relative;
+}
+
+.lb-card-badge-friday {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  background-color: var(--y, #F9EE24);
+  color: var(--g-deep, #00271A);
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Full-width Dessert Card */
+.lb-card-full {
+  margin-top: 10px;
+}
+
+.lb-card-full .lb-card-media-banner {
+  aspect-ratio: auto;
+  height: clamp(200px, 26vw, 300px);
+}
+
+.lb-card-full .lb-card-media-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.lb-card-full .lb-card-body {
+  padding: 20px 24px;
+}
+
+.lb-card-full .lb-card-title {
+  font-size: 1.25rem;
+}
+
+.lb-card-full .lb-card-desc {
+  font-size: 0.95rem;
+}
+
+/* ── 7. Drinks Highlight Strip ── */
 .lb-drinks-strip {
   background-color: #FDF3D8;
-  border: 1.5px solid #F3DFC0;
-  border-radius: 10px;
-  padding: 14px 24px;
+  border: 1px solid #F3DFC0;
+  border-radius: 12px;
+  padding: 14px 22px;
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: 14px;
-  margin-bottom: 6px;
+  margin-top: 36px;
 }
 
 .lb-drinks-kicker {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.95rem;
+  font-family: var(--font-body, "Plus Jakarta Sans", sans-serif);
+  font-size: 0.88rem;
   font-weight: 800;
-  color: #D49127;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--ochre, #C89228);
 }
 
 .lb-drinks-offer {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: 1.05rem;
   color: var(--g, #003C28);
 }
 
 .lb-drinks-dot {
-  color: #D49127;
-  font-weight: 800;
-  margin: 0 4px;
+  color: var(--ochre, #C89228);
+  margin: 0 6px;
 }
 
 .lb-drinks-disclaimer {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.78rem;
-  color: #7A8B80;
+  font-size: 0.8rem;
   font-style: italic;
-  margin-top: 6px;
-  margin-bottom: 30px;
+  color: rgba(0, 60, 40, 0.65);
+  margin: 8px 0 0 4px;
 }
 
-/* ── Bottom Navigation Banner ── */
+/* ── 8. Brunch CTA Banner ── */
 .lb-bottom-banner {
   background-color: var(--g, #003C28);
-  border-radius: 12px;
-  padding: 22px 32px;
+  border-radius: 16px;
+  padding: 26px 36px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  margin-top: 36px;
-  box-shadow: 0 4px 18px rgba(0, 60, 40, 0.12);
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 48px;
+  box-shadow: 0 8px 24px rgba(0, 60, 40, 0.15);
+}
+
+.lb-banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .lb-banner-kicker {
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-size: 0.74rem;
+  font-family: var(--font-body, "Plus Jakarta Sans", sans-serif);
+  font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
-  display: block;
-  margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .lb-banner-title {
   font-family: var(--font-display, "Paytone One", sans-serif);
-  font-size: 1.55rem;
-  font-weight: 400;
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
   color: #FFFFFF;
   margin: 0;
-  line-height: 1.15;
 }
 
 .lb-banner-btn {
-  background: transparent;
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  background-color: transparent;
   color: #FFFFFF;
   border: 1.5px solid #FFFFFF;
+  padding: 12px 24px;
   border-radius: 999px;
-  padding: 10px 24px;
-  font-family: var(--font-body, "Lexend", sans-serif);
-  font-weight: 800;
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
   cursor: pointer;
-  transition: all 0.25s ease;
   white-space: nowrap;
+  transition: all 0.25s ease;
 }
 
 .lb-banner-btn:hover {
@@ -527,63 +612,194 @@
   color: var(--g, #003C28);
 }
 
-/* ── Decorative Floral Accent at bottom ── */
+/* ── 9. Decorative Bottom Floral ── */
 .lb-bottom-floral {
-  width: 100%;
   height: 120px;
   background-image: url('../img/signature-dishes-floral.jpg');
   background-size: cover;
   background-position: center bottom;
-  opacity: 0.22;
-  margin-top: 40px;
-  pointer-events: none;
+  opacity: 0.18;
   mask-image: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
   -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+  pointer-events: none;
 }
 
-/* ==========================================================================
-   Responsive Adaptations
-   ========================================================================== */
-@media (max-width: 1024px) {
+/* ── 10. Complete Premium Restaurant Footer ── */
+.site-foot {
+  background-color: #00271A !important;
+  color: #FAF3E6 !important;
+  padding: clamp(52px, 6vw, 84px) 24px clamp(32px, 4vw, 48px) !important;
+  border-top: 1px solid rgba(250, 243, 230, 0.12) !important;
+  position: relative !important;
+  z-index: 10 !important;
+  display: block !important;
+}
+
+.foot-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.foot-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.9fr) minmax(0, 1.05fr) minmax(0, 1.15fr);
+  gap: clamp(28px, 4vw, 56px);
+  padding-bottom: clamp(36px, 4vw, 52px);
+  border-bottom: 1px solid rgba(250, 243, 230, 0.15);
+}
+
+.foot-col-brand .foot-logo-link {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.foot-col-brand img {
+  width: clamp(140px, 14vw, 175px) !important;
+  max-width: 180px !important;
+  height: auto !important;
+  display: block;
+}
+
+.foot-col-brand p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(250, 243, 230, 0.85);
+  max-width: 32ch;
+  margin: 0;
+}
+
+.foot-col h3 {
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: 1.05rem;
+  color: #F9EE24;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.foot-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.foot-col ul li {
+  margin: 0;
+}
+
+.foot-col ul li a {
+  color: rgba(250, 243, 230, 0.82);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.foot-col ul li a:hover,
+.foot-col ul li a.active {
+  color: #F9EE24;
+  transform: translateX(2px);
+}
+
+.foot-col-contact .foot-contact-item {
+  margin-bottom: 14px;
+}
+
+.foot-col-contact .foot-contact-label {
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #F9EE24;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.foot-col-contact p,
+.foot-col-contact a {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: rgba(250, 243, 230, 0.85);
+  margin: 0;
+  text-decoration: none;
+}
+
+.foot-col-contact a:hover {
+  color: #F9EE24;
+}
+
+.foot-bottom {
+  padding-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.86rem;
+  color: rgba(250, 243, 230, 0.65);
+}
+
+.foot-bottom p {
+  margin: 0;
+}
+
+/* ── 11. Responsive Breakpoints ── */
+@media (max-width: 1080px) {
   .lb-grid-5 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .lb-grid-4 {
+  .foot-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
   }
+}
+
+@media (max-width: 900px) {
+  .site-header .nav {
+    display: none;
+  }
+  .burger {
+    display: inline-flex !important;
+  }
+  .lb-hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .lb-hero-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .lb-grid-4,
   .lb-grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .lb-hero {
-    padding: 30px 16px 20px;
+    padding: 30px 16px 24px;
   }
-  .lb-hero-container {
+  .lb-content-container {
+    padding: 20px 16px 40px;
+  }
+  .lb-hero-right {
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
-  }
-  .lb-hero-right {
-    width: 100%;
-    justify-content: space-between;
-    padding-top: 0;
-  }
-  .lb-content-container {
-    padding: 24px 16px;
-  }
-  .lb-friday-banner {
-    border-radius: 16px;
-    padding: 12px 18px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
   }
   .lb-grid-5,
   .lb-grid-4,
   .lb-grid-3 {
     grid-template-columns: 1fr;
+  }
+  .lb-friday-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
   .lb-drinks-strip {
     flex-direction: column;
@@ -600,10 +816,18 @@
     width: 100%;
     text-align: center;
   }
+  .foot-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .foot-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
 
-
-/* ── Ensure Mobile Drawer is strictly hidden on desktop (>= 901px) ── */
+/* ── Strictly hide mobile drawer on desktop (>= 901px) ── */
 @media (min-width: 901px) {
   .drawer {
     display: none !important;
