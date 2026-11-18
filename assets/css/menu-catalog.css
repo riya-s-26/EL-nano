@@ -1021,3 +1021,33 @@
   object-fit: cover !important;
   object-position: center center !important;
 }
+
+/* ── Full Cocktail Glass Visibility (No Cropping) ── */
+.mc-dish-card[data-cat="signature-cocktails"] .mc-card-media,
+.mc-dish-card:has(img[src*="espresso-martini"]) .mc-card-media,
+.mc-dish-card:has(img[src*="canelazo"]) .mc-card-media,
+.mc-dish-card:has(img[src*="la nana"]) .mc-card-media,
+.mc-dish-card:has(img[src*="la%20nana"]) .mc-card-media {
+  aspect-ratio: 4 / 5 !important;
+  background: #14221a !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  padding: 8px !important;
+}
+
+.mc-dish-card[data-cat="signature-cocktails"] .mc-card-media img,
+.mc-card-media img[src*="espresso-martini"],
+.mc-card-media img[src*="canelazo"],
+.mc-card-media img[src*="la nana"],
+.mc-card-media img[src*="la%20nana"] {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+  border-radius: 6px !important;
+}

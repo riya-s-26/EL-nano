@@ -252,6 +252,11 @@
     } catch (e) {
       // Ignore if localStorage unavailable
     }
+    try {
+      document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: lang } }));
+    } catch (e) {
+      // Ignore
+    }
   }
 
   // Bind click events on all language buttons (with delegation)
