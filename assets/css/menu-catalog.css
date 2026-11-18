@@ -1000,3 +1000,24 @@
   object-position: center center !important;
   display: block !important;
 }
+
+/* Dessert & Espresso Martini Framing */
+.mc-dish-card:has(img[src*="espresso-martini"]) .mc-card-media img,
+.mc-card-media img[src*="espresso-martini"],
+.menu-card:has(img[src*="espresso-martini"]) .menu-card-media img,
+.menu-card-media img[src*="espresso-martini"] {
+  object-fit: cover !important;
+  object-position: center 60% !important;
+}
+
+.mc-dish-card:has(img[src*="coconut-flan"]) .mc-card-media img,
+.mc-card-media img[src*="coconut-flan"] {
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+.mc-dish-card:has(img[src*="tomate-de-arbol-cheesecake"]) .mc-card-media img,
+.mc-card-media img[src*="tomate-de-arbol-cheesecake"] {
+  object-fit: cover !important;
+  object-position: center center !important;
+}

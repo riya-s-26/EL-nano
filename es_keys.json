@@ -295,5 +295,8 @@
   "nav_locations": "Nuestras Ubicaciones",
   "coming_soon_badge": "PRÓXIMAMENTE",
   "coming_soon_desc": "Estamos preparando algo especial para ti. ¡Mantente al tanto!",
-  "back_to_home": "Volver al Inicio"
+  "back_to_home": "Volver al Inicio",
+  "mc_desc_espresso_martini": "Café espresso tostado ecuatoriano batido con vodka artesanal y licor de café, terminado con granos de café.",
+  "cocktail_espresso_title": "Espresso Martini",
+  "cocktail_espresso_desc": "Café espresso tostado ecuatoriano batido con vodka artesanal y licor de café, terminado con granos de café."
 }
