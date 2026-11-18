@@ -977,3 +977,26 @@
   background: transparent !important;
   transform: none !important;
 }
+
+
+/* Centering & Framing for Pan de Yuca, Bolón de Plátano, and Parrillada de Carnes */
+.mc-dish-card:has(img[src*="pan-de-yuca"]) .mc-card-media img,
+.mc-card-media img[src*="pan-de-yuca"] {
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+.mc-dish-card:has(img[src*="bolon-de-platano"]) .mc-card-media img,
+.mc-card-media img[src*="bolon-de-platano"] {
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media img,
+.mc-card-media img[src*="parrillada-de-carnes"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+}
