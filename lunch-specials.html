@@ -54,27 +54,39 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Navigation -->
-  <aside class="drawer" id="drawer" aria-hidden="true" inert>
-    <div class="drawer-panel">
-      <div class="drawer-head">
-        <img src="assets/logo/el-nano-miami-yellow.svg" alt="El Ñaño Miami" width="130" height="66">
-        <button class="drawer-close" type="button" aria-label="Close menu">✕</button>
-      </div>
-      <nav class="drawer-nav">
-        <a href="index.html" data-i18n="nav_home">Home</a>
-        <a href="about.html" data-i18n="nav_about">About Us</a>
-        <a href="menu.html" data-i18n="nav_menu_catalog">Menu Catalog</a>
-        <a href="lunch-specials.html" class="active" data-i18n="nav_lunch">Lunch Specials</a>
-        <a href="blogs.html" data-i18n="nav_blogs">Blogs</a>
-        <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
-      </nav>
-      <div class="drawer-foot">
-        <a class="btn btn-primary" href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/"
-          target="_blank" rel="noopener" data-i18n="reserve_btn">Reserve a Table</a>
+    <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer-lang">
+      <span class="drawer-lang-label" data-i18n="drawer_lang_label">Language:</span>
+      <div class="lang-switch" role="group" aria-label="Mobile Language selection">
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
       </div>
     </div>
-  </aside>
+    <nav aria-label="Mobile Navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="about.html" data-i18n="nav_about">About Us</a>
+      <a href="menu.html" data-i18n="nav_menu_catalog">Menu Catalog Page</a>
+      <a href="lunch-specials.html" class="active" data-i18n="nav_lunch">Lunch Specials</a>
+      <a href="blogs.html" data-i18n="nav_blogs">Blogs</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
+      <a class="drawer-sublink" href="menu.html" target="_blank" rel="noopener"
+        data-i18n="drawer_full_menu">Browse Digital Menu ↗</a>
+      <a class="drawer-sublink" href="https://www.ubereats.com/store/el-nano-coral-gables/kp463oD1Vi6E7nZN94qZXA"
+        target="_blank" rel="noopener" data-i18n="drawer_delivery">Delivery on Uber Eats ↗</a>
+      <a class="drawer-sublink"
+        href="https://www.doordash.com/store/el-%C3%91a%C3%91o-coral-gables-42138918/?srsltid=AYCX9vI_KnE7H-Bl0SJWq5RdilWhw7yQn5uDHOik-DngAWsfa8M4sarF"
+        target="_blank" rel="noopener" data-i18n="drawer_doordash">Delivery on DoorDash ↗</a>
+    </nav>
+    <div class="drawer-footer">
+      <p>339 Miracle Mile, Coral Gables, FL 33134</p>
+      <p><span data-i18n="drawer_phone_label">Direct Inquiries:</span> <a href="tel:+17865585466">(786) 558-5466</a></p>
+      <a class="btn btn-primary drawer-cta"
+        href="https://www.sevenrooms.com/explore/elnanomiami/reservations/create/search/" target="_blank" rel="noopener"
+        data-i18n="drawer_reserve_btn">Reserve a Table</a>
+    </div>
+  </div>
 
   <!-- MAIN PAGE WRAPPER -->
   <main class="lb-page-wrap" id="main-content">

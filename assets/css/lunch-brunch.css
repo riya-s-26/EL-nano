@@ -601,3 +601,18 @@
     text-align: center;
   }
 }
+
+
+/* ── Ensure Mobile Drawer is strictly hidden on desktop (>= 901px) ── */
+@media (min-width: 901px) {
+  .drawer {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    transform: none !important;
+  }
+  .burger {
+    display: none !important;
+  }
+}
