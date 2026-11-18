@@ -271,9 +271,9 @@
   "about_team_lead": "Nuestra familia cocina estas recetas ecuatorianas desde hace generaciones. Ahora las cocinamos para ti, como un domingo en casa.",
   "about_team_title": "La familia detrás de cada plato",
   "feat_desc": "Recetas de familia, platos llenos y gente que te hace sentir en casa. Aquí mismo en Coral Gables.",
+  "feat_dish_line": "Recién salido de nuestra cocina",
   "feat_kicker": "La Diferencia El Ñaño",
   "feat_title": "Por qué se siente como en casa",
-  "feat_dish_line": "Recién salido de nuestra cocina",
   "stat_years": "Años de Trayectoria",
   "team_pillar1_desc": "Los sabores con los que creciste, cocinados como nos los enseñaron.",
   "team_pillar1_title": "Recetas de familia",
@@ -343,5 +343,6 @@
   "lb_brunch_sec3_title": "Nombre de la sección",
   "lb_banner_kicker": "TAMBIÉN EN EL ÑAÑO",
   "lb_banner_title": "¿Buscas brunch?",
-  "lb_banner_btn": "VER MENÚ DE BRUNCH →"
+  "lb_banner_btn": "VER MENÚ DE BRUNCH →",
+  "lunch_view_full_menu": "Explorar Menú de Almuerzo y Brunch →"
 }

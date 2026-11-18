@@ -3818,11 +3818,11 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
 }
 
 .contact-quicklinks-panel {
-  background-color: #FFFFFF;
+  background-color: #FFFDF8;
   border: 1.5px solid rgba(0, 60, 40, 0.12);
   border-radius: 24px;
   padding: clamp(24px, 3.2vw, 38px) clamp(20px, 3.8vw, 48px);
-  box-shadow: 0 8px 28px rgba(0, 39, 26, 0.08);
+  box-shadow: 0 8px 28px rgba(0, 39, 26, 0.07);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3836,7 +3836,7 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
 .quicklinks-panel-title {
   font-family: var(--font-display);
   font-size: clamp(1.3rem, 2vw, 1.85rem);
-  color: #003C28;
+  color: var(--g);
   line-height: 1.15;
   margin: 0;
   letter-spacing: -0.01em;
@@ -3868,14 +3868,15 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
 .quicklink-item-icon {
   width: 32px;
   height: 32px;
-  color: #F4B723 !important;
+  color: #F9EE24 !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s var(--ease);
+  transition: transform 0.2s var(--ease), color 0.2s var(--ease);
 }
 
 .quicklink-item:hover .quicklink-item-icon {
+  color: var(--g);
   transform: scale(1.1);
 }
 
@@ -3889,13 +3890,13 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   font-family: var(--font-body);
   font-size: 0.86rem;
   font-weight: 700;
-  color: #003C28;
+  color: var(--g);
   line-height: 1.25;
   transition: color 0.2s var(--ease);
 }
 
 .quicklink-item:hover .quicklink-item-label {
-  color: #00271A;
+  color: #f6a214;
 }
 
 /* ── Closing Welcome Note & Corner Foliage ── */
@@ -4245,31 +4246,41 @@ body.coming-soon-page .site-header {
   }
 }
 /* ── Full Cocktail Glass Visibility (No Cropping) Homepage ── */
+.menu-card[data-cat="drinks"] 
+
+
+/* ==========================================================================
+   COCKTAIL CARDS: Full width, zero side spacing, 100% glass visible
+   ========================================================================== */
 .menu-card[data-cat="drinks"] .menu-card-media,
 .menu-card:has(img[src*="espresso-martini"]) .menu-card-media,
 .menu-card:has(img[src*="canelazo"]) .menu-card-media,
 .menu-card:has(img[src*="la nana"]) .menu-card-media,
-.menu-card:has(img[src*="la%20nana"]) .menu-card-media {
-  aspect-ratio: 4 / 5 !important;
-  background: #14221a !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+.menu-card:has(img[src*="la%20nana"]) .menu-card-media,
+.menu-card:has(img[src*="pina"]) .menu-card-media {
+  aspect-ratio: 2 / 3 !important;
+  background: transparent !important;
+  display: block !important;
   overflow: hidden !important;
-  padding: 8px !important;
+  padding: 0 !important;
+  width: 100% !important;
 }
 
 .menu-card[data-cat="drinks"] .menu-card-media img,
 .menu-card:has(img[src*="espresso-martini"]) .menu-card-media img,
 .menu-card:has(img[src*="canelazo"]) .menu-card-media img,
 .menu-card:has(img[src*="la nana"]) .menu-card-media img,
-.menu-card:has(img[src*="la%20nana"]) .menu-card-media img {
+.menu-card:has(img[src*="la%20nana"]) .menu-card-media img,
+.menu-card:has(img[src*="pina"]) .menu-card-media img {
   width: 100% !important;
   height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center center !important;
   transform: none !important;
-  border-radius: 6px !important;
+  border-radius: 0 !important;
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }

@@ -485,7 +485,8 @@ window.I18N_DATA = {
     "lb_brunch_sec3_title": "Section name",
     "lb_banner_kicker": "ALSO AT EL ÑAÑO",
     "lb_banner_title": "Looking for brunch?",
-    "lb_banner_btn": "SEE THE BRUNCH MENU →"
+    "lb_banner_btn": "SEE THE BRUNCH MENU →",
+    "lunch_view_full_menu": "Explore Lunch &amp; Brunch Menu →"
   },
   es: {
     "menu_catalog_kicker": "EL ÑAÑO MIAMI",
@@ -981,6 +982,7 @@ window.I18N_DATA = {
     "lb_brunch_sec3_title": "Nombre de la sección",
     "lb_banner_kicker": "TAMBIÉN EN EL ÑAÑO",
     "lb_banner_title": "¿Buscas brunch?",
-    "lb_banner_btn": "VER MENÚ DE BRUNCH →"
+    "lb_banner_btn": "VER MENÚ DE BRUNCH →",
+    "lunch_view_full_menu": "Explorar Menú de Almuerzo y Brunch →"
   }
 };
