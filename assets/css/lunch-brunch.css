@@ -498,11 +498,12 @@
   position: relative;
 }
 
-/* Contained Course 1 Food Card Images (No Cropping / Complete Dish Visibility) */
+/* Contained Food Card Images (No Cropping / Complete Dish Visibility) */
 #lb-card-ceviche .lb-card-media,
 #lb-card-locro .lb-card-media,
 #lb-card-chupe .lb-card-media,
-#lb-card-caldo .lb-card-media {
+#lb-card-caldo .lb-card-media,
+#lb-card-chaulafan .lb-card-media {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,10 +525,13 @@
   background-color: #B58051;
 }
 
+#lb-card-chaulafan .lb-card-media {
+  background: linear-gradient(135deg, #074B34 38%, #B58051 62%);
+}
+
 #lb-card-ceviche .lb-card-media img,
 #lb-card-locro .lb-card-media img,
-#lb-card-chupe .lb-card-media img,
-#lb-card-caldo .lb-card-media img {
+#lb-card-chupe .lb-card-media img {
   width: 100% !important;
   height: 100% !important;
   object-fit: contain !important;
@@ -537,10 +541,22 @@
   transform: none !important;
 }
 
+#lb-card-caldo .lb-card-media img,
+#lb-card-chaulafan .lb-card-media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
 #lb-card-ceviche:hover .lb-card-media img,
 #lb-card-locro:hover .lb-card-media img,
 #lb-card-chupe:hover .lb-card-media img,
-#lb-card-caldo:hover .lb-card-media img {
+#lb-card-caldo:hover .lb-card-media img,
+#lb-card-chaulafan:hover .lb-card-media img {
   transform: scale(1.02) !important;
 }
 
