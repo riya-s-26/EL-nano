@@ -4246,24 +4246,19 @@ body.coming-soon-page .site-header {
   }
 }
 /* ==========================================================================
-   OUR KITCHEN & BAR SECTION (#menu / #menu-grid): Complete Food Photo Display
-   Prevents cropping, displays complete original food photographs with
-   natural proportions, centered horizontally and vertically, no white gaps.
+   OUR KITCHEN & BAR SECTION (#menu / #menu-grid): Edge-to-Edge Food Photos
+   Full-width coverage, zero left/right gaps, natural proportions, centered
    ========================================================================== */
 .on-site-menu .menu-card:not([data-cat="drinks"]) .menu-card-media,
 #menu-grid .menu-card:not([data-cat="drinks"]) .menu-card-media {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background-color: var(--g-deep, #00271A) !important;
+  display: block !important;
   overflow: hidden !important;
+  background-color: var(--g-deep, #00271A) !important;
 }
 
 .on-site-menu .menu-card:not([data-cat="drinks"]) .menu-card-media picture,
 #menu-grid .menu-card:not([data-cat="drinks"]) .menu-card-media picture {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: block !important;
   width: 100% !important;
   height: 100% !important;
 }
@@ -4276,13 +4271,50 @@ body.coming-soon-page .site-header {
   height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center center !important;
   padding: 0 !important;
   margin: 0 !important;
   display: block !important;
   box-sizing: border-box !important;
   transform: none !important;
+}
+
+/* Individual object-position adjustments for optimal food subject centering */
+.menu-card:has(img[src*="Fritada"]) .menu-card-media img {
+  object-position: center 60% !important;
+}
+.menu-card:has(img[src*="Seco%20de%20Pollo"]) .menu-card-media img,
+.menu-card:has(img[src*="Seco de Pollo"]) .menu-card-media img {
+  object-position: center 55% !important;
+}
+.menu-card:has(img[src*="Churrasco"]) .menu-card-media img {
+  object-position: center 58% !important;
+}
+.menu-card:has(img[src*="Yapingacho"]) .menu-card-media img {
+  object-position: center 60% !important;
+}
+.menu-card:has(img[src*="Encocado"]) .menu-card-media img {
+  object-position: center 55% !important;
+}
+.menu-card:has(img[src*="Guatita"]) .menu-card-media img {
+  object-position: center 55% !important;
+}
+.menu-card:has(img[src*="Encebollado"]) .menu-card-media img {
+  object-position: center 55% !important;
+}
+.menu-card:has(img[src*="Cazuela"]) .menu-card-media img {
+  object-position: center 55% !important;
+}
+.menu-card:has(img[src*="Chaulafan"]) .menu-card-media img {
+  object-position: center 58% !important;
+}
+.menu-card:has(img[src*="Arroz%20marinero"]) .menu-card-media img,
+.menu-card:has(img[src*="Arroz marinero"]) .menu-card-media img {
+  object-position: center 58% !important;
+}
+.menu-card:has(img[src*="Moros"]) .menu-card-media img {
+  object-position: center 58% !important;
 }
 
 .on-site-menu .menu-card:not([data-cat="drinks"]):hover .menu-card-media img,
