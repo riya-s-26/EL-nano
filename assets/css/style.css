@@ -4245,9 +4245,50 @@ body.coming-soon-page .site-header {
     transform: none;
   }
 }
-/* ── Full Cocktail Glass Visibility (No Cropping) Homepage ── */
-.menu-card[data-cat="drinks"] 
+/* ==========================================================================
+   OUR KITCHEN & BAR SECTION (#menu / #menu-grid): Complete Food Photo Display
+   Prevents cropping, displays complete original food photographs with
+   natural proportions, centered horizontally and vertically, no white gaps.
+   ========================================================================== */
+.on-site-menu .menu-card:not([data-cat="drinks"]) .menu-card-media,
+#menu-grid .menu-card:not([data-cat="drinks"]) .menu-card-media {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--g-deep, #00271A) !important;
+  overflow: hidden !important;
+}
 
+.on-site-menu .menu-card:not([data-cat="drinks"]) .menu-card-media picture,
+#menu-grid .menu-card:not([data-cat="drinks"]) .menu-card-media picture {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.on-site-menu .menu-card:not([data-cat="drinks"]) .menu-card-media img,
+.on-site-menu .menu-card:not([data-cat="drinks"]) .menu-card-media picture img,
+#menu-grid .menu-card:not([data-cat="drinks"]) .menu-card-media img,
+#menu-grid .menu-card:not([data-cat="drinks"]) .menu-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+.on-site-menu .menu-card:not([data-cat="drinks"]):hover .menu-card-media img,
+#menu-grid .menu-card:not([data-cat="drinks"]):hover .menu-card-media img {
+  transform: none !important;
+}
 
 /* ==========================================================================
    COCKTAIL CARDS: Full width, zero side spacing, 100% glass visible
