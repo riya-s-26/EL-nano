@@ -1201,3 +1201,40 @@
   transform: none !important;
 }
 
+/* ==========================================================================
+   Contained Images: Seco de Pollo & Arroz con Costilla y Frijol
+   Card & container dimensions strictly preserved (existing 4:3 aspect ratio).
+   ========================================================================== */
+.mc-dish-card:has(img[src*="seco-de-pollo"]) .mc-card-media,
+.mc-dish-card:has(img[src*="costilla-frijol"]) .mc-card-media {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #074B34 38%, #B58051 62%) !important;
+  overflow: hidden !important;
+}
+
+.mc-dish-card:has(img[src*="seco-de-pollo"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="costilla-frijol"]) .mc-card-media picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mc-dish-card:has(img[src*="seco-de-pollo"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="seco-de-pollo"]) .mc-card-media picture img,
+.mc-dish-card:has(img[src*="costilla-frijol"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="costilla-frijol"]) .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+
