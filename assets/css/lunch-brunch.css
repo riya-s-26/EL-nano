@@ -498,14 +498,35 @@
   position: relative;
 }
 
-/* Caldo de Bola: Center image and show complete plate */
+/* Contained Course 1 Food Card Images (No Cropping / Complete Dish Visibility) */
+#lb-card-ceviche .lb-card-media,
+#lb-card-locro .lb-card-media,
+#lb-card-chupe .lb-card-media,
 #lb-card-caldo .lb-card-media {
-  background-color: #B58051;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+#lb-card-ceviche .lb-card-media {
+  background: linear-gradient(to bottom, #CAD5DB 0%, #DBD9D3 100%);
+}
+
+#lb-card-locro .lb-card-media {
+  background-color: #A97B4D;
+}
+
+#lb-card-chupe .lb-card-media {
+  background-color: #B58051;
+}
+
+#lb-card-caldo .lb-card-media {
+  background-color: #B58051;
+}
+
+#lb-card-ceviche .lb-card-media img,
+#lb-card-locro .lb-card-media img,
+#lb-card-chupe .lb-card-media img,
 #lb-card-caldo .lb-card-media img {
   width: 100% !important;
   height: 100% !important;
@@ -516,6 +537,9 @@
   transform: none !important;
 }
 
+#lb-card-ceviche:hover .lb-card-media img,
+#lb-card-locro:hover .lb-card-media img,
+#lb-card-chupe:hover .lb-card-media img,
 #lb-card-caldo:hover .lb-card-media img {
   transform: scale(1.02) !important;
 }
@@ -630,29 +654,30 @@
   font-size: 0.95rem;
 }
 
-/* ── Brunch View Menu Cards (Design System Green) ── */
+/* ── Brunch View Menu Cards (Match Lunch Card Layout & Typography) ── */
 #lb-view-brunch .lb-card {
-  background-color: var(--g, #003C28);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 4px 16px rgba(0, 39, 26, 0.16);
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 60, 40, 0.08);
+  box-shadow: 0 4px 18px rgba(0, 39, 26, 0.06);
 }
 
 #lb-view-brunch .lb-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 20, 10, 0.28);
-  border-color: rgba(249, 238, 36, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 39, 26, 0.12);
+  border-color: rgba(0, 60, 40, 0.18);
 }
 
+/* Highlight ONLY the image placeholder areas in GREEN */
 #lb-view-brunch .lb-card-media {
-  background-color: var(--g-deep, #00271A);
+  background-color: var(--g, #003C28);
 }
 
 #lb-view-brunch .lb-card-title {
-  color: #FFFFFF;
+  color: var(--g, #003C28);
 }
 
 #lb-view-brunch .lb-card-desc {
-  color: rgba(255, 255, 255, 0.88);
+  color: #4a5568;
 }
 
 
