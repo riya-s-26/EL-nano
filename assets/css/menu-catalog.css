@@ -1099,8 +1099,7 @@
 .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media,
 .mc-dish-card:has(img[src*="ceviche-jipijapa"]) .mc-card-media,
 .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media,
-.mc-dish-card:has(img[src*="combo-peladito"]) .mc-card-media,
-.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media {
+.mc-dish-card:has(img[src*="combo-peladito"]) .mc-card-media {
   aspect-ratio: 4 / 5 !important;
   display: flex !important;
   align-items: center !important;
@@ -1146,7 +1145,6 @@
 .mc-dish-card:has(img[src*="ceviche-jipijapa"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="combo-peladito"]) .mc-card-media picture,
-.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="jarra-de-sangria-de-vino"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="jarra-de-sangria-de-champagne"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="copa-de-sangria-de-champagne"]) .mc-card-media picture {
@@ -1184,7 +1182,6 @@
 .mc-dish-card:has(img[src*="ceviche-jipijapa"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="combo-peladito"]) .mc-card-media img,
-.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="jarra-de-sangria-de-vino"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="jarra-de-sangria-de-champagne"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="copa-de-sangria-de-champagne"]) .mc-card-media img {
@@ -1236,5 +1233,68 @@
   box-sizing: border-box !important;
   transform: none !important;
 }
+
+/* ==========================================================================
+   Jarra de jugo: Fill Full Container Width, Zero Side Spaces, Centered Pitcher
+   ========================================================================== */
+.mc-dish-card:has(img[src*="jarra-de-jugo"]) .mc-card-media {
+  display: block !important;
+  overflow: hidden !important;
+  background: #eae4d5 !important;
+}
+
+.mc-dish-card:has(img[src*="jarra-de-jugo"]) .mc-card-media picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mc-dish-card:has(img[src*="jarra-de-jugo"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="jarra-de-jugo"]) .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+/* ==========================================================================
+   Vaso de jugo: Original Card Dimensions Preserved (4:3), Zero Cropping, Centered
+   ========================================================================== */
+.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #eae4d5 !important;
+  overflow: hidden !important;
+}
+
+.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
 
 
