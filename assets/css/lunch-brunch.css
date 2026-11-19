@@ -502,7 +502,6 @@
 #lb-card-ceviche .lb-card-media,
 #lb-card-locro .lb-card-media,
 #lb-card-chupe .lb-card-media,
-#lb-card-caldo .lb-card-media,
 #lb-card-chaulafan .lb-card-media {
   display: flex;
   align-items: center;
@@ -518,10 +517,6 @@
 }
 
 #lb-card-chupe .lb-card-media {
-  background-color: #B58051;
-}
-
-#lb-card-caldo .lb-card-media {
   background-color: #B58051;
 }
 
@@ -541,7 +536,6 @@
   transform: none !important;
 }
 
-#lb-card-caldo .lb-card-media img,
 #lb-card-chaulafan .lb-card-media img {
   width: 100% !important;
   height: 100% !important;
@@ -550,6 +544,40 @@
   object-fit: contain !important;
   object-position: center center !important;
   padding: 0 !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+/* ==========================================================================
+   First Course Card: Caldo de Bola
+   Fill full width naturally edge-to-edge, zero side spaces, perfectly centered
+   ========================================================================== */
+#lb-card-caldo .lb-card-media,
+.lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media {
+  display: block !important;
+  background: #5D796A !important;
+  overflow: hidden !important;
+}
+
+#lb-card-caldo .lb-card-media picture,
+.lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#lb-card-caldo .lb-card-media img,
+#lb-card-caldo .lb-card-media picture img,
+.lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
   box-sizing: border-box !important;
   transform: none !important;
 }
