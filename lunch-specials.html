@@ -159,7 +159,7 @@
             <!-- Card 1: Shrimp Ceviche -->
             <article class="lb-card">
               <div class="lb-card-media">
-                <img src="assets/img/menu/ceviche-de-gambas.jpg" alt="Shrimp Ceviche" width="400" height="250" loading="eager" decoding="async">
+                <picture><source srcset="assets/img/menu/ceviche-de-gambas.webp" type="image/webp"><img src="assets/img/menu/ceviche-de-gambas.jpg" alt="Shrimp Ceviche" width="400" height="250" loading="eager" decoding="async"></picture>
               </div>
               <div class="lb-card-body">
                 <h3 class="lb-card-title" data-i18n="lb_title_shrimp_ceviche">Shrimp Ceviche</h3>
@@ -167,10 +167,13 @@
               </div>
             </article>
 
-            <!-- Card 2: Chicken Caesar Salad -->
+            <!-- Card 2: Chicken Caesar Salad (Missing Photo - Solid Green Placeholder) -->
             <article class="lb-card">
-              <div class="lb-card-media">
-                <img src="assets/img/menu/chicken-caesar-salad.jpg" alt="Chicken Caesar Salad" width="400" height="250" loading="eager" decoding="async">
+              <div class="lb-card-media placeholder-media">
+                <div class="lb-placeholder-graphic">
+                  <span class="lb-placeholder-icon">✦</span>
+                  <span class="lb-placeholder-cat" data-i18n="menu_cat_salads">SALADS</span>
+                </div>
               </div>
               <div class="lb-card-body">
                 <h3 class="lb-card-title" data-i18n="lb_title_caesar_salad">Chicken Caesar Salad</h3>
@@ -181,7 +184,7 @@
             <!-- Card 3: Locro de Papa Soup -->
             <article class="lb-card">
               <div class="lb-card-media">
-                <img src="assets/img/menu/locro-de-papa.jpg" alt="Locro de Papa Soup" width="400" height="250" loading="eager" decoding="async">
+                <picture><source srcset="assets/img/menu/locro-de-papa.webp" type="image/webp"><img src="assets/img/menu/locro-de-papa.jpg" alt="Locro de Papa Soup" width="400" height="250" loading="eager" decoding="async"></picture>
               </div>
               <div class="lb-card-body">
                 <h3 class="lb-card-title" data-i18n="lb_title_locro_papa">Locro de Papa Soup</h3>
@@ -192,7 +195,7 @@
             <!-- Card 4: Chupe Fish & Shrimp Soup -->
             <article class="lb-card">
               <div class="lb-card-media">
-                <img src="assets/img/menu/chupe-fish-shrimp-soup.jpg" alt="Chupe Fish &amp; Shrimp Soup" width="400" height="250" loading="eager" decoding="async">
+                <picture><source srcset="assets/img/menu/chupe-fish-shrimp-soup.webp" type="image/webp"><img src="assets/img/menu/chupe-fish-shrimp-soup.jpg" alt="Chupe Fish &amp; Shrimp Soup" width="400" height="250" loading="eager" decoding="async"></picture>
               </div>
               <div class="lb-card-body">
                 <h3 class="lb-card-title" data-i18n="lb_title_chupe_soup">Chupe Fish &amp; Shrimp Soup</h3>
@@ -230,7 +233,7 @@
             <!-- Card 1: Chaulafán -->
             <article class="lb-card">
               <div class="lb-card-media">
-                <img src="assets/img/menu/chaulafan.jpg" alt="Chaulafán" width="400" height="250" loading="eager" decoding="async">
+                <picture><source srcset="assets/img/menu/chaulafan.webp" type="image/webp"><img src="assets/img/menu/chaulafan.jpg" alt="Chaulafán" width="400" height="250" loading="eager" decoding="async"></picture>
               </div>
               <div class="lb-card-body">
                 <h3 class="lb-card-title" data-i18n="lb_title_chaulafan">Chaulafán</h3>
@@ -273,11 +276,8 @@
             </div>
           </div>
 
-          <!-- Full-width Dessert Card matching reference screenshot -->
-          <article class="lb-card lb-card-full">
-            <div class="lb-card-media lb-card-media-banner">
-              <img src="assets/img/menu/house-specialty-dessert.jpg" alt="House Specialty Dessert" width="1200" height="400" loading="eager" decoding="async">
-            </div>
+          <!-- Full-width Dessert Card: Text-only intentional information box -->
+          <article class="lb-card lb-card-full lb-card-textonly">
             <div class="lb-card-body">
               <h3 class="lb-card-title" data-i18n="lb_dessert_title">House Specialty</h3>
               <p class="lb-card-desc" data-i18n="lb_dessert_desc">Our dessert of the day. Ask your server.</p>
