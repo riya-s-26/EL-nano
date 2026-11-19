@@ -1061,3 +1061,84 @@
   padding: 0 !important;
   margin: 0 !important;
 }
+
+/* ==========================================================================
+   MOBILE FOOD CARD DISPLAY FIX (Strictly @media max-width: 767px)
+   Targeted specifically to provided dishes with object-fit: contain
+   ========================================================================== */
+@media (max-width: 767px) {
+  .mc-dish-card.mc-card-contain-mobile .mc-card-media,
+  .mc-dish-card:has(img[src*="chuleta-de-cerdo"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="pescado-frito"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="pollo-asado"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="fritada"]) .mc-card-media {
+    aspect-ratio: 1 / 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: linear-gradient(135deg, #074B34 38%, #B58051 62%) !important;
+    overflow: hidden !important;
+  }
+
+  .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media {
+    background: linear-gradient(to bottom, #CAD5DB 0%, #DBD9D3 100%) !important;
+  }
+
+  .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media,
+  .mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media {
+    background: #B58051 !important;
+  }
+
+  .mc-dish-card.mc-card-contain-mobile .mc-card-media picture,
+  .mc-dish-card:has(img[src*="chuleta-de-cerdo"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="pescado-frito"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="pollo-asado"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media picture,
+  .mc-dish-card:has(img[src*="fritada"]) .mc-card-media picture {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .mc-dish-card.mc-card-contain-mobile .mc-card-media img,
+  .mc-dish-card.mc-card-contain-mobile .mc-card-media picture img,
+  .mc-dish-card:has(img[src*="chuleta-de-cerdo"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="pescado-frito"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="pollo-asado"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media img,
+  .mc-dish-card:has(img[src*="fritada"]) .mc-card-media img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+}
+
