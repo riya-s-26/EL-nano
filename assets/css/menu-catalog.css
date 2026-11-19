@@ -1204,11 +1204,9 @@
    ========================================================================== */
 .mc-dish-card:has(img[src*="seco-de-pollo"]) .mc-card-media,
 .mc-dish-card:has(img[src*="costilla-frijol"]) .mc-card-media {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background: linear-gradient(135deg, #074B34 38%, #B58051 62%) !important;
+  display: block !important;
   overflow: hidden !important;
+  background: #eae4d5 !important;
 }
 
 .mc-dish-card:has(img[src*="seco-de-pollo"]) .mc-card-media picture,
@@ -1226,7 +1224,7 @@
   height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center center !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -1265,12 +1263,10 @@
 }
 
 /* ==========================================================================
-   Vaso de jugo: Original Card Dimensions Preserved (4:3), Zero Cropping, Centered
+   Vaso de jugo: Natural Edge-to-Edge, Zero Side Spaces, Visually Centered
    ========================================================================== */
 .mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: block !important;
   background: #eae4d5 !important;
   overflow: hidden !important;
 }
@@ -1287,7 +1283,7 @@
   height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center center !important;
   padding: 0 !important;
   margin: 0 !important;

@@ -503,11 +503,7 @@
 #lb-card-locro .lb-card-media,
 #lb-card-chupe .lb-card-media,
 #lb-card-caldo .lb-card-media,
-#lb-card-chaulafan .lb-card-media,
-#lb-card-costilla-frijol .lb-card-media,
-#lb-card-seco-pollo .lb-card-media,
-.lb-card:has(img[src*="costilla-frijol"]) .lb-card-media,
-.lb-card:has(img[src*="seco-de-pollo"]) .lb-card-media {
+#lb-card-chaulafan .lb-card-media {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -529,21 +525,8 @@
   background-color: #B58051;
 }
 
-#lb-card-chaulafan .lb-card-media,
-#lb-card-costilla-frijol .lb-card-media,
-#lb-card-seco-pollo .lb-card-media,
-.lb-card:has(img[src*="costilla-frijol"]) .lb-card-media,
-.lb-card:has(img[src*="seco-de-pollo"]) .lb-card-media {
+#lb-card-chaulafan .lb-card-media {
   background: linear-gradient(135deg, #074B34 38%, #B58051 62%);
-}
-
-#lb-card-costilla-frijol .lb-card-media picture,
-#lb-card-seco-pollo .lb-card-media picture,
-.lb-card:has(img[src*="costilla-frijol"]) .lb-card-media picture,
-.lb-card:has(img[src*="seco-de-pollo"]) .lb-card-media picture {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 #lb-card-ceviche .lb-card-media img,
@@ -559,7 +542,40 @@
 }
 
 #lb-card-caldo .lb-card-media img,
-#lb-card-chaulafan .lb-card-media img,
+#lb-card-chaulafan .lb-card-media img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+/* ==========================================================================
+   Second Course Cards: Arroz con Costilla y Frijol & Seco de Pollo
+   Fill full width naturally edge-to-edge, zero side spaces, perfectly centered
+   ========================================================================== */
+#lb-card-costilla-frijol .lb-card-media,
+#lb-card-seco-pollo .lb-card-media,
+.lb-card:has(img[src*="costilla-frijol"]) .lb-card-media,
+.lb-card:has(img[src*="seco-de-pollo"]) .lb-card-media {
+  display: block !important;
+  background: #5D796A !important;
+  overflow: hidden !important;
+}
+
+#lb-card-costilla-frijol .lb-card-media picture,
+#lb-card-seco-pollo .lb-card-media picture,
+.lb-card:has(img[src*="costilla-frijol"]) .lb-card-media picture,
+.lb-card:has(img[src*="seco-de-pollo"]) .lb-card-media picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 #lb-card-costilla-frijol .lb-card-media img,
 #lb-card-costilla-frijol .lb-card-media picture img,
 #lb-card-seco-pollo .lb-card-media img,
@@ -570,9 +586,11 @@
   height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center center !important;
   padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
   box-sizing: border-box !important;
   transform: none !important;
 }
