@@ -1063,82 +1063,141 @@
 }
 
 /* ==========================================================================
-   MOBILE FOOD CARD DISPLAY FIX (Strictly @media max-width: 767px)
-   Targeted specifically to provided dishes with object-fit: contain
+   SPECIFIED 24 FOOD & DRINK CARDS IMAGE FIX (Responsive: Desktop, Tablet, Mobile)
+   Maintains complete image visibility, perfect centering, and exact aspect ratios.
    ========================================================================== */
-@media (max-width: 767px) {
-  .mc-dish-card.mc-card-contain-mobile .mc-card-media,
-  .mc-dish-card:has(img[src*="chuleta-de-cerdo"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="pescado-frito"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="pollo-asado"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="fritada"]) .mc-card-media {
-    aspect-ratio: 1 / 1 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: linear-gradient(135deg, #074B34 38%, #B58051 62%) !important;
-    overflow: hidden !important;
-  }
 
-  .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media {
-    background: linear-gradient(to bottom, #CAD5DB 0%, #DBD9D3 100%) !important;
-  }
+/* 1. Aspect Ratio 3:4 Cards (0.75 ratio) */
+.mc-dish-card.mc-card-contain-3-4 .mc-card-media,
+.mc-dish-card:has(img[src*="fritada"]) .mc-card-media,
+.mc-dish-card:has(img[src*="chaulafan"]) .mc-card-media,
+.mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
+.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media,
+.mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media,
+.mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media,
+.mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media,
+.mc-dish-card:has(img[src*="pescado-frito-con-arroz-y-menestra"]) .mc-card-media,
+.mc-dish-card:has(img[src*="pollo-asado-con-arroz-y-menestra"]) .mc-card-media,
+.mc-dish-card:has(img[src*="chuleta-de-cerdo-con-arroz-y-menestra"]) .mc-card-media,
+.mc-dish-card:has(img[src$="pollo-asado.jpg"]) .mc-card-media,
+.mc-dish-card:has(img[src$="pollo-asado.webp"]) .mc-card-media {
+  aspect-ratio: 3 / 4 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
 
-  .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media,
-  .mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media {
-    background: #B58051 !important;
-  }
+/* 2. Aspect Ratio 4:5 Cards (0.80 ratio) */
+.mc-dish-card.mc-card-contain-4-5 .mc-card-media,
+.mc-dish-card:has(img[src*="ceviche-de-pescado"]) .mc-card-media,
+.mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media,
+.mc-dish-card:has(img[src*="maduros-con-queso"]) .mc-card-media,
+.mc-dish-card:has(img[src*="platanos-mixtos-con-queso"]) .mc-card-media,
+.mc-dish-card:has(img[src*="patacones-con-queso"]) .mc-card-media,
+.mc-dish-card:has(img[src*="pulpo-a-la-brasa-con-patatas"]) .mc-card-media,
+.mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media,
+.mc-dish-card:has(img[src*="ceviche-jipijapa"]) .mc-card-media,
+.mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media,
+.mc-dish-card:has(img[src*="combo-peladito"]) .mc-card-media,
+.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media {
+  aspect-ratio: 4 / 5 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
 
-  .mc-dish-card.mc-card-contain-mobile .mc-card-media picture,
-  .mc-dish-card:has(img[src*="chuleta-de-cerdo"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="pescado-frito"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="pollo-asado"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media picture,
-  .mc-dish-card:has(img[src*="fritada"]) .mc-card-media picture {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
+/* 3. Aspect Ratio 1:1 Cards (1.00 ratio) */
+.mc-dish-card.mc-card-contain-1-1 .mc-card-media,
+.mc-dish-card:has(img[src*="jarra-de-sangria-de-vino"]) .mc-card-media,
+.mc-dish-card:has(img[src*="jarra-de-sangria-de-champagne"]) .mc-card-media,
+.mc-dish-card:has(img[src*="copa-de-sangria-de-champagne"]) .mc-card-media {
+  aspect-ratio: 1 / 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
 
-  .mc-dish-card.mc-card-contain-mobile .mc-card-media img,
-  .mc-dish-card.mc-card-contain-mobile .mc-card-media picture img,
-  .mc-dish-card:has(img[src*="chuleta-de-cerdo"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="pescado-frito"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="pollo-asado"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media img,
-  .mc-dish-card:has(img[src*="fritada"]) .mc-card-media img {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: contain !important;
-    object-position: center center !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    transform: none !important;
-  }
+/* Picture wrappers */
+.mc-dish-card.mc-card-contain-3-4 .mc-card-media picture,
+.mc-dish-card.mc-card-contain-4-5 .mc-card-media picture,
+.mc-dish-card.mc-card-contain-1-1 .mc-card-media picture,
+.mc-dish-card:has(img[src*="fritada"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="chaulafan"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="pescado-frito-con-arroz-y-menestra"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="pollo-asado-con-arroz-y-menestra"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="chuleta-de-cerdo-con-arroz-y-menestra"]) .mc-card-media picture,
+.mc-dish-card:has(img[src$="pollo-asado.jpg"]) .mc-card-media picture,
+.mc-dish-card:has(img[src$="pollo-asado.webp"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="ceviche-de-pescado"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="maduros-con-queso"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="platanos-mixtos-con-queso"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="patacones-con-queso"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="pulpo-a-la-brasa-con-patatas"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="ceviche-jipijapa"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="combo-peladito"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="jarra-de-sangria-de-vino"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="jarra-de-sangria-de-champagne"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="copa-de-sangria-de-champagne"]) .mc-card-media picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Image containment and precision centering */
+.mc-dish-card.mc-card-contain-3-4 .mc-card-media img,
+.mc-dish-card.mc-card-contain-3-4 .mc-card-media picture img,
+.mc-dish-card.mc-card-contain-4-5 .mc-card-media img,
+.mc-dish-card.mc-card-contain-4-5 .mc-card-media picture img,
+.mc-dish-card.mc-card-contain-1-1 .mc-card-media img,
+.mc-dish-card.mc-card-contain-1-1 .mc-card-media picture img,
+.mc-dish-card:has(img[src*="fritada"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="chaulafan"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="pescado-frito-con-arroz-y-menestra"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="pollo-asado-con-arroz-y-menestra"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="chuleta-de-cerdo-con-arroz-y-menestra"]) .mc-card-media img,
+.mc-dish-card:has(img[src$="pollo-asado.jpg"]) .mc-card-media img,
+.mc-dish-card:has(img[src$="pollo-asado.webp"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="ceviche-de-pescado"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="choclo-asado"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="maduros-con-queso"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="platanos-mixtos-con-queso"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="patacones-con-queso"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="pulpo-a-la-brasa-con-patatas"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="ceviche-de-gambas"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="ceviche-jipijapa"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="trio-de-ceviches"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="combo-peladito"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="vaso-de-jugo"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="jarra-de-sangria-de-vino"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="jarra-de-sangria-de-champagne"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="copa-de-sangria-de-champagne"]) .mc-card-media img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
 }
 
