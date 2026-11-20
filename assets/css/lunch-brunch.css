@@ -500,7 +500,6 @@
 
 /* Contained Food Card Images (No Cropping / Complete Dish Visibility) */
 #lb-card-ceviche .lb-card-media,
-#lb-card-locro .lb-card-media,
 #lb-card-chupe .lb-card-media,
 #lb-card-chaulafan .lb-card-media {
   display: flex;
@@ -512,10 +511,6 @@
   background: linear-gradient(to bottom, #CAD5DB 0%, #DBD9D3 100%);
 }
 
-#lb-card-locro .lb-card-media {
-  background-color: #A97B4D;
-}
-
 #lb-card-chupe .lb-card-media {
   background-color: #B58051;
 }
@@ -525,7 +520,6 @@
 }
 
 #lb-card-ceviche .lb-card-media img,
-#lb-card-locro .lb-card-media img,
 #lb-card-chupe .lb-card-media img {
   width: 100% !important;
   height: 100% !important;
@@ -549,9 +543,39 @@
 }
 
 /* ==========================================================================
-   First Course Card: Caldo de Bola
-   Fill full width naturally edge-to-edge, zero side spaces, perfectly centered
+   First Course Cards: Locro de Papa Soup & Caldo de Bola
+   Uncropped food presentation, perfectly centered and balanced
    ========================================================================== */
+#lb-card-locro .lb-card-media,
+.lb-card:has(img[src*="locro-de-papa"]) .lb-card-media {
+  display: block !important;
+  background: #B58051 !important;
+  overflow: hidden !important;
+}
+
+#lb-card-locro .lb-card-media picture,
+.lb-card:has(img[src*="locro-de-papa"]) .lb-card-media picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#lb-card-locro .lb-card-media img,
+#lb-card-locro .lb-card-media picture img,
+.lb-card:has(img[src*="locro-de-papa"]) .lb-card-media img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 56% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
 #lb-card-caldo .lb-card-media,
 .lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media {
   display: block !important;
@@ -574,7 +598,7 @@
   max-width: 100% !important;
   max-height: 100% !important;
   object-fit: cover !important;
-  object-position: center center !important;
+  object-position: center 36% !important;
   padding: 0 !important;
   margin: 0 !important;
   display: block !important;
