@@ -1852,7 +1852,7 @@ html[lang="es"] .offer-price-item span,
   background-repeat: repeat;
   background-position: center top;
   background-size: 1024px auto;
-  opacity: 0.16;
+  opacity: 1;
   pointer-events: none;
   z-index: 0;
 }
@@ -2805,15 +2805,15 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  vertical-align: -2.5px;
-  margin-right: 7px;
+  vertical-align: -3px;
+  margin-right: 8px;
   color: var(--y, #F9EE24);
   flex-shrink: 0;
 }
 
 .events-status-icon svg {
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   display: block;
 }
 
