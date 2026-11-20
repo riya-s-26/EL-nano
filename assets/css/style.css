@@ -2801,6 +2801,22 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   margin-bottom: 0;
 }
 
+.events-status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: -2.5px;
+  margin-right: 7px;
+  color: var(--y, #F9EE24);
+  flex-shrink: 0;
+}
+
+.events-status-icon svg {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
 @keyframes pulseGlow {
   0% {
     box-shadow: 0 0 0 0 rgba(249, 238, 36, 0.6);

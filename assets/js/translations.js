@@ -242,7 +242,7 @@ window.I18N_DATA = {
     "events_kicker": "Live Music & Gatherings",
     "events_title": "Events & Celebrations Coming Soon",
     "events_desc": "We are curating a calendar of live Latin music, cultural celebrations, private pairing dinners, and holiday gatherings on Miracle Mile. In the meantime, our dining room and terrace are available for your private bookings, birthdays, and corporate celebrations.",
-    "events_status_text": "🗓 <strong>Calendar Under Preparation:</strong> Official event dates and performer lineups will be announced shortly. For immediate private room and large group reservations, reserve online or call our hospitality team.",
+    "events_status_text": "<strong>Calendar Under Preparation:</strong> Official event dates and performer lineups will be announced shortly. For immediate private room and large group reservations, reserve online or call our hospitality team.",
     "events_reserve_btn": "Reserve With SevenRooms",
     "events_call_btn": "Call (786) 558-5466",
     "hours_title": "Opening Hours",
