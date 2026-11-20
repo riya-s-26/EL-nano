@@ -1840,6 +1840,25 @@ html[lang="es"] .offer-price-item span,
   background-color: var(--cream);
   padding: clamp(72px, 9vw, 140px) var(--pad);
   position: relative;
+  overflow: hidden;
+}
+
+.visit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/visit-floral-pattern.jpg");
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: 620px auto;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.visit-grid {
+  position: relative;
+  z-index: 1;
 }
 
 .visit-address-divider {
