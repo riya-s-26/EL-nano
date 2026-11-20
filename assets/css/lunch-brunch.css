@@ -581,6 +581,8 @@
 #lb-card-caldo .lb-card-media,
 .lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media {
   display: block !important;
+  width: 100% !important;
+  aspect-ratio: 533 / 800 !important;
   background: #5D796A !important;
   overflow: hidden !important;
 }
@@ -599,8 +601,8 @@
   height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  object-fit: cover !important;
-  object-position: center 36% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
   padding: 0 !important;
   margin: 0 !important;
   display: block !important;
