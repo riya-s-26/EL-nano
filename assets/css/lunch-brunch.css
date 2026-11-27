@@ -499,18 +499,17 @@
 }
 
 /* ==========================================================================
-   First Course Cards: Unified Dimensions & Uncropped Presentation
-   All cards share identical dimensions, alignments, and seamless presentation
+   First Course Cards: Unified Dimensions & Edge-to-Edge Uncropped Images
+   All cards share identical dimensions, full width fitting, and uncropped dishes
    ========================================================================== */
 #lb-course1-grid .lb-card-media {
   position: relative !important;
   width: 100% !important;
   aspect-ratio: 1 / 1 !important;
   height: auto !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: block !important;
   overflow: hidden !important;
+  background-color: #5D796A !important;
 }
 
 #lb-course1-grid #lb-card-ceviche .lb-card-media {
@@ -527,9 +526,7 @@
 }
 
 #lb-course1-grid .lb-card-media picture {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: block !important;
   width: 100% !important;
   height: 100% !important;
 }
@@ -540,13 +537,33 @@
   height: 100% !important;
   max-width: 100% !important;
   max-height: 100% !important;
-  object-fit: contain !important;
-  object-position: center center !important;
+  object-fit: cover !important;
   padding: 0 !important;
   margin: 0 !important;
   display: block !important;
   box-sizing: border-box !important;
   transform: none !important;
+}
+
+/* Individual vertical positioning to ensure entire dish and plate remain 100% visible */
+#lb-course1-grid #lb-card-locro .lb-card-media img,
+#lb-course1-grid .lb-card:has(img[src*="locro-de-papa"]) .lb-card-media img {
+  object-position: center bottom !important;
+}
+
+#lb-course1-grid #lb-card-chupe .lb-card-media img,
+#lb-course1-grid .lb-card:has(img[src*="chupe"]) .lb-card-media img {
+  object-position: center 52% !important;
+}
+
+#lb-course1-grid #lb-card-caldo .lb-card-media img,
+#lb-course1-grid .lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media img {
+  object-position: center 50% !important;
+}
+
+#lb-course1-grid #lb-card-ceviche .lb-card-media img,
+#lb-course1-grid .lb-card:has(img[src*="ceviche"]) .lb-card-media img {
+  object-position: center 65% !important;
 }
 
 /* Ensure Friday badge card has identical outer and inner bounds */
