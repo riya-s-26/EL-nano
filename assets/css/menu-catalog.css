@@ -1438,7 +1438,6 @@
 .mc-dish-card:has(img[src*="churrasco-ecuatoriano.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media,
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media,
 .mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media {
   aspect-ratio: 1 / 1 !important;
   width: 100% !important;
@@ -1452,7 +1451,8 @@
 /* 2. Aspect Ratio 3:4 Cards (Portrait dishes) */
 .mc-dish-card:has(img[src*="fritada"]) .mc-card-media,
 .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
-.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media {
+.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media,
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media {
   aspect-ratio: 3 / 4 !important;
   width: 100% !important;
   display: flex !important;
@@ -1505,7 +1505,6 @@
 .mc-dish-card:has(img[src*="churrasco-ecuatoriano.jpg"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media img,
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="fritada"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media img,
@@ -1521,7 +1520,6 @@
 .mc-dish-card:has(img[src*="churrasco-ecuatoriano.jpg"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media picture img,
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="fritada"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media picture img,
@@ -1532,6 +1530,22 @@
   max-width: 100% !important;
   max-height: 100% !important;
   object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+/* Arroz marinero: exact edge-to-edge fill matching other wok-rice cards */
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
   object-position: center center !important;
   display: block !important;
   box-sizing: border-box !important;
