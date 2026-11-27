@@ -606,17 +606,29 @@ h4 {
 }
 
 /* Mobile Drawer */
+.menu-open .site-header {
+  background-color: var(--g-deep) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  box-shadow: 0 4px 20px rgba(0, 39, 26, 0.4);
+}
+
 .drawer {
   position: fixed;
-  inset: 0;
+  top: var(--hh);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100svh - var(--hh));
   z-index: 95;
   background-color: var(--g-deep);
   color: var(--cream);
-  padding: calc(var(--hh) + 24px) var(--pad) 36px;
+  padding: 18px var(--pad) 36px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   opacity: 0;
   transform: translateY(-8px);
   pointer-events: none;
@@ -674,10 +686,21 @@ h4 {
   font-weight: 700;
 }
 
-.drawer-cta {
+.drawer-footer .drawer-cta,
+a.drawer-cta {
   display: block;
   margin-top: 18px;
   text-align: center;
+  background-color: var(--y) !important;
+  color: #00271A !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+}
+
+.drawer-footer .drawer-cta:hover,
+a.drawer-cta:hover {
+  background-color: #F0C800 !important;
+  color: #00271A !important;
 }
 
 .menu-open {
@@ -2536,9 +2559,9 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   width: 100%;
   max-width: 980px;
   margin: 0 auto clamp(28px, 3.5vw, 48px);
-  display: grid;
-  grid-template-columns: 56% 44%;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 16px 40px rgba(0, 30, 20, 0.24);
   position: relative;
@@ -2549,8 +2572,9 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 28px 28px 28px 32px;
+  padding: clamp(28px, 3.5vw, 36px) clamp(24px, 4vw, 44px);
   border-right: none;
+  max-width: 100%;
 }
 
 .lunch-specials-badge {
@@ -2940,20 +2964,14 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   }
 
   .lunch-specials-box {
-    grid-template-columns: 1fr;
     width: 100%;
     border-radius: 22px;
   }
 
   .lunch-specials-content {
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: none;
     padding: 30px 22px;
-  }
-
-  .lunch-notice-card {
-    margin: 22px;
-    padding: 24px 18px;
   }
 
   .visit-main {

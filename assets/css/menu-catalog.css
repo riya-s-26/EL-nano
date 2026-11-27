@@ -1402,6 +1402,17 @@
   flex-grow: 1 !important;
 }
 
+/* Arroz marinero specific padding balance (remove unwanted top & bottom empty space) */
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-body {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-foot {
+  padding-top: 10px !important;
+}
+
+
 
 
 
