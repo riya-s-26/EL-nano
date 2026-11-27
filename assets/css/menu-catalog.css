@@ -1453,9 +1453,7 @@
 
 /* 2. Aspect Ratio 3:4 Cards (Portrait dishes + Uniform Josper-Fired Cards) */
 .mc-dish-card[data-cat="josper-fired"] .mc-card-media,
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media,
-.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media,
-.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media {
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media {
   aspect-ratio: 3 / 4 !important;
   width: 100% !important;
   display: flex !important;
@@ -1556,11 +1554,9 @@
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media picture,
-.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="fritada"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media picture,
-.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media picture,
-.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media picture {
+.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media picture {
   display: block !important;
   width: 100% !important;
   height: 100% !important;
@@ -1576,11 +1572,9 @@
 .mc-dish-card:has(img[src*="churrasco-ecuatoriano.jpg"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media img,
-.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="fritada"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media img,
-.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="encebollado.jpg"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="guatita.jpg"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="seco-de-pollo.jpg"]) .mc-card-media picture img,
@@ -1591,10 +1585,46 @@
 .mc-dish-card:has(img[src*="churrasco-ecuatoriano.jpg"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media picture img,
-.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="fritada"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media picture img,
-.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media picture img,
+.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+/* ── Josper Fired: Carne asada o apanada & Parrillada de carnes para compartir (Zero Top & Bottom Empty Spacing) ── */
+.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media,
+.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media {
+  aspect-ratio: 4 / 3 !important;
+  width: 100% !important;
+  background-color: #eae4d5 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media picture {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media picture img {
   width: 100% !important;
   height: 100% !important;
