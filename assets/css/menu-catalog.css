@@ -1134,6 +1134,7 @@
 .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media,
 .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media,
 .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media,
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media,
 .mc-dish-card:has(img[src*="pescado-frito-con-arroz-y-menestra"]) .mc-card-media,
 .mc-dish-card:has(img[src*="pollo-asado-con-arroz-y-menestra"]) .mc-card-media,
 .mc-dish-card:has(img[src*="chuleta-de-cerdo-con-arroz-y-menestra"]) .mc-card-media,
@@ -1188,6 +1189,7 @@
 .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media picture,
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="pescado-frito-con-arroz-y-menestra"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="pollo-asado-con-arroz-y-menestra"]) .mc-card-media picture,
 .mc-dish-card:has(img[src*="chuleta-de-cerdo-con-arroz-y-menestra"]) .mc-card-media picture,
@@ -1225,6 +1227,7 @@
 .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="pescado-frito-con-arroz-y-menestra"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="pollo-asado-con-arroz-y-menestra"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="chuleta-de-cerdo-con-arroz-y-menestra"]) .mc-card-media img,
@@ -1349,6 +1352,56 @@
   box-sizing: border-box !important;
   transform: none !important;
 }
+
+/* ==========================================================================
+   OUR MENU (WOK RICE DISHES) EQUAL CARD & IMAGE SIZING
+   Chaulafán, Arroz con camarones, Arroz marinero
+   ========================================================================== */
+.mc-dish-card[data-cat="wok-rice"] {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.mc-dish-card[data-cat="wok-rice"] .mc-card-media {
+  aspect-ratio: 3 / 4 !important;
+  width: 100% !important;
+  background: #eae4d5 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.mc-dish-card[data-cat="wok-rice"] .mc-card-media picture {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mc-dish-card[data-cat="wok-rice"] .mc-card-media img,
+.mc-dish-card[data-cat="wok-rice"] .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+}
+
+.mc-dish-card[data-cat="wok-rice"] .mc-card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.mc-dish-card[data-cat="wok-rice"] .mc-card-desc {
+  flex-grow: 1 !important;
+}
+
 
 
 
