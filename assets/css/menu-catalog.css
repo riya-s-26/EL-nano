@@ -1437,8 +1437,7 @@
 .mc-dish-card:has(img[src*="encocado-mixto.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="churrasco-ecuatoriano.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media,
-.mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media,
-.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media {
+.mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media {
   aspect-ratio: 1 / 1 !important;
   width: 100% !important;
   display: flex !important;
@@ -1448,11 +1447,15 @@
   background-color: #eae4d5 !important;
 }
 
-/* 2. Aspect Ratio 3:4 Cards (Portrait dishes) */
+/* 2. Aspect Ratio 3:4 Cards (Portrait dishes + Uniform Josper-Fired Cards) */
+.mc-dish-card.mc-card-contain-3-4 .mc-card-media,
+.mc-dish-card[data-cat="josper-fired"] .mc-card-media,
 .mc-dish-card:has(img[src*="fritada"]) .mc-card-media,
 .mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
 .mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media,
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media {
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media,
+.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media,
+.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media {
   aspect-ratio: 3 / 4 !important;
   width: 100% !important;
   display: flex !important;
@@ -1462,15 +1465,25 @@
   background-color: #eae4d5 !important;
 }
 
-/* 3. Aspect Ratio 4:3 Cards (Landscape dishes) */
-.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media {
-  aspect-ratio: 4 / 3 !important;
-  width: 100% !important;
+/* 3. Josper-Fired 8 Cards Uniform Dimensions */
+.mc-dish-card[data-cat="josper-fired"] {
   display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  overflow: hidden !important;
-  background-color: #eae4d5 !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  min-height: 655px !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mc-dish-card[data-cat="josper-fired"] {
+    min-height: 674px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mc-dish-card[data-cat="josper-fired"] {
+    min-height: 694px !important;
+  }
 }
 
 /* Unified picture wrappers & image containment for all target dishes with photos */
