@@ -1401,6 +1401,26 @@
   transform: none !important;
 }
 
+/* Edge-to-edge container fill for 3 specific cards: Arroz marinero, Carne asada o apanada, Parrillada de carnes */
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media picture img,
+.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media picture img,
+.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
 .mc-dish-card[data-cat="wok-rice"] .mc-card-body,
 .mc-dish-card[data-cat="josper-fired"] .mc-card-body {
   display: flex !important;
