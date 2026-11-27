@@ -1227,7 +1227,6 @@
 .mc-dish-card:has(img[src*="picana-a-la-brasa"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="parrillada-de-mariscos"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="arroz-con-camarones"]) .mc-card-media img,
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="pescado-frito-con-arroz-y-menestra"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="pollo-asado-con-arroz-y-menestra"]) .mc-card-media img,
 .mc-dish-card:has(img[src*="chuleta-de-cerdo-con-arroz-y-menestra"]) .mc-card-media img,
@@ -1388,6 +1387,18 @@
   max-width: 100% !important;
   max-height: 100% !important;
   object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+}
+
+/* Arroz marinero card image: fill container completely without top/bottom empty space */
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
   object-position: center center !important;
   display: block !important;
 }
