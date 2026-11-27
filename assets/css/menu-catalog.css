@@ -1427,15 +1427,19 @@
    Exact natural aspect ratios with object-fit: contain.
    ========================================================================== */
 
-/* 1. Aspect Ratio 1:1 Cards (Square dishes) */
+/* 1. Aspect Ratio 1:1 Cards (Square dishes + Uniform Clasicos Section) */
+.mc-dish-card[data-cat="clasicos"] .mc-card-media,
 .mc-dish-card:has(img[src*="encebollado.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="guatita.jpg"]) .mc-card-media,
+.mc-dish-card:has(img[src*="fritada"]) .mc-card-media,
 .mc-dish-card:has(img[src*="seco-de-pollo.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="encebollado-mixto.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="cazuela-platano-pescado.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="cazuela-platano-mixta.jpg"]) .mc-card-media,
+.mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
 .mc-dish-card:has(img[src*="encocado-mixto.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="churrasco-ecuatoriano.jpg"]) .mc-card-media,
+.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media,
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media {
   aspect-ratio: 1 / 1 !important;
@@ -1448,11 +1452,7 @@
 }
 
 /* 2. Aspect Ratio 3:4 Cards (Portrait dishes + Uniform Josper-Fired Cards) */
-.mc-dish-card.mc-card-contain-3-4 .mc-card-media,
 .mc-dish-card[data-cat="josper-fired"] .mc-card-media,
-.mc-dish-card:has(img[src*="fritada"]) .mc-card-media,
-.mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
-.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media,
 .mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media,
 .mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media,
 .mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media {
@@ -1465,7 +1465,65 @@
   background-color: #eae4d5 !important;
 }
 
-/* 3. Josper-Fired 8 Cards Uniform Dimensions */
+/* 3. Clasicos 15 Cards Uniform Dimensions */
+.mc-dish-card[data-cat="clasicos"] {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  min-height: 655px !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mc-dish-card[data-cat="clasicos"] {
+    min-height: 674px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mc-dish-card[data-cat="clasicos"] {
+    min-height: 574px !important;
+  }
+}
+
+.mc-dish-card[data-cat="clasicos"] .mc-card-media picture {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mc-dish-card[data-cat="clasicos"] .mc-card-media img,
+.mc-dish-card[data-cat="clasicos"] .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+.mc-dish-card[data-cat="clasicos"] .mc-card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.mc-dish-card[data-cat="clasicos"] .mc-card-desc {
+  flex-grow: 1 !important;
+}
+
+.mc-dish-card[data-cat="clasicos"] .mc-card-foot {
+  margin-top: auto !important;
+}
+
+/* 4. Josper-Fired 8 Cards Uniform Dimensions */
 .mc-dish-card[data-cat="josper-fired"] {
   display: flex !important;
   flex-direction: column !important;
