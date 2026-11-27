@@ -1431,18 +1431,28 @@
 .mc-dish-card[data-cat="clasicos"] .mc-card-media,
 .mc-dish-card:has(img[src*="encebollado.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="guatita.jpg"]) .mc-card-media,
-.mc-dish-card:has(img[src*="fritada"]) .mc-card-media,
 .mc-dish-card:has(img[src*="seco-de-pollo.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="encebollado-mixto.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="cazuela-platano-pescado.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="cazuela-platano-mixta.jpg"]) .mc-card-media,
-.mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
 .mc-dish-card:has(img[src*="encocado-mixto.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="churrasco-ecuatoriano.jpg"]) .mc-card-media,
-.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media,
 .mc-dish-card:has(img[src*="bandera-mixta.jpg"]) .mc-card-media,
 .mc-dish-card:has(img[src*="bandera-completa.jpg"]) .mc-card-media {
   aspect-ratio: 1 / 1 !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background-color: #eae4d5 !important;
+}
+
+/* 1b. Aspect Ratio 3:4 Cards (Fritada, Encocado de pescado, Yapingacho: Zero Left & Right Gap) */
+.mc-dish-card:has(img[src*="fritada"]) .mc-card-media,
+.mc-dish-card:has(img[src*="encocado-de-pescado"]) .mc-card-media,
+.mc-dish-card:has(img[src*="yapingacho"]) .mc-card-media {
+  aspect-ratio: 3 / 4 !important;
   width: 100% !important;
   display: flex !important;
   align-items: center !important;
@@ -1622,9 +1632,24 @@
   height: 100% !important;
 }
 
+/* Carne asada o apanada: object-fit cover with center 88% positioning to eliminate top blank border */
 .mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media img,
+.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 88% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+/* Parrillada de carnes para compartir: 4:3 exact aspect ratio edge-to-edge containment */
 .mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media img,
-.mc-dish-card:has(img[src*="carne-asada-o-apanada"]) .mc-card-media picture img,
 .mc-dish-card:has(img[src*="parrillada-de-carnes"]) .mc-card-media picture img {
   width: 100% !important;
   height: 100% !important;
