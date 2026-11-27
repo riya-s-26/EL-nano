@@ -1353,16 +1353,21 @@
 }
 
 /* ==========================================================================
-   OUR MENU (WOK RICE DISHES) EQUAL CARD & IMAGE SIZING
-   Chaulafán, Arroz con camarones, Arroz marinero
+   OUR MENU — 11 TARGET CARDS EQUAL SIZING & IMAGE CONTAINMENT
+   Chaulafán, Carne asada o apanada, Pollo asado, Filete de Corvina,
+   Pesca del Dia, Tira de churrasco a la brasa 12OZ, Picaña a la brasa 12OZ,
+   Parrillada de mariscos, Parrillada de carnes para compartir,
+   Arroz con camarones, Arroz marinero
    ========================================================================== */
-.mc-dish-card[data-cat="wok-rice"] {
+.mc-dish-card[data-cat="wok-rice"]:not(.is-hidden),
+.mc-dish-card[data-cat="josper-fired"]:not(.is-hidden) {
   height: 100% !important;
   display: flex !important;
   flex-direction: column !important;
 }
 
-.mc-dish-card[data-cat="wok-rice"] .mc-card-media {
+.mc-dish-card[data-cat="wok-rice"] .mc-card-media,
+.mc-dish-card[data-cat="josper-fired"] .mc-card-media {
   aspect-ratio: 3 / 4 !important;
   width: 100% !important;
   background: #eae4d5 !important;
@@ -1372,7 +1377,8 @@
   overflow: hidden !important;
 }
 
-.mc-dish-card[data-cat="wok-rice"] .mc-card-media picture {
+.mc-dish-card[data-cat="wok-rice"] .mc-card-media picture,
+.mc-dish-card[data-cat="josper-fired"] .mc-card-media picture {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1381,7 +1387,9 @@
 }
 
 .mc-dish-card[data-cat="wok-rice"] .mc-card-media img,
-.mc-dish-card[data-cat="wok-rice"] .mc-card-media picture img {
+.mc-dish-card[data-cat="josper-fired"] .mc-card-media img,
+.mc-dish-card[data-cat="wok-rice"] .mc-card-media picture img,
+.mc-dish-card[data-cat="josper-fired"] .mc-card-media picture img {
   width: 100% !important;
   height: 100% !important;
   max-width: 100% !important;
@@ -1389,38 +1397,35 @@
   object-fit: contain !important;
   object-position: center center !important;
   display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
 }
 
-/* Arroz marinero card image: fill container completely without top/bottom empty space */
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media img,
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-media picture img {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: cover !important;
-  object-position: center center !important;
-  display: block !important;
-}
-
-.mc-dish-card[data-cat="wok-rice"] .mc-card-body {
+.mc-dish-card[data-cat="wok-rice"] .mc-card-body,
+.mc-dish-card[data-cat="josper-fired"] .mc-card-body {
   display: flex !important;
   flex-direction: column !important;
   flex-grow: 1 !important;
 }
 
-.mc-dish-card[data-cat="wok-rice"] .mc-card-desc {
+.mc-dish-card[data-cat="wok-rice"] .mc-card-desc,
+.mc-dish-card[data-cat="josper-fired"] .mc-card-desc {
   flex-grow: 1 !important;
 }
 
-/* Arroz marinero specific padding balance (remove unwanted top & bottom empty space) */
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-body {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+.mc-dish-card[data-cat="wok-rice"] .mc-card-foot,
+.mc-dish-card[data-cat="josper-fired"] .mc-card-foot {
+  margin-top: auto !important;
 }
 
-.mc-dish-card:has(img[src*="arroz-marinero"]) .mc-card-foot {
-  padding-top: 10px !important;
+/* ==========================================================================
+   UNBREAKABLE CATEGORY FILTERING HIDDEN STATE
+   Ensures is-hidden always hides cards across all categories.
+   ========================================================================== */
+.mc-dish-card.is-hidden,
+.mc-dish-card[data-cat].is-hidden,
+[data-cat].is-hidden {
+  display: none !important;
 }
 
 
