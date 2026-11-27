@@ -627,6 +627,64 @@
   gap: clamp(16px, 2.2vw, 26px);
 }
 
+/* ── Drinks & Desserts Strict Card & Image Consistency ── */
+#drinks-desserts .mc-drinks-grid .mc-dish-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#drinks-desserts .mc-drinks-grid .mc-card-media {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background-color: #eae4d5 !important;
+}
+
+#drinks-desserts .mc-drinks-grid .mc-card-media picture {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#drinks-desserts .mc-drinks-grid .mc-card-media img,
+#drinks-desserts .mc-drinks-grid .mc-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+#drinks-desserts .mc-drinks-grid .mc-dish-card:hover .mc-card-media img {
+  transform: scale(1.03) !important;
+  transition: transform 0.4s var(--ease) !important;
+}
+
+#drinks-desserts .mc-drinks-grid .mc-card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+#drinks-desserts .mc-drinks-grid .mc-card-desc {
+  flex-grow: 1 !important;
+}
+
 /* ── 6. Restaurant Visit / Reservation Section ── */
 .mc-visit-section {
   background-color: var(--cream);
