@@ -498,36 +498,69 @@
   position: relative;
 }
 
-/* Contained Food Card Images (No Cropping / Complete Dish Visibility) */
-#lb-card-ceviche .lb-card-media,
-#lb-card-chupe .lb-card-media,
+/* ==========================================================================
+   First Course Cards: Unified Dimensions & Uncropped Presentation
+   All cards share identical dimensions, alignments, and seamless presentation
+   ========================================================================== */
+#lb-course1-grid .lb-card-media {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+#lb-course1-grid #lb-card-ceviche .lb-card-media {
+  background: linear-gradient(to bottom, #CAD5DB 0%, #DBD9D3 100%) !important;
+}
+
+#lb-course1-grid #lb-card-locro .lb-card-media,
+#lb-course1-grid #lb-card-chupe .lb-card-media,
+#lb-course1-grid #lb-card-caldo .lb-card-media,
+#lb-course1-grid .lb-card:has(img[src*="locro-de-papa"]) .lb-card-media,
+#lb-course1-grid .lb-card:has(img[src*="chupe"]) .lb-card-media,
+#lb-course1-grid .lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media {
+  background-color: #B58051 !important;
+}
+
+#lb-course1-grid .lb-card-media picture {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#lb-course1-grid .lb-card-media img,
+#lb-course1-grid .lb-card-media picture img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+/* Ensure Friday badge card has identical outer and inner bounds */
+#lb-course1-grid .lb-card-friday {
+  border: 1px solid var(--y, #F9EE24) !important;
+  box-shadow: 0 0 0 1px var(--y, #F9EE24), 0 4px 14px rgba(0, 60, 40, 0.05) !important;
+}
+
+/* Second Course Chaulafan Contained Image */
 #lb-card-chaulafan .lb-card-media {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#lb-card-ceviche .lb-card-media {
-  background: linear-gradient(to bottom, #CAD5DB 0%, #DBD9D3 100%);
-}
-
-#lb-card-chupe .lb-card-media {
-  background-color: #B58051;
-}
-
-#lb-card-chaulafan .lb-card-media {
   background: linear-gradient(135deg, #074B34 38%, #B58051 62%);
-}
-
-#lb-card-ceviche .lb-card-media img,
-#lb-card-chupe .lb-card-media img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  padding: 6px !important;
-  box-sizing: border-box !important;
-  transform: none !important;
 }
 
 #lb-card-chaulafan .lb-card-media img {
@@ -538,74 +571,6 @@
   object-fit: contain !important;
   object-position: center center !important;
   padding: 0 !important;
-  box-sizing: border-box !important;
-  transform: none !important;
-}
-
-/* ==========================================================================
-   First Course Cards: Locro de Papa Soup & Caldo de Bola
-   Uncropped food presentation, perfectly centered and balanced
-   ========================================================================== */
-#lb-card-locro .lb-card-media,
-.lb-card:has(img[src*="locro-de-papa"]) .lb-card-media {
-  display: block !important;
-  width: 100% !important;
-  aspect-ratio: 1024 / 929 !important;
-  background: #B58051 !important;
-  overflow: hidden !important;
-}
-
-#lb-card-locro .lb-card-media picture,
-.lb-card:has(img[src*="locro-de-papa"]) .lb-card-media picture {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-#lb-card-locro .lb-card-media img,
-#lb-card-locro .lb-card-media picture img,
-.lb-card:has(img[src*="locro-de-papa"]) .lb-card-media img {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: block !important;
-  box-sizing: border-box !important;
-  transform: none !important;
-}
-
-#lb-card-caldo .lb-card-media,
-.lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media {
-  display: block !important;
-  width: 100% !important;
-  aspect-ratio: 533 / 800 !important;
-  background: #5D796A !important;
-  overflow: hidden !important;
-}
-
-#lb-card-caldo .lb-card-media picture,
-.lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media picture {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-#lb-card-caldo .lb-card-media img,
-#lb-card-caldo .lb-card-media picture img,
-.lb-card:has(img[src*="caldo-de-bola"]) .lb-card-media img {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: block !important;
   box-sizing: border-box !important;
   transform: none !important;
 }
