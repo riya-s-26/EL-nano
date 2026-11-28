@@ -1059,16 +1059,16 @@ body.about-page {
   flex: 1;
   height: 1.5px;
   max-width: 50px;
-  background-color: #C8A46B;
+  background-color: var(--y, #FBC92D);
 }
 
 .visit-pill-badge {
   background-color: #0A2E20;
   color: #FAF4E8;
-  border: 1.5px solid #C8A46B;
+  border: 1.5px solid var(--y, #FBC92D);
   border-radius: 999px;
   padding: 6px 24px;
-  font-family: var(--font-body);
+  font-family: var(--font-body, "Lexend", sans-serif);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -1079,20 +1079,20 @@ body.about-page {
 
 /* ── Main Address Heading ── */
 .visit-main-heading {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-display, "Paytone One", sans-serif);
   font-size: clamp(2.35rem, 4.4vw, 3.5rem);
-  font-weight: 700;
+  font-weight: 400;
   color: #0A2E20;
   margin: 0;
   letter-spacing: -0.015em;
-  line-height: 1.08;
+  line-height: 1.1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .visit-city-line {
-  font-family: var(--font-body);
+  font-family: var(--font-body, "Lexend", sans-serif);
   font-size: clamp(1.1rem, 1.8vw, 1.45rem);
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -1135,7 +1135,7 @@ body.about-page {
 }
 
 .phone-text {
-  font-family: var(--font-body);
+  font-family: var(--font-body, "Lexend", sans-serif);
   font-size: clamp(1.2rem, 2vw, 1.55rem);
   font-weight: 700;
   color: #0A2E20;
@@ -1145,7 +1145,7 @@ body.about-page {
 /* ── Two-Column Opening Hours Card with Vertical Divider ── */
 .visit-hours-card-ref {
   background-color: #FAF4E8;
-  border: 1.5px solid #C8A46B;
+  border: 1.5px solid var(--y, #FBC92D);
   border-radius: 18px;
   padding: 12px clamp(18px, 3.5vw, 36px) 14px;
   box-shadow: 0 6px 24px rgba(10, 46, 32, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
@@ -1166,14 +1166,14 @@ body.about-page {
 .card-title-dash {
   width: 32px;
   height: 1.5px;
-  background-color: #C8A46B;
+  background-color: var(--y, #FBC92D);
 }
 
 .card-title-text {
-  font-family: var(--font-body);
-  font-size: clamp(0.82rem, 1vw, 0.92rem);
-  font-weight: 800;
-  letter-spacing: 0.14em;
+  font-family: var(--font-display, "Paytone One", sans-serif);
+  font-size: clamp(0.85rem, 1.1vw, 1rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #0A2E20;
   margin: 0;
@@ -1191,7 +1191,7 @@ body.about-page {
   flex-direction: column;
   gap: 6px;
   text-align: left;
-  font-family: var(--font-body);
+  font-family: var(--font-body, "Lexend", sans-serif);
   font-size: clamp(0.84rem, 1.1vw, 0.92rem);
   font-weight: 600;
   color: #0A2E20;
@@ -1199,7 +1199,7 @@ body.about-page {
 
 .hours-divider-vert {
   width: 1.5px;
-  background-color: #C8A46B;
+  background-color: var(--y, #FBC92D);
   border-radius: 1px;
 }
 
@@ -1208,7 +1208,7 @@ body.about-page {
   flex-direction: column;
   gap: 6px;
   text-align: left;
-  font-family: var(--font-body);
+  font-family: var(--font-body, "Lexend", sans-serif);
   font-size: clamp(0.84rem, 1.1vw, 0.92rem);
   font-weight: 600;
   color: #0A2E20;
@@ -1241,7 +1241,7 @@ body.about-page {
 
 .gallery-photo-card {
   background-color: #FAF4E8;
-  border: 2px solid #C8A46B;
+  border: 2px solid var(--y, #FBC92D);
   border-radius: 20px;
   padding: 7px;
   box-shadow: 0 8px 24px rgba(10, 46, 32, 0.12);
@@ -1270,19 +1270,19 @@ body.about-page {
   transform: scale(1.04);
 }
 
-/* ── Distinct Location Label at Bottom (Overlapping frames) ── */
+/* ── Distinct Location Label at Bottom (Positioned cleanly below frames) ── */
 .visit-bottom-pill-row {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: -14px;
+  margin-top: clamp(20px, 3vw, 28px);
   position: relative;
   z-index: 5;
 }
 
 .visit-location-pill {
   background-color: #0A2E20;
-  border: 1.5px solid #C8A46B;
+  border: 1.5px solid var(--y, #FBC92D);
   border-radius: 999px;
   padding: 7px 24px;
   display: inline-flex;
@@ -1299,7 +1299,7 @@ body.about-page {
 .location-pin-icon {
   display: inline-flex;
   align-items: center;
-  color: #C8A46B;
+  color: var(--y, #FBC92D);
   flex-shrink: 0;
 }
 .location-pin-icon svg {
@@ -1309,7 +1309,7 @@ body.about-page {
 }
 
 .location-pill-text {
-  font-family: var(--font-body);
+  font-family: var(--font-body, "Lexend", sans-serif);
   font-size: clamp(0.85rem, 1.2vw, 0.95rem);
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1318,7 +1318,7 @@ body.about-page {
 
 @media (max-width: 680px) {
   .visit-bottom-pill-row {
-    margin-top: 14px;
+    margin-top: 18px;
   }
 }
 
