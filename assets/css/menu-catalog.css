@@ -331,7 +331,7 @@
 .mc-card-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1 / 1;
   background: #eae4d5;
   overflow: hidden;
 }
@@ -1049,7 +1049,7 @@
 #drinks-desserts .mc-card-media {
   position: relative !important;
   width: 100% !important;
-  aspect-ratio: 4 / 3 !important;
+  aspect-ratio: 1 / 1 !important;
   height: auto !important;
   min-height: 0 !important;
   background-color: #eae4d5 !important;
