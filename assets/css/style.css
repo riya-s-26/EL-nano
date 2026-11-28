@@ -688,7 +688,12 @@ h4 {
 
 .drawer-footer .drawer-cta,
 a.drawer-cta {
-  display: block;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 48px !important;
+  padding: 0 24px !important;
+  line-height: 1 !important;
   margin-top: 18px;
   text-align: center;
   background-color: var(--y) !important;
@@ -1905,7 +1910,76 @@ html[lang="es"] .offer-price-item span,
 }
 
 .visit-main {
-  grid-column: 1 / span 7;
+  grid-column: 1 / -1;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.visit-hours-links-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(20px, 3vw, 36px);
+  margin-top: clamp(20px, 3vw, 32px);
+  align-items: stretch;
+}
+
+@media (min-width: 900px) {
+  .visit-hours-links-row {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(24px, 3.5vw, 44px);
+  }
+}
+
+.visit-links-card {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: clamp(20px, 2.5vw, 32px);
+  border: 1px solid var(--cream-alt);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.visit-links-card .links {
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visit-links-card .links li {
+  list-style: none;
+}
+
+.visit-links-card .links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 4px;
+  border-bottom: 1px solid rgba(0, 60, 40, 0.15);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--g);
+  transition: padding 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.visit-links-card .links a.primary {
+  background-color: var(--g);
+  color: var(--y);
+  min-height: 54px;
+  padding-inline: 18px;
+  font-size: 1.05rem;
+  border-radius: var(--radius-sm);
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-bottom: 0;
 }
 
 .visit h2 {
@@ -1957,7 +2031,11 @@ html[lang="es"] .offer-price-item span,
   padding: clamp(20px, 3vw, 32px);
   border: 1px solid var(--cream-alt);
   box-shadow: var(--shadow-sm);
-  margin-bottom: clamp(28px, 4vw, 40px);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .hours-card h3 {
@@ -2053,7 +2131,10 @@ html[lang="es"] .offer-price-item span,
 }
 
 .visit-side {
-  grid-column: 8 / span 5;
+  grid-column: 1 / -1;
+  max-width: 1240px;
+  margin: 16px auto 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -2376,15 +2457,15 @@ html[lang="es"] .offer-price-item span,
   position: absolute;
   top: 12px;
   left: 12px;
-  background: rgba(0, 60, 40, 0.9);
-  color: var(--y);
-  font-size: 0.72rem;
+  background: #00271A;
+  color: #FBCA27;
+  font-size: 0.76rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 999px;
-  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
   z-index: 2;
 }
 
@@ -2475,9 +2556,10 @@ html[lang="es"] .offer-price-item span,
 }
 
 .menu-card-price .price-reg {
-  color: rgba(0, 60, 40, 0.65);
-  font-size: 0.8rem;
-  font-weight: 600;
+  color: #00271A;
+  font-size: 0.85rem;
+  font-weight: 700;
+  opacity: 0.95;
   white-space: nowrap;
 }
 
@@ -2547,13 +2629,16 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   margin-top: auto;
   padding-top: 12px;
   border-top: 1px dashed var(--cream-alt);
-  font-size: 0.85rem;
-  color: rgba(0, 60, 40, 0.7);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #00271A;
 }
 
 .menu-card-meta>span {
   flex: 1 1 auto;
   min-width: 0;
+  color: #00271A;
+  font-weight: 700;
 }
 
 .menu-card-link {
@@ -4383,6 +4468,34 @@ body.coming-soon-page .site-header {
 .on-site-menu .menu-card:not([data-cat="drinks"]):hover .menu-card-media img,
 #menu-grid .menu-card:not([data-cat="drinks"]):hover .menu-card-media img {
   transform: none !important;
+}
+
+/* ── High Contrast Readability for Our Kitchen & Bar (Cards 17-23) ── */
+#menu-grid .menu-card .menu-card-meta,
+#menu-grid .menu-card .menu-card-meta > span {
+  color: #00271A !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+#menu-grid .menu-card .menu-card-price,
+#menu-grid .menu-card .menu-card-price .price-reg,
+#menu-grid .menu-card .menu-card-price .price-hh {
+  color: #00271A !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+#menu-grid .menu-card .menu-card-tag {
+  background: #00271A !important;
+  color: #FBCA27 !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+}
+
+#menu-grid .menu-card .menu-card-link {
+  color: #FBCA27 !important;
+  font-weight: 700 !important;
 }
 
 /* ==========================================================================

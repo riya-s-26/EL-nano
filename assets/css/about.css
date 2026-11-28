@@ -236,7 +236,8 @@ body.about-page {
    ========================================================================== */
 .about-story-sec {
   background-color: var(--cream);
-  padding-block: clamp(60px, 8vw, 110px);
+  padding-top: clamp(60px, 8vw, 110px);
+  padding-bottom: clamp(24px, 3.5vw, 40px);
   position: relative;
   overflow: hidden;
 }
@@ -427,7 +428,8 @@ body.about-page {
    ========================================================================== */
 .about-atmosphere-sec {
   background-color: #F8F1E4;
-  padding-block: clamp(64px, 8vw, 110px);
+  padding-top: clamp(24px, 3.5vw, 40px);
+  padding-bottom: clamp(64px, 8vw, 110px);
   position: relative;
   border-top: 1px solid var(--cream-alt);
   overflow: hidden;
