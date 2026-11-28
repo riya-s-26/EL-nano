@@ -3272,7 +3272,7 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center 32%;
   display: block;
 }
 
@@ -3832,6 +3832,18 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
 
 .contact-gallery-card:hover img {
   transform: scale(1.05);
+}
+
+/* Card 1 in Our Location gallery: show full original image including the complete table without cropping */
+.contact-gallery-card:first-child,
+.contact-gallery-card:has(img[src*="contact-gallery-1"]) {
+  background-color: #19140e;
+}
+
+.contact-gallery-card:first-child img,
+.contact-gallery-card:has(img[src*="contact-gallery-1"]) img {
+  object-fit: contain !important;
+  object-position: center center !important;
 }
 
 /* ── Quick Links Single Panel Section ── */
