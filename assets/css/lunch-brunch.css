@@ -2,7 +2,7 @@
    El Ñaño Miami — Lunch & Brunch Page Stylesheet (Production Polished)
    Palette:
      Deep Green: #003C28 / #00271A
-     Yellow: #F9EE24
+     Yellow: #FBC92D
      Warm Cream: #FAF3E6
      Card Cream: #FFFBF2
      Sage Green: #5D796A
@@ -69,7 +69,7 @@
 
 .site-header .nav a:hover,
 .site-header .nav a.active {
-  color: var(--y, #F9EE24);
+  color: var(--y, #FBC92D);
 }
 
 .site-header .nav a.active::after {
@@ -79,7 +79,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: var(--y, #F9EE24);
+  background-color: var(--y, #FBC92D);
   border-radius: 2px;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .header-actions .reserve-btn {
-  background-color: var(--y, #F9EE24);
+  background-color: var(--y, #FBC92D);
   color: var(--g-deep, #00271A);
   font-family: var(--font-display, "Paytone One", sans-serif);
   font-size: 0.85rem;
@@ -105,7 +105,7 @@
 }
 
 .header-actions .reserve-btn:hover {
-  background-color: #ffe600;
+  background-color: #FBC92D;
   transform: translateY(-1px);
 }
 
@@ -203,7 +203,7 @@
 }
 
 .lb-day-btn.active {
-  background-color: var(--y, #F9EE24);
+  background-color: var(--y, #FBC92D);
   color: var(--g-deep, #00271A);
   box-shadow: 0 2px 8px rgba(0, 60, 40, 0.12);
 }
@@ -222,7 +222,7 @@
   letter-spacing: 0.04em;
   padding: 7px 18px;
   border-radius: 999px;
-  background-color: var(--y, #F9EE24);
+  background-color: var(--y, #FBC92D);
   color: var(--g-deep, #00271A);
 }
 
@@ -264,7 +264,7 @@
 }
 
 .lb-tab-btn.active {
-  background-color: var(--y, #F9EE24);
+  background-color: var(--y, #FBC92D);
   color: var(--g-deep, #00271A);
   box-shadow: 0 2px 6px rgba(0, 60, 40, 0.1);
 }
@@ -349,7 +349,7 @@
 
 .lb-friday-badge {
   font-family: var(--font-display, "Paytone One", sans-serif);
-  background-color: var(--y, #F9EE24);
+  background-color: var(--y, #FBC92D);
   color: var(--g-deep, #00271A);
   font-size: 0.72rem;
   letter-spacing: 0.05em;
@@ -382,7 +382,7 @@
   height: 32px;
   border-radius: 50%;
   background-color: var(--g, #003C28);
-  color: var(--y, #F9EE24);
+  color: var(--y, #FBC92D);
   font-family: var(--font-display, "Paytone One", sans-serif);
   font-size: 0.98rem;
   font-weight: 700;
@@ -494,7 +494,7 @@
 
 /* Friday-Only Card Special Badge */
 .lb-card-friday {
-  border: 2px solid var(--y, #F9EE24);
+  border: 2px solid var(--y, #FBC92D);
   position: relative;
 }
 
@@ -568,8 +568,8 @@
 
 /* Ensure Friday badge card has identical outer and inner bounds */
 #lb-course1-grid .lb-card-friday {
-  border: 1px solid var(--y, #F9EE24) !important;
-  box-shadow: 0 0 0 1px var(--y, #F9EE24), 0 4px 14px rgba(0, 60, 40, 0.05) !important;
+  border: 1px solid var(--y, #FBC92D) !important;
+  box-shadow: 0 0 0 1px var(--y, #FBC92D), 0 4px 14px rgba(0, 60, 40, 0.05) !important;
 }
 
 /* Second Course Chaulafan Contained Image */
@@ -657,7 +657,7 @@
 
 .lb-placeholder-icon {
   font-size: 1.8rem;
-  color: var(--y, #F9EE24);
+  color: var(--y, #FBC92D);
   margin-bottom: 4px;
 }
 
@@ -713,7 +713,7 @@
   top: 10px;
   left: 10px;
   z-index: 5;
-  background-color: var(--y, #F9EE24);
+  background-color: var(--y, #FBC92D);
   color: var(--g-deep, #00271A);
   font-family: var(--font-display, "Paytone One", sans-serif);
   font-size: 0.72rem;
@@ -932,7 +932,7 @@
 .foot-col h3 {
   font-family: var(--font-display, "Paytone One", sans-serif);
   font-size: 1.05rem;
-  color: #F9EE24;
+  color: #FBC92D;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0 0 16px;
@@ -961,7 +961,7 @@
 
 .foot-col ul li a:hover,
 .foot-col ul li a.active {
-  color: #F9EE24;
+  color: #FBC92D;
   transform: translateX(2px);
 }
 
@@ -974,7 +974,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #F9EE24;
+  color: #FBC92D;
   display: block;
   margin-bottom: 3px;
 }
@@ -989,7 +989,7 @@
 }
 
 .foot-col-contact a:hover {
-  color: #F9EE24;
+  color: #FBC92D;
 }
 
 .foot-bottom {

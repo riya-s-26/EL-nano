@@ -1,7 +1,7 @@
 /* ==========================================================================
    El Ñaño Miami — About Us Page Stylesheet
    Editorial Redesign scoped strictly to content below the approved hero.
-   Brand Palette: Deep Forest Green (#003C28), Brand Yellow (#F9EE24),
+   Brand Palette: Deep Forest Green (#003C28), Brand Yellow (#FBC92D),
    Warm Cream (#FAF3E6), Teal (#32B4A6), Light Green (#ADCC70)
    Typography: Paytone One (Display Headings), Lexend (Body & UI)
    ========================================================================== */
@@ -319,15 +319,15 @@ body.about-page {
   transition: background-color 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 .house-badge.current {
-  background-color: rgba(249, 238, 36, 0.16);
-  border-color: rgba(249, 238, 36, 0.6);
+  background-color: rgba(251, 201, 45, 0.16);
+  border-color: rgba(251, 201, 45, 0.6);
 }
 .house-badge.current .house-city {
   color: var(--g);
 }
 .house-badge.current .house-city::after {
   content: " ★";
-  color: #c9ba00;
+  color: #FBC92D;
   font-size: 0.85em;
 }
 
@@ -561,7 +561,6 @@ body.about-page {
   }
 }
 
-
 .atmo-editorial-card {
   background-color: #FFFFFF;
   border-radius: var(--radius-md);
@@ -738,7 +737,7 @@ body.about-page {
   position: absolute;
   inset: 0;
   background-image: radial-gradient(circle at 80% 20%, rgba(50, 180, 166, 0.12) 0%, transparent 55%),
-                    radial-gradient(circle at 15% 85%, rgba(249, 238, 36, 0.08) 0%, transparent 50%);
+                    radial-gradient(circle at 15% 85%, rgba(251, 201, 45, 0.08) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -755,7 +754,7 @@ body.about-page {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(0, 20, 14, 0.45);
-  border: 3px solid rgba(249, 238, 36, 0.5);
+  border: 3px solid rgba(251, 201, 45, 0.5);
   aspect-ratio: 16 / 10;
   background-color: var(--g-deep);
   position: relative;
@@ -788,7 +787,7 @@ body.about-page {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(249, 238, 36, 0.35);
+  border: 1px solid rgba(251, 201, 45, 0.35);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
@@ -830,7 +829,7 @@ body.about-page {
 .team-pillar-item:hover {
   transform: translateY(-4px);
   background-color: rgba(255, 255, 255, 0.09);
-  border-color: rgba(249, 238, 36, 0.4);
+  border-color: rgba(251, 201, 45, 0.4);
 }
 
 .pillar-bullet-num {
@@ -922,7 +921,7 @@ body.about-page {
 }
 
 .feature-block-card:hover .feature-icon-badge {
-  background-color: rgba(249, 238, 36, 0.25);
+  background-color: rgba(251, 201, 45, 0.25);
   color: var(--g);
   transform: scale(1.08);
 }
@@ -1011,11 +1010,10 @@ body.about-page {
    ========================================================================== */
 /* ── Section E: Plan Your Visit (Reference Match) ── */
 .about-visit-sec {
-  font-family: "Paytone One", var(--font-display);
   position: relative;
   background-color: #FAF5EB;
   background-image:
-    radial-gradient(ellipse 440px 220px at 50% 165px, #FAF4E8 0%, #FAF4E8 42%, rgba(250, 244, 232, 0.7) 65%, rgba(250, 244, 232, 0) 88%),
+    radial-gradient(ellipse 640px 420px at 50% 28%, #FFFDF8 0%, rgba(255, 253, 248, 0.95) 45%, rgba(255, 253, 248, 0.35) 75%, rgba(255, 253, 248, 0) 100%),
     url("../img/Floral-Pattern.jpeg");
   background-size: cover, 760px auto;
   background-position: center center, center top;
@@ -1070,7 +1068,7 @@ body.about-page {
   border: 1.5px solid #C8A46B;
   border-radius: 999px;
   padding: 6px 24px;
-  font-family: "Paytone One", var(--font-display);
+  font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -1081,7 +1079,7 @@ body.about-page {
 
 /* ── Main Address Heading ── */
 .visit-main-heading {
-  font-family: "Paytone One", var(--font-display);
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
   font-size: clamp(2.35rem, 4.4vw, 3.5rem);
   font-weight: 700;
   color: #0A2E20;
@@ -1094,7 +1092,7 @@ body.about-page {
 }
 
 .visit-city-line {
-  font-family: "Paytone One", var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(1.1rem, 1.8vw, 1.45rem);
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -1137,7 +1135,7 @@ body.about-page {
 }
 
 .phone-text {
-  font-family: "Paytone One", var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(1.2rem, 2vw, 1.55rem);
   font-weight: 700;
   color: #0A2E20;
@@ -1172,7 +1170,7 @@ body.about-page {
 }
 
 .card-title-text {
-  font-family: "Paytone One", var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(0.82rem, 1vw, 0.92rem);
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -1193,7 +1191,7 @@ body.about-page {
   flex-direction: column;
   gap: 6px;
   text-align: left;
-  font-family: "Paytone One", var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(0.84rem, 1.1vw, 0.92rem);
   font-weight: 600;
   color: #0A2E20;
@@ -1210,7 +1208,7 @@ body.about-page {
   flex-direction: column;
   gap: 6px;
   text-align: left;
-  font-family: "Paytone One", var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(0.84rem, 1.1vw, 0.92rem);
   font-weight: 600;
   color: #0A2E20;
@@ -1311,7 +1309,7 @@ body.about-page {
 }
 
 .location-pill-text {
-  font-family: "Paytone One", var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(0.85rem, 1.2vw, 0.95rem);
   font-weight: 700;
   letter-spacing: 0.08em;
