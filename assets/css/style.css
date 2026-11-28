@@ -3834,33 +3834,16 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   transform: scale(1.05);
 }
 
-/* Card 1 in Our Location gallery: exactly equal dimensions to Card 2, complete image 100% visible with object-fit: contain */
-.contact-gallery-card:first-child,
-.contact-gallery-card:has(img[src*="contact-gallery-1"]) {
-  background-color: #0b1812 !important;
-  box-sizing: border-box !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  overflow: hidden !important;
-}
-
+/* Card 1 in Our Location gallery: equal dimensions to Card 2, edge-to-edge with zero left/right empty spacing */
 .contact-gallery-card:first-child picture,
 .contact-gallery-card:first-child img,
 .contact-gallery-card:has(img[src*="contact-gallery-1"]) picture,
 .contact-gallery-card:has(img[src*="contact-gallery-1"]) img {
   width: 100% !important;
   height: 100% !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: contain !important;
-  object-position: center center !important;
+  object-fit: cover !important;
+  object-position: center 38% !important;
   display: block !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
-  border-radius: inherit !important;
-  box-sizing: border-box !important;
-  transform: none !important;
 }
 
 /* ── Quick Links Single Panel Section ── */
