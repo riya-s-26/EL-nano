@@ -4352,6 +4352,62 @@ body.coming-soon-page .site-header {
 /* ==========================================================================
    COCKTAIL CARDS: Full width, zero side spacing, 100% glass visible
    ========================================================================== */
+/* ==========================================================================
+   COCKTAIL CARDS: Full width, zero side spacing, equal card dimensions & calibrated glass scale
+   ========================================================================== */
+.menu-card[data-cat="drinks"],
+.menu-card:has(img[src*="espresso-martini"]),
+.menu-card:has(img[src*="canelazo"]),
+.menu-card:has(img[src*="la nana"]),
+.menu-card:has(img[src*="la%20nana"]),
+.menu-card:has(img[src*="pina"]) {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  min-height: 700px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 767px) {
+  .menu-card[data-cat="drinks"],
+  .menu-card:has(img[src*="espresso-martini"]),
+  .menu-card:has(img[src*="canelazo"]),
+  .menu-card:has(img[src*="la nana"]),
+  .menu-card:has(img[src*="la%20nana"]),
+  .menu-card:has(img[src*="pina"]) {
+    min-height: auto !important;
+  }
+}
+
+.menu-card[data-cat="drinks"] .menu-card-body,
+.menu-card:has(img[src*="espresso-martini"]) .menu-card-body,
+.menu-card:has(img[src*="canelazo"]) .menu-card-body,
+.menu-card:has(img[src*="la nana"]) .menu-card-body,
+.menu-card:has(img[src*="la%20nana"]) .menu-card-body,
+.menu-card:has(img[src*="pina"]) .menu-card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.menu-card[data-cat="drinks"] .menu-card-desc,
+.menu-card:has(img[src*="espresso-martini"]) .menu-card-desc,
+.menu-card:has(img[src*="canelazo"]) .menu-card-desc,
+.menu-card:has(img[src*="la nana"]) .menu-card-desc,
+.menu-card:has(img[src*="la%20nana"]) .menu-card-desc,
+.menu-card:has(img[src*="pina"]) .menu-card-desc {
+  flex-grow: 1 !important;
+}
+
+.menu-card[data-cat="drinks"] .menu-card-meta,
+.menu-card:has(img[src*="espresso-martini"]) .menu-card-meta,
+.menu-card:has(img[src*="canelazo"]) .menu-card-meta,
+.menu-card:has(img[src*="la nana"]) .menu-card-meta,
+.menu-card:has(img[src*="la%20nana"]) .menu-card-meta,
+.menu-card:has(img[src*="pina"]) .menu-card-meta {
+  margin-top: auto !important;
+}
+
 .menu-card[data-cat="drinks"] .menu-card-media,
 .menu-card:has(img[src*="espresso-martini"]) .menu-card-media,
 .menu-card:has(img[src*="canelazo"]) .menu-card-media,
@@ -4359,11 +4415,24 @@ body.coming-soon-page .site-header {
 .menu-card:has(img[src*="la%20nana"]) .menu-card-media,
 .menu-card:has(img[src*="pina"]) .menu-card-media {
   aspect-ratio: 2 / 3 !important;
-  background: transparent !important;
+  background: #00271A !important;
   display: block !important;
   overflow: hidden !important;
   padding: 0 !important;
   width: 100% !important;
+  height: auto !important;
+  position: relative !important;
+}
+
+.menu-card[data-cat="drinks"] .menu-card-media picture,
+.menu-card:has(img[src*="espresso-martini"]) .menu-card-media picture,
+.menu-card:has(img[src*="canelazo"]) .menu-card-media picture,
+.menu-card:has(img[src*="la nana"]) .menu-card-media picture,
+.menu-card:has(img[src*="la%20nana"]) .menu-card-media picture,
+.menu-card:has(img[src*="pina"]) .menu-card-media picture {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .menu-card[data-cat="drinks"] .menu-card-media img,
@@ -4371,7 +4440,13 @@ body.coming-soon-page .site-header {
 .menu-card:has(img[src*="canelazo"]) .menu-card-media img,
 .menu-card:has(img[src*="la nana"]) .menu-card-media img,
 .menu-card:has(img[src*="la%20nana"]) .menu-card-media img,
-.menu-card:has(img[src*="pina"]) .menu-card-media img {
+.menu-card:has(img[src*="pina"]) .menu-card-media img,
+.menu-card[data-cat="drinks"] .menu-card-media picture img,
+.menu-card:has(img[src*="espresso-martini"]) .menu-card-media picture img,
+.menu-card:has(img[src*="canelazo"]) .menu-card-media picture img,
+.menu-card:has(img[src*="la nana"]) .menu-card-media picture img,
+.menu-card:has(img[src*="la%20nana"]) .menu-card-media picture img,
+.menu-card:has(img[src*="pina"]) .menu-card-media picture img {
   width: 100% !important;
   height: 100% !important;
   max-width: 100% !important;
@@ -4383,6 +4458,20 @@ body.coming-soon-page .site-header {
   display: block !important;
   padding: 0 !important;
   margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Calibrated glass scale & position adjustments for equal visual presence */
+.menu-card:has(img[src*="espresso-martini"]) .menu-card-media img,
+.menu-card:has(img[src*="espresso-martini"]) .menu-card-media picture img {
+  transform: scale(1.18) !important;
+  object-position: center 65% !important;
+}
+
+.menu-card:has(img[src*="pina"]) .menu-card-media img,
+.menu-card:has(img[src*="pina"]) .menu-card-media picture img {
+  transform: scale(1.08) !important;
+  object-position: center 55% !important;
 }
 
 
