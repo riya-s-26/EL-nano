@@ -1,7 +1,7 @@
 /* ==========================================================================
    El Ñaño Miami — About Us Page Stylesheet
    Editorial Redesign scoped strictly to content below the approved hero.
-   Brand Palette: Deep Forest Green (#003C28), Brand Yellow (#FBC92D),
+   Brand Palette: Deep Forest Green (#003C28), Brand Yellow (#FBCA27),
    Warm Cream (#FAF3E6), Teal (#32B4A6), Light Green (#ADCC70)
    Typography: Paytone One (Display Headings), Lexend (Body & UI)
    ========================================================================== */
@@ -144,7 +144,7 @@ body.about-page {
   display: inline-block;
   width: 32px;
   height: 2px;
-  background-color: #f6a214;
+  background-color: #FBCA27;
   border-radius: 2px;
 }
 .eyebrow-line.light {
@@ -156,7 +156,7 @@ body.about-page {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #f6a214;
+  color: #FBCA27;
 }
 .eyebrow-text.light {
   color: var(--y);
@@ -319,15 +319,15 @@ body.about-page {
   transition: background-color 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 .house-badge.current {
-  background-color: rgba(251, 201, 45, 0.16);
-  border-color: rgba(251, 201, 45, 0.6);
+  background-color: rgba(251, 202, 39, 0.16);
+  border-color: rgba(251, 202, 39, 0.6);
 }
 .house-badge.current .house-city {
   color: var(--g);
 }
 .house-badge.current .house-city::after {
   content: " ★";
-  color: #FBC92D;
+  color: #FBCA27;
   font-size: 0.85em;
 }
 
@@ -737,7 +737,7 @@ body.about-page {
   position: absolute;
   inset: 0;
   background-image: radial-gradient(circle at 80% 20%, rgba(50, 180, 166, 0.12) 0%, transparent 55%),
-                    radial-gradient(circle at 15% 85%, rgba(251, 201, 45, 0.08) 0%, transparent 50%);
+                    radial-gradient(circle at 15% 85%, rgba(251, 202, 39, 0.08) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -754,7 +754,7 @@ body.about-page {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(0, 20, 14, 0.45);
-  border: 3px solid rgba(251, 201, 45, 0.5);
+  border: 3px solid rgba(251, 202, 39, 0.5);
   aspect-ratio: 16 / 10;
   background-color: var(--g-deep);
   position: relative;
@@ -787,7 +787,7 @@ body.about-page {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(251, 201, 45, 0.35);
+  border: 1px solid rgba(251, 202, 39, 0.35);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
@@ -829,7 +829,7 @@ body.about-page {
 .team-pillar-item:hover {
   transform: translateY(-4px);
   background-color: rgba(255, 255, 255, 0.09);
-  border-color: rgba(251, 201, 45, 0.4);
+  border-color: rgba(251, 202, 39, 0.4);
 }
 
 .pillar-bullet-num {
@@ -921,7 +921,7 @@ body.about-page {
 }
 
 .feature-block-card:hover .feature-icon-badge {
-  background-color: rgba(251, 201, 45, 0.25);
+  background-color: rgba(251, 202, 39, 0.25);
   color: var(--g);
   transform: scale(1.08);
 }
@@ -1059,13 +1059,13 @@ body.about-page {
   flex: 1;
   height: 1.5px;
   max-width: 50px;
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
 }
 
 .visit-pill-badge {
   background-color: #0A2E20;
   color: #FAF4E8;
-  border: 1.5px solid var(--y, #FBC92D);
+  border: 1.5px solid var(--y, #FBCA27);
   border-radius: 999px;
   padding: 6px 24px;
   font-family: var(--font-body, "Lexend", sans-serif);
@@ -1145,7 +1145,7 @@ body.about-page {
 /* ── Two-Column Opening Hours Card with Vertical Divider ── */
 .visit-hours-card-ref {
   background-color: #FAF4E8;
-  border: 1.5px solid var(--y, #FBC92D);
+  border: 1.5px solid var(--y, #FBCA27);
   border-radius: 18px;
   padding: 12px clamp(18px, 3.5vw, 36px) 14px;
   box-shadow: 0 6px 24px rgba(10, 46, 32, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
@@ -1166,7 +1166,7 @@ body.about-page {
 .card-title-dash {
   width: 32px;
   height: 1.5px;
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
 }
 
 .card-title-text {
@@ -1199,7 +1199,7 @@ body.about-page {
 
 .hours-divider-vert {
   width: 1.5px;
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
   border-radius: 1px;
 }
 
@@ -1241,7 +1241,7 @@ body.about-page {
 
 .gallery-photo-card {
   background-color: #FAF4E8;
-  border: 2px solid var(--y, #FBC92D);
+  border: 2px solid var(--y, #FBCA27);
   border-radius: 20px;
   padding: 7px;
   box-shadow: 0 8px 24px rgba(10, 46, 32, 0.12);
@@ -1282,7 +1282,7 @@ body.about-page {
 
 .visit-location-pill {
   background-color: #0A2E20;
-  border: 1.5px solid var(--y, #FBC92D);
+  border: 1.5px solid var(--y, #FBCA27);
   border-radius: 999px;
   padding: 7px 24px;
   display: inline-flex;
@@ -1299,7 +1299,7 @@ body.about-page {
 .location-pin-icon {
   display: inline-flex;
   align-items: center;
-  color: var(--y, #FBC92D);
+  color: var(--y, #FBCA27);
   flex-shrink: 0;
 }
 .location-pin-icon svg {

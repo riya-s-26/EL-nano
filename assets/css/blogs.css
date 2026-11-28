@@ -1,7 +1,7 @@
 /* ==========================================================================
    El Ñaño Miami — Premium Editorial Blog Stylesheet (blogs.css)
    Matches official brand palette: Deep Green (#003C28), Dark Green (#00271A),
-   Cream (#FAF3E6), Soft Cream (#FFFBF2), Yellow (#FBC92D), Light Green (#ADCC70)
+   Cream (#FAF3E6), Soft Cream (#FFFBF2), Yellow (#FBCA27), Light Green (#ADCC70)
    Typography: Paytone One, Lexend, Holiday Free / Caveat
    ========================================================================== */
 
@@ -74,7 +74,7 @@ body.blog-page {
 
 .site-header .nav a:hover,
 .site-header .nav a.active {
-  color: var(--y, #FBC92D);
+  color: var(--y, #FBCA27);
 }
 
 .site-header .nav a.active::after {
@@ -84,7 +84,7 @@ body.blog-page {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
   border-radius: 2px;
 }
 
@@ -96,7 +96,7 @@ body.blog-page {
 }
 
 .header-actions .reserve-btn {
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
   color: var(--g-deep, #00271A);
   font-family: var(--font-display, "Paytone One", sans-serif);
   font-size: 0.85rem;
@@ -110,7 +110,7 @@ body.blog-page {
 }
 
 .header-actions .reserve-btn:hover {
-  background-color: #FBC92D;
+  background-color: #FBCA27;
   transform: translateY(-1px);
 }
 
@@ -204,10 +204,10 @@ body.blog-page::before {
 .blog-hero-brush {
   width: clamp(140px, 18vw, 220px);
   height: 8px;
-  background: var(--y, #FBC92D);
+  background: var(--y, #FBCA27);
   border-radius: 999px;
   margin: 0 0 18px 0;
-  box-shadow: 0 2px 8px rgba(251, 201, 45, 0.4);
+  box-shadow: 0 2px 8px rgba(251, 202, 39, 0.4);
 }
 
 .blog-hero-desc {
@@ -326,7 +326,7 @@ body.blog-page::before {
 
 .blog-badge-yellow {
   display: inline-block;
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
   color: var(--g-deep, #00271A);
   font-family: var(--font-body, "Lexend", sans-serif);
   font-size: 0.76rem;
@@ -362,7 +362,7 @@ body.blog-page::before {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--y, #FBC92D);
+  color: var(--y, #FBCA27);
   font-family: var(--font-body, "Lexend", sans-serif);
   font-size: 1.05rem;
   font-weight: 800;
@@ -375,7 +375,7 @@ body.blog-page::before {
 }
 
 .blog-cta-yellow:hover {
-  color: #FBC92D;
+  color: #FBCA27;
   transform: translateX(4px);
 }
 
@@ -438,7 +438,7 @@ body.blog-page::before {
   right: 28px;
   width: 88px;
   height: 26px;
-  background: rgba(251, 201, 45, 0.88);
+  background: rgba(251, 202, 39, 0.88);
   transform: rotate(14deg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   z-index: 3;
@@ -556,7 +556,7 @@ body.blog-page::before {
 .blog-card-badge {
   display: inline-block;
   align-self: flex-start;
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
   color: var(--g-deep, #00271A);
   font-family: var(--font-body, "Lexend", sans-serif);
   font-size: 0.72rem;
@@ -667,7 +667,7 @@ body.blog-page::before {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--y, #FBC92D);
+  color: var(--y, #FBCA27);
   margin-bottom: 14px;
   display: block;
 }
@@ -773,7 +773,7 @@ body.blog-page::before {
 .blog-duo-badge {
   display: inline-block;
   align-self: flex-start;
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
   color: var(--g-deep, #00271A);
   font-family: var(--font-body, "Lexend", sans-serif);
   font-size: 0.72rem;
@@ -880,7 +880,7 @@ body.blog-page::before {
   font-family: var(--font-accent, "Caveat", cursive);
   font-size: clamp(2.2rem, 3.2vw, 3.2rem);
   font-weight: 700;
-  color: var(--y, #FBC92D);
+  color: var(--y, #FBCA27);
   line-height: 1.05;
   margin: 0 0 4px 0;
 }
@@ -922,8 +922,8 @@ body.blog-page::before {
 }
 
 .blog-newsletter-input:focus {
-  border-color: var(--y, #FBC92D);
-  box-shadow: 0 0 0 3px rgba(251, 201, 45, 0.3);
+  border-color: var(--y, #FBCA27);
+  box-shadow: 0 0 0 3px rgba(251, 202, 39, 0.3);
 }
 
 .blog-newsletter-input::placeholder {
@@ -931,7 +931,7 @@ body.blog-page::before {
 }
 
 .blog-newsletter-btn {
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
   color: var(--g-deep, #00271A);
   font-family: var(--font-body, "Lexend", sans-serif);
   font-size: 0.92rem;
@@ -946,7 +946,7 @@ body.blog-page::before {
 }
 
 .blog-newsletter-btn:hover {
-  background-color: var(--y-hover, #FBC92D);
+  background-color: var(--y-hover, #FBCA27);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
@@ -985,15 +985,15 @@ body.blog-page::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--y, #FBC92D);
+  color: var(--y, #FBCA27);
   transition: all 0.25s var(--ease);
 }
 
 .blog-social-link:hover {
-  background: var(--y, #FBC92D);
+  background: var(--y, #FBCA27);
   color: var(--g-deep, #00271A);
   transform: translateY(-2px);
-  border-color: var(--y, #FBC92D);
+  border-color: var(--y, #FBCA27);
 }
 
 .blog-social-link svg {
@@ -1069,7 +1069,7 @@ body.blog-page::before {
 }
 
 .blog-modal-close-btn:hover {
-  background: var(--y, #FBC92D);
+  background: var(--y, #FBCA27);
   color: var(--g-deep, #00271A);
   transform: rotate(90deg);
 }
@@ -1088,7 +1088,7 @@ body.blog-page::before {
 }
 
 .blog-modal-badge {
-  background-color: var(--y, #FBC92D);
+  background-color: var(--y, #FBCA27);
   color: var(--g-deep, #00271A);
   font-size: 0.76rem;
   font-weight: 800;
@@ -1146,7 +1146,7 @@ body.blog-page::before {
   margin: 28px 0;
   padding: 20px 28px;
   background: rgba(0, 60, 40, 0.05);
-  border-left: 4px solid var(--y, #FBC92D);
+  border-left: 4px solid var(--y, #FBCA27);
   border-radius: 0 14px 14px 0;
   font-family: var(--font-accent, "Caveat", cursive);
   font-size: clamp(1.3rem, 1.8vw, 1.65rem);
