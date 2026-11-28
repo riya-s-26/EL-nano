@@ -128,6 +128,62 @@
     });
   }
 
-  // Initialize: Display all items in the catalog with ALL tab active
-  filterCategory('all', false);
+  // Handle URL hash navigation and deep-linking
+  function handleHash() {
+    var rawHash = window.location.hash || '';
+    if (!rawHash) {
+      filterCategory('all', false);
+      return;
+    }
+    var hash = rawHash.replace(/^#/, '').toLowerCase();
+
+    if (hash === 'all' || hash === 'menu-catalog-main') {
+      filterCategory('all', false);
+      scrollToElement(mainSection);
+    } else if (hash === 'clasicos' || hash === 'classics') {
+      filterCategory('clasicos', false);
+      var target = document.getElementById('clasicos') || mainSection;
+      scrollToElement(target);
+    } else if (hash === 'starters') {
+      filterCategory('starters', false);
+      var target = document.getElementById('starters') || mainSection;
+      scrollToElement(target);
+    } else if (hash === 'rice-dishes' || hash === 'wok-rice' || hash === 'arroces') {
+      filterCategory('wok-rice', false);
+      var target = document.getElementById('rice-dishes') || mainSection;
+      scrollToElement(target);
+    } else if (hash === 'combo-platters' || hash === 'banderas') {
+      filterCategory('all', false);
+      var target = document.getElementById('combo-platters') || document.getElementById('banderas');
+      if (target) scrollToElement(target);
+    } else if (hash === 'sides' || hash === 'acompanantes') {
+      filterCategory('all', false);
+      var target = document.getElementById('sides') || document.getElementById('acompanantes');
+      if (target) scrollToElement(target);
+    } else if (hash === 'drinks-desserts' || hash === 'drinks') {
+      var drinksSec = document.getElementById('drinks-desserts');
+      if (drinksSec) scrollToElement(drinksSec);
+    } else if (hash === 'happy-hour') {
+      filterCategory('signature-cocktails', false);
+      var target = document.getElementById('happy-hour') || mainSection;
+      scrollToElement(target);
+    } else {
+      var matchingPill = pills.find(function (p) { return p.getAttribute('data-cat') === hash; });
+      if (matchingPill) {
+        filterCategory(hash, true);
+      } else {
+        var el = document.getElementById(hash);
+        if (el) scrollToElement(el);
+      }
+    }
+  }
+
+  window.addEventListener('hashchange', handleHash);
+
+  // Initialize: Check hash or display all items in catalog
+  if (window.location.hash) {
+    setTimeout(handleHash, 100);
+  } else {
+    filterCategory('all', false);
+  }
 })();

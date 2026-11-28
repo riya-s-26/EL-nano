@@ -178,7 +178,8 @@
 
   if (menuTabs.length > 0) {
     menuTabs.forEach(function (tab) {
-      tab.addEventListener('click', function () {
+      tab.addEventListener('click', function (e) {
+        if (tab.tagName === 'A' && tab.getAttribute('href')) return;
         var cat = tab.getAttribute('data-cat');
 
         // Update active tab button

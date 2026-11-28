@@ -2279,6 +2279,30 @@ html[lang="es"] .offer-price-item span,
   flex-shrink: 0;
   box-shadow: 0 3px 10px rgba(0, 30, 20, 0.09);
   transition: all 0.25s var(--ease);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+#all,
+#menu-catalog-main,
+#clasicos,
+#classics,
+#starters,
+#rice-dishes,
+#wok-rice,
+#combo-platters,
+#banderas,
+#sides,
+#acompanantes,
+#drinks,
+#drinks-desserts,
+#happy-hour,
+#lb-view-lunch,
+#sec-first-course {
+  scroll-margin-top: clamp(100px, 14vw, 150px);
 }
 
 .menu-tab-btn:hover {
