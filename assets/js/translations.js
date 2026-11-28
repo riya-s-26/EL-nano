@@ -163,7 +163,7 @@ window.I18N_DATA = {
   "dish_encocado_desc": "From the green province of Ecuador and across the Pacific coast, our fresh seafood in coconut sauce.",
   "dish_sango_title": "Cazuela",
   "dish_sango_desc": "From our Manabí Creole culture, a fish stew with a base of green plantain and peanut.",
-  "tag_starter": "Andean Corn",
+  "tag_starter": "Starter",
   "cat_empezar_label": "Starters",
   "dish_patacones_queso_title": "Patacones con Queso",
   "dish_patacones_queso_desc": "Fried green plantains served with cheese and tartar sauce.",
