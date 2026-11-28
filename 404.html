@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    var path = window.location.pathname;
+    var routes = {
+      'home': 'home/',
+      'about': 'about-us/',
+      'about-us': 'about-us/',
+      'about.html': 'about-us/',
+      'menu': 'menu-catalog/',
+      'menu.html': 'menu-catalog/',
+      'menu-catalog': 'menu-catalog/',
+      'menu-catalog.html': 'menu-catalog/',
+      'lunch-specials': 'lunch-specials/',
+      'lunch-specials.html': 'lunch-specials/',
+      'lunch': 'lunch-specials/',
+      'blogs': 'blogs/',
+      'blogs.html': 'blogs/',
+      'blog': 'blogs/',
+      'contact': 'contact-us/',
+      'contact.html': 'contact-us/',
+      'contact-us': 'contact-us/'
+    };
+    var match = path.match(/\/([^\/]+)\/?$/);
+    var base = path.indexOf('/EL-nano/') !== -1 ? '/EL-nano/' : '/';
+    if (match && routes[match[1]]) {
+      window.location.replace(base + routes[match[1]] + window.location.search + window.location.hash);
+    } else {
+      window.location.replace(base + 'home/');
+    }
+  </script>
+  <meta http-equiv="refresh" content="0; url=home/">
+  <title>El Ñaño Miami</title>
+</head>
+<body>
+  <p>Redirecting to <a href="home/">El Ñaño Miami</a>...</p>
+</body>
+</html>
