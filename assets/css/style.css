@@ -3834,17 +3834,15 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   transform: scale(1.05);
 }
 
-/* Card 1 in Our Location gallery: show complete original image with zero left/right/top/bottom cropping and natural container fit */
+/* Card 1 in Our Location gallery: exactly equal dimensions to Card 2, complete image 100% visible with object-fit: contain */
 .contact-gallery-card:first-child,
 .contact-gallery-card:has(img[src*="contact-gallery-1"]) {
-  aspect-ratio: 819 / 1024 !important;
-  width: auto !important;
-  max-width: 100% !important;
-  justify-self: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  background-color: transparent !important;
+  background-color: #0b1812 !important;
   box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
 }
 
 .contact-gallery-card:first-child picture,
@@ -3858,10 +3856,11 @@ html[lang="es"] .menu-card[data-cat="drinks"] .menu-card-price,
   object-fit: contain !important;
   object-position: center center !important;
   display: block !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 0 !important;
   border-radius: inherit !important;
   box-sizing: border-box !important;
+  transform: none !important;
 }
 
 /* ── Quick Links Single Panel Section ── */
